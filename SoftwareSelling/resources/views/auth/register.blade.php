@@ -197,9 +197,9 @@
                   <!-- Role Base-->
                   <div class="col-12">
                     <label for="role" :value="__('Role')" class="form-label">Role</label>
-                    <select class="form-select" id="inputSelectCountry" aria-label="Default select example">
-                        <option id="role" name="role" required value="User">Register As User</option>
-                      <option id="role" name="role" required value="Company">Register As Company</option>
+                    <select class="form-select" id="inputSelectCountry" aria-label="Default select example" name="role" >
+                        <option id="role" required value="User">Register As User</option>
+                      <option id="role"  required value="Company">Register As Company</option>
                     </select>
                     <x-input-error :messages="$errors->get('Role')" class="mt-2" />
                   </div>
@@ -263,3 +263,4 @@
 
 <!-- Mirrored from codervent.com/maxton/demo/vertical-menu/auth-cover-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 14:23:14 GMT -->
 </html>
+

@@ -8,6 +8,6 @@ class CompanyController extends Controller
 {
     public function Company()
     {
-        return view('Company.Dashboard');
+        return view('company.dashboard');
     }
 }
