@@ -18,7 +18,7 @@
 
 
 <!doctype html>
-<html lang="en" data-bs-theme="blue-theme">
+<html lang="en" data-bs-theme="dark">
 
 
 <!-- Mirrored from codervent.com/maxton/demo/vertical-menu/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 14:21:21 GMT -->
