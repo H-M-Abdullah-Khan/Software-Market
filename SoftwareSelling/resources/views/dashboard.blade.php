@@ -685,7 +685,7 @@
               <div class="menu-title">Widgets</div>
             </a>
             <ul>
-              <li><a href="{{url('/../admin/widgets-data.html')}}')}}"><i class="material-icons-outlined">arrow_right</i>Data</a>
+              <li><a href="{{url('/../admin/widgets-data.html')}}"><i class="material-icons-outlined">arrow_right</i>Data</a>
               </li>
               <li><a href="{{url('/../admin/widgets-static.html')}}"><i class="material-icons-outlined">arrow_right</i>Static</a>
               </li>

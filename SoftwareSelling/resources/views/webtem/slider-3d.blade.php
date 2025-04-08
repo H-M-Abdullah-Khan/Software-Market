@@ -46,16 +46,16 @@
     </div>
     <!-- /preload -->
 
-    
-        
+
+
     <div id="wrapper">
         <div id="page" class="pt-40 slider-3d-page">
 
             <header id="header_main" class="header_1 header-fixed">
                 <div class="themesflat-container">
                     <div class="row">
-                        <div class="col-md-12">                              
-                            <div id="site-header-inner"> 
+                        <div class="col-md-12">
+                            <div id="site-header-inner">
                                 <div class="wrap-box flex">
                                     <div id="site-logo">
                                         <div id="site-logo-inner">
@@ -168,14 +168,14 @@
                                                     <button class="search search-submit" type="submit" title="Search">
                                                         <i class="icon-search"></i>
                                                     </button>
-                                                </form> 
+                                                </form>
                                             </div>
                                         </div>
                                         <div class="canvas">
                                             <span></span>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -463,9 +463,9 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
+
+
+
         </div>
         <!-- /#page -->
 
@@ -491,7 +491,7 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/count-down.js"></script>
-    
+
     <script src="assets/js/simpleParallax.min.js"></script>
     <script src="assets/js/gsap.js"></script>
     <script src="assets/js/SplitText.js"></script>

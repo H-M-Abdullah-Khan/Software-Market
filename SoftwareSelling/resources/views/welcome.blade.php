@@ -353,7 +353,7 @@
                                             <li class="menu-item menu-item-has-children current-menu-item">
                                                 <a>Home</a>
                                                 <ul class="sub-menu">
-                                                    <li class="menu-item current-item"><a href="index.html">Home 1</a></li>
+                                                    <li class="menu-item current-item"><a href="{{ url('/../webtem/index') }}">Home 1</a></li>
                                                     <li class="menu-item"><a href="home-2.html">Home 2</a></li>
                                                     <li class="menu-item"><a href="home-3.html">Home 3</a></li>
                                                     <li class="menu-item"><a href="home-4.html">Home 4</a></li>
