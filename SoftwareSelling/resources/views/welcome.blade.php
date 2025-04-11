@@ -30,7 +30,7 @@
 <!--<![endif]-->
 
 
-<!-- Mirrored from themesflat.co/html/open9/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Mar 2025 14:15:01 GMT -->
+<!-- Mirrored from themesflat.co/html/open9/index.html') }} by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Mar 2025 14:15:01 GMT -->
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
@@ -43,14 +43,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Theme Style -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/../template/assets/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('../template/assets/css/style.css')}}">
 
     <!-- Reponsive -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/../template/assets/css/responsive.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('../template/assets/css/responsive.css')}}">
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="{{asset('/../template/assets/icon/Favicon.png')}}">
-    <link rel="apple-touch-icon-precomposed" href="{{asset('/../template/assets/icon/Favicon.png')}}">
+    <link rel="shortcut icon" href="{{asset('../template/assets/icon/Favicon.png')}}">
+    <link rel="apple-touch-icon-precomposed" href="{{asset('../template/assets/icon/Favicon.png')}}">
 
 </head>
 
@@ -82,7 +82,7 @@
                                 <div class="wrap-box flex">
                                     <div id="site-logo">
                                         <div id="site-logo-inner">
-                                            <a href="index.html" rel="home" class="main-logo">
+                                            <a href="{{ url('welcome') }}" rel="home" class="main-logo">
                                                 <img id="logo_header" src="{{asset('../template/assets/images/logo/logo.png')}}"
                                                 data-retina="{{asset('../template/assets/images/logo/logo.png')}}" >
                                             </a>
@@ -93,84 +93,36 @@
                                     </div><!-- /.mobile-button -->
                                     <nav id="main-nav" class="main-nav">
                                         <ul id="menu-primary-menu" class="menu">
-                                            <li class="menu-item menu-item-has-children current-menu-item">
-                                                <a>Home</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item current-item"><a href="{{ url('/../webtem/index') }}">Home 1</a></li>
-                                                    <li class="menu-item"><a href="home-2.html">Home 2</a></li>
-                                                    <li class="menu-item"><a href="home-3.html">Home 3</a></li>
-                                                    <li class="menu-item"><a href="home-4.html">Home 4</a></li>
-                                                    <li class="menu-item"><a href="home-5.html">Home 5</a></li>
-                                                    <li class="menu-item"><a href="home-6.html">Home 6</a></li>
-                                                    <li class="menu-item"><a href="home-7.html">Home 7</a></li>
-                                                    <li class="menu-item has-item">
-                                                        <a href="#">Home Slider Style</a>
-                                                        <ul class="nav-sub-menu">
-                                                            <li class="nav-menu-item"><a href="slider-3d.html">Slider 3d</a></li>
-                                                            <li class="nav-menu-item"><a href="slider-scroll.html">Slider Scroll</a></li>
-                                                            <li class="nav-menu-item"><a href="slider-animation.html">Slider Animation</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
+                                            <li class="menu-item current-menu-item">
+                                                <a href="{{ url('welcome') }}">Home</a>
                                             </li>
                                             <li class="menu-item">
                                                 <a href="{{url('about-us')}}">About us</a>
                                             </li>
-                                            <li class="menu-item menu-item-has-children">
-                                                <a>Explore</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item"><a href="explore-1.html">Explore Style 1</a></li>
-                                                    <li class="menu-item"><a href="explore-2.html">Explore Style 2</a></li>
-                                                    <li class="menu-item"><a href="explore-3.html">Explore Style 3</a></li>
-                                                    <li class="menu-item"><a href="explore-4.html">Explore Style 4</a></li>
-                                                    <li class="menu-item"><a href="nft-detail-1.html">NFT Detail 1</a></li>
-                                                    <li class="menu-item"><a href="nft-detail-2.html">NFT Detail 2</a></li>
-                                                    <li class="menu-item"><a href="nft-detail-3.html">NFT Detail 3</a></li>
-                                                    <li class="menu-item"><a href="ranking.html">Ranking</a></li>
-                                                    <li class="menu-item"><a href="upcoming.html">Upcoming Projects</a></li>
-                                                </ul>
+                                            <li class="menu-item">
+                                                <a href="{{ url('explore-1') }}">Explore</a>
                                             </li>
                                             <li class="menu-item menu-item-has-children">
-                                                <a>Pages</a>
+                                                <a href="{{ url('market') }}">Market</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item has-item">
-                                                        <a href="market.html">Market</a>
-                                                        <ul class="nav-sub-menu">
-                                                            <li class="nav-menu-item"><a href="market-create.html">Create</a></li>
-                                                            <li class="nav-menu-item"><a href="market.html">Market</a></li>
-                                                            <li class="nav-menu-item"><a href="market-active-bid.html">Active Bid</a></li>
-                                                            <li class="nav-menu-item"><a href="market-explore.html">Explore</a></li>
-                                                            <li class="nav-menu-item"><a href="market-collection.html">My collection</a></li>
-                                                            <li class="nav-menu-item"><a href="market-favorite.html">My favorite</a></li>
-                                                            <li class="nav-menu-item"><a href="market-wallet.html">Wallet</a></li>
-                                                            <li class="nav-menu-item"><a href="market-history.html">History</a></li>
-                                                            <li class="nav-menu-item"><a href="market.html">Settings</a></li>
-                                                        </ul>
+                                                            <li class="nav-menu-item"><a href="{{ url('market-create') }}">Create</a></li>
+                                                            <li class="nav-menu-item"><a href="{{ url('market') }}">Market</a></li>
+                                                            <li class="nav-menu-item"><a href="{{ url('market-active-bid') }}">Active Bid</a></li>
+                                                            <li class="nav-menu-item"><a href="{{ url('market-explore') }}">Explore</a></li>
+                                                            <li class="nav-menu-item"><a href="{{ url('market-collection') }}">My collection</a></li>
+                                                            <li class="nav-menu-item"><a href="{{ url('market-favorite') }}">My favorite</a></li>
+                                                            <li class="nav-menu-item"><a href="{{ url('market-wallet') }}">Wallet</a></li>
+                                                            <li class="nav-menu-item"><a href="{{ url('market-history') }}">History</a></li>
+                                                            <li class="nav-menu-item"><a href="{{ url('market') }}">Settings</a></li>
                                                     </li>
-                                                    <li class="menu-item"><a href="author-1.html">Authors Style 1</a></li>
-                                                    <li class="menu-item"><a href="author-2.html">Authors Style 2</a></li>
-                                                    <li class="menu-item"><a href="terms-condition.html">Terms & Condition</a></li>
-                                                    <li class="menu-item"><a href="no-result.html">No Result</a></li>
-                                                    <li class="menu-item"><a href="faq.html">FAQs</a></li>
-                                                    <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                                    <li class="menu-item"><a href="maintenance.html">Maintenance</a></li>
-                                                    <li class="menu-item"><a href="404.html">404</a></li>
-                                                    <li class="menu-item"><a href="login.html">Login</a></li>
-                                                    <li class="menu-item"><a href="sign-up.html">Sign up</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item menu-item-has-children">
-                                                <a>Blog</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item"><a href="blog-grid.html">Blog Grid</a></li>
-                                                    <li class="menu-item"><a href="blog-grid-1.html">Blog Grid 1</a></li>
-                                                    <li class="menu-item"><a href="blog-list.html">Blog List</a></li>
-                                                    <li class="menu-item"><a href="blog-list-1.html">Blog List 1</a></li>
-                                                    <li class="menu-item"><a href="blog-detail.html">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item">
-                                                <a href="contact-us.html">Contact</a>
+                                                <a href="{{ url('blog-detail') }}">Blog</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="{{ url('contact-us') }}">Contact</a>
                                             </li>
                                             @if (Route::has('login'))
                                             @auth
@@ -183,7 +135,7 @@
                                             </li>
                                             @else
                                             <li class="menu-item">
-                                                <a 
+                                                <a class=""
                                                     href="{{ route('login') }}"   
                                                 >
                                                     Log in
@@ -206,7 +158,7 @@
                                 <!-- /#main-nav -->
                                     {{-- <div class="flat-wallet flex">
                                         {{-- <div class="" id="wallet-header">
-                                            <a  href="market-wallet.html" id="connectbtn" class="tf-button style-1">
+                                            <a  href="market-wallet') }}" id="connectbtn" class="tf-button style-1">
                                                 <span>Wallet connect</span>
                                                 <i class="icon-wa"></i>
                                             </a>
@@ -237,7 +189,7 @@
                     <div class="overlay-canvas-nav"></div>
                     <div class="inner-canvas-nav">
                         <div class="side-bar">
-                            <a href="index.html" rel="home" class="main-logo">
+                            <a href="{{ url('welcome') }}" rel="home" class="main-logo">
                                 <img id="logo_header" src="{{asset('../template/assets/images/logo/logo.png')}}"
                                 data-retina="{{asset('../template/assets/images/logo/logo.png')}}" >
                             </a>
@@ -298,7 +250,7 @@
                 <div class="mobile-nav-wrap">
                     <div class="overlay-mobile-nav"></div>
                     <div class="inner-mobile-nav">
-                        <a href="index.html" rel="home" class="main-logo">
+                        <a href="{{ url('welcome') }}" rel="home" class="main-logo">
                             <img id="mobile-logo_header" src="{{asset('/../template/assets/images/logo/logo.png')}}" data-retina="{{asset('/../template/assets/images/logo/logo@2x.png')}}">
                         </a>
                         <div class="mobile-nav-close">
@@ -306,75 +258,63 @@
                         </div>
                         <nav id="mobile-main-nav" class="mobile-main-nav">
                             <ul id="menu-mobile-menu" class="menu">
-                                <li class="menu-item menu-item-has-children-mobile current-menu-item">
-                                    <a class="item-menu-mobile">Home</a>
+                                <li class="menu-item current-menu-item">
+                                    <a class="item-menu-mobile" href="{{ url('welcome') }}">Home</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="item-menu-mobile" href="{{ url('about-us') }}">About us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="item-menu-mobile" href="{{ url('explore-1.html') }}">Explore</a>
+                                </li>
+                                <li class="menu-item menu-item-has-children-mobile">
+                                    <a class="item-menu-mobile">Market</a>
                                     <ul class="sub-menu-mobile">
-                                        <li class="menu-item current-item"><a href="index.html">Home 1</a></li>
-                                        <li class="menu-item"><a href="home-2.html">Home 2</a></li>
-                                        <li class="menu-item"><a href="home-3.html">Home 3</a></li>
-                                        <li class="menu-item"><a href="home-4.html">Home 4</a></li>
-                                        <li class="menu-item"><a href="home-5.html">Home 5</a></li>
-                                        <li class="menu-item"><a href="home-6.html">Home 6</a></li>
-                                        <li class="menu-item"><a href="home-7.html">Home 7</a></li>
-                                        <li class="menu-item"><a href="slider-3d.html">Slider 3d</a></li>
-                                        <li class="menu-item"><a href="slider-scroll.html">Slider Scroll</a></li>
-                                        <li class="menu-item"><a href="slider-animation.html">Slider Animation</a></li>
+                                        <li class="menu-item"><a href="{{ url('market') }}">Market</a></li>
+                                        <li class="menu-item"><a href="{{ url('market-create') }}">Create</a></li>
+                                        <li class="menu-item"><a href="{{ url('market-active-bid') }}">Active Bid</a></li>
+                                        <li class="menu-item"><a href="{{ url('market-explore') }}">Explore</a></li>
+                                        <li class="menu-item"><a href="{{ url('market-collection') }}">My collection</a></li>
+                                        <li class="menu-item"><a href="{{ url('market-favorite') }}">My favorite</a></li>
+                                        <li class="menu-item"><a href="{{ url('market-wallet') }}">Wallet</a></li>
+                                        <li class="menu-item"><a href="{{ url('market-history') }}">History</a></li>
+                                        <li class="menu-item"><a href="{{ url('market') }}">Settings</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item">
-                                    <a class="item-menu-mobile" href="about-us.html">About us</a>
-                                </li>
-                                <li class="menu-item menu-item-has-children-mobile">
-                                    <a class="item-menu-mobile">Explore</a>
-                                    <ul class="sub-menu-mobile">
-                                        <li class="menu-item"><a href="explore-1.html">Explore Style 1</a></li>
-                                        <li class="menu-item"><a href="explore-2.html">Explore Style 2</a></li>
-                                        <li class="menu-item"><a href="explore-3.html">Explore Style 3</a></li>
-                                        <li class="menu-item"><a href="explore-4.html">Explore Style 4</a></li>
-                                        <li class="menu-item"><a href="nft-detail-1.html">NFT Detail 1</a></li>
-                                        <li class="menu-item"><a href="nft-detail-2.html">NFT Detail 2</a></li>
-                                        <li class="menu-item"><a href="nft-detail-3.html">NFT Detail 3</a></li>
-                                        <li class="menu-item"><a href="ranking.html">Ranking</a></li>
-                                        <li class="menu-item"><a href="upcoming.html">Upcoming Projects</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children-mobile">
-                                    <a class="item-menu-mobile">Pages</a>
-                                    <ul class="sub-menu-mobile">
-                                        <li class="menu-item"><a href="market.html">Market</a></li>
-                                        <li class="menu-item"><a href="market-create.html">Create</a></li>
-                                        <li class="menu-item"><a href="market-active-bid.html">Active Bid</a></li>
-                                        <li class="menu-item"><a href="market-explore.html">Explore</a></li>
-                                        <li class="menu-item"><a href="market-collection.html">My collection</a></li>
-                                        <li class="menu-item"><a href="market-favorite.html">My favorite</a></li>
-                                        <li class="menu-item"><a href="market-wallet.html">Wallet</a></li>
-                                        <li class="menu-item"><a href="market-history.html">History</a></li>
-                                        <li class="menu-item"><a href="market.html">Settings</a></li>
-                                        <li class="menu-item"><a href="author-1.html">Authors Style 1</a></li>
-                                        <li class="menu-item"><a href="author-2.html">Authors Style 2</a></li>
-                                        <li class="menu-item"><a href="terms-condition.html">Terms & Condition</a></li>
-                                        <li class="menu-item"><a href="no-result.html">No Result</a></li>
-                                        <li class="menu-item"><a href="faq.html">FAQs</a></li>
-                                        <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                        <li class="menu-item"><a href="maintenance.html">Maintenance</a></li>
-                                        <li class="menu-item"><a href="404.html">404</a></li>
-                                        <li class="menu-item"><a href="login.html">Login</a></li>
-                                        <li class="menu-item"><a href="sign-up.html">Sign up</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children-mobile">
-                                    <a class="item-menu-mobile">Blog</a>
-                                    <ul class="sub-menu-mobile">
-                                        <li class="menu-item"><a href="blog-grid.html">Blog Grid</a></li>
-                                        <li class="menu-item"><a href="blog-grid-1.html">Blog Grid 1</a></li>
-                                        <li class="menu-item"><a href="blog-list.html">Blog List</a></li>
-                                        <li class="menu-item"><a href="blog-list-1.html">Blog List 1</a></li>
-                                        <li class="menu-item"><a href="blog-detail.html">Blog Details</a></li>
-                                    </ul>
+                                    <a class="item-menu-mobile" href="{{ url('blog-detail') }}">Blog</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a class="item-menu-mobile" href="contact-us.html">Contact</a>
+                                    <a class="item-menu-mobile" href="{{ url('contact-us') }}">Contact</a>
                                 </li>
+                                @if (Route::has('login'))
+                                            @auth
+                                            <li>
+                                                <a class="tf-button style-1"
+                                                    href="{{ url('/dashboard') }}"  
+                                                >
+                                                    Dashboard
+                                                </a>
+                                            </li>
+                                            @else
+                                            <li class="menu-item">
+                                                <a class=""
+                                                    href="{{ route('login') }}"   
+                                                >
+                                                    Log in
+                                                </a>
+                                            </li>
+                                            @if (Route::has('register'))
+                                            <li class="menu-item">
+                                                    <a 
+                                                        href="{{ route('register') }}"
+                                                        >
+                                                        Register
+                                                    </a>
+                                            </li>
+                                                @endif
+                                            @endauth
+                                    @endif
                             </ul>
                         </nav>
                         <div class="widget-search mt-30">
@@ -436,7 +376,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="meta-info text-center">
-                                                    <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                    <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                     <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                                 </div>
                                             </div>
@@ -456,7 +396,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="meta-info text-center">
-                                                    <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                    <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                     <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                                 </div>
                                             </div>
@@ -476,7 +416,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="meta-info text-center">
-                                                    <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                    <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                     <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                                 </div>
                                             </div>
@@ -496,7 +436,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="meta-info text-center">
-                                                    <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                    <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                     <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                                 </div>
                                             </div>
@@ -516,7 +456,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="meta-info text-center">
-                                                    <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                    <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                     <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                                 </div>
                                             </div>
@@ -536,7 +476,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="meta-info text-center">
-                                                    <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                    <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                     <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                                 </div>
                                             </div>
@@ -556,7 +496,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="meta-info text-center">
-                                                    <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                    <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                     <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                                 </div>
                                             </div>
@@ -578,7 +518,7 @@
                         <div class="col-md-12">
                             <div class="heading-section pb-20">
                                 <h2 class="tf-title ">Featured Item</h2>
-                                <a href="explore-3.html">Discover more <i class="icon-arrow-right2"></i></a>
+                                <a href="explore-3.html') }}">Discover more <i class="icon-arrow-right2"></i></a>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -627,14 +567,14 @@
                                                     <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                 </div>
                                             </div>
-                                            <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                            <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                             <div class="author flex items-center">
                                                 <div class="avatar">
                                                     <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                 </div>
                                                 <div class="info">
                                                     <span>Created by:</span>
-                                                    <h6><a href="author-2.html">Kathryn Murphy</a> </h6>
+                                                    <h6><a href="{{url ('author-2') }}">Kathryn Murphy</a> </h6>
                                                 </div>
                                             </div>
                                             <div class="divider"></div>
@@ -658,14 +598,14 @@
                                                     <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                 </div>
                                             </div>
-                                            <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                            <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                             <div class="author flex items-center">
                                                 <div class="avatar">
                                                     <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                 </div>
                                                 <div class="info">
                                                     <span>Created by:</span>
-                                                    <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                    <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                 </div>
                                             </div>
                                             <div class="divider"></div>
@@ -689,14 +629,14 @@
                                                     <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                 </div>
                                             </div>
-                                            <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                            <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                             <div class="author flex items-center">
                                                 <div class="avatar">
                                                     <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                 </div>
                                                 <div class="info">
                                                     <span>Created by:</span>
-                                                    <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                    <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                 </div>
                                             </div>
                                             <div class="divider"></div>
@@ -720,14 +660,14 @@
                                                     <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                 </div>
                                             </div>
-                                            <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                            <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                             <div class="author flex items-center">
                                                 <div class="avatar">
                                                     <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                 </div>
                                                 <div class="info">
                                                     <span>Created by:</span>
-                                                    <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                    <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                 </div>
                                             </div>
                                             <div class="divider"></div>
@@ -751,14 +691,14 @@
                                                     <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                 </div>
                                             </div>
-                                            <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                            <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                             <div class="author flex items-center">
                                                 <div class="avatar">
                                                     <img src="{{asset('/../template/assets/images/avatar/avatar-box-05.jpg')}}" alt="Image">
                                                 </div>
                                                 <div class="info">
                                                     <span>Created by:</span>
-                                                    <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                    <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                 </div>
                                             </div>
                                             <div class="divider"></div>
@@ -782,14 +722,14 @@
                                                     <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                 </div>
                                             </div>
-                                            <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                            <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                             <div class="author flex items-center">
                                                 <div class="avatar">
                                                     <img src="{{asset('/../template/assets/images/avatar/avatar-box-06.jpg')}}" alt="Image">
                                                 </div>
                                                 <div class="info">
                                                     <span>Created by:</span>
-                                                    <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                    <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                 </div>
                                             </div>
                                             <div class="divider"></div>
@@ -813,14 +753,14 @@
                                                     <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                 </div>
                                             </div>
-                                            <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                            <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                             <div class="author flex items-center">
                                                 <div class="avatar">
                                                     <img src="{{asset('/../template/assets/images/avatar/avatar-box-07.jpg')}}" alt="Image">
                                                 </div>
                                                 <div class="info">
                                                     <span>Created by:</span>
-                                                    <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                    <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                 </div>
                                             </div>
                                             <div class="divider"></div>
@@ -844,14 +784,14 @@
                                                     <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                 </div>
                                             </div>
-                                            <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                            <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                             <div class="author flex items-center">
                                                 <div class="avatar">
                                                     <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                 </div>
                                                 <div class="info">
                                                     <span>Created by:</span>
-                                                    <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                    <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                 </div>
                                             </div>
                                             <div class="divider"></div>
@@ -926,7 +866,7 @@
                                                 <div class="number">1</div>
                                             </div>
                                             <div class="author-infor ">
-                                                <h5><a href="author-2.html">Courtney Henry</a></h5>
+                                                <h5><a href="{{url ('author-2') }}">Courtney Henry</a></h5>
                                                 <h6 class="price gem style-1"><i class="icon-gem"></i>7,080.95</h6>
                                             </div>
                                         </div>
@@ -938,7 +878,7 @@
                                                 <div class="number">2</div>
                                             </div>
                                             <div class="author-infor ">
-                                                <h5><a href="author-2.html">Robertson</a></h5>
+                                                <h5><a href="{{url ('author-2') }}">Robertson</a></h5>
                                                 <h6 class="price gem style-1"><i class="icon-gem"></i>7,080.95</h6>
                                             </div>
                                         </div>
@@ -950,7 +890,7 @@
                                                 <div class="number">3</div>
                                             </div>
                                             <div class="author-infor ">
-                                                <h5><a href="author-2.html">Midjourney NFTs</a></h5>
+                                                <h5><a href="{{url ('author-2') }}">Midjourney NFTs</a></h5>
                                                 <h6 class="price gem style-1"><i class="icon-gem"></i>7,080.95</h6>
                                             </div>
                                         </div>
@@ -962,7 +902,7 @@
                                                 <div class="number">4</div>
                                             </div>
                                             <div class="author-infor ">
-                                                <h5><a href="author-2.html">Kristin Watson</a></h5>
+                                                <h5><a href="{{url ('author-2') }}">Kristin Watson</a></h5>
                                                 <h6 class="price gem style-1"><i class="icon-gem"></i>7,080.95</h6>
                                             </div>
                                         </div>
@@ -974,7 +914,7 @@
                                                 <div class="number">5</div>
                                             </div>
                                             <div class="author-infor ">
-                                                <h5><a href="author-2.html">Dianne Russell</a></h5>
+                                                <h5><a href="{{url ('author-2') }}">Dianne Russell</a></h5>
                                                 <h6 class="price gem style-1"><i class="icon-gem"></i>7,080.95</h6>
                                             </div>
                                         </div>
@@ -986,7 +926,7 @@
                                                 <div class="number">6</div>
                                             </div>
                                             <div class="author-infor ">
-                                                <h5><a href="author-2.html">Jenny Wilson</a></h5>
+                                                <h5><a href="{{url ('author-2') }}">Jenny Wilson</a></h5>
                                                 <h6 class="price gem style-1"><i class="icon-gem"></i>7,080.95</h6>
                                             </div>
                                         </div>
@@ -998,7 +938,7 @@
                                                 <div class="number">7</div>
                                             </div>
                                             <div class="author-infor ">
-                                                <h5><a href="author-2.html">Courtney Henry</a></h5>
+                                                <h5><a href="{{url ('author-2') }}">Courtney Henry</a></h5>
                                                 <h6 class="price gem style-1"><i class="icon-gem"></i>7,080.95</h6>
                                             </div>
                                         </div>
@@ -1010,7 +950,7 @@
                                                 <div class="number">8</div>
                                             </div>
                                             <div class="author-infor ">
-                                                <h5><a href="author-2.html">Courtney Henry</a></h5>
+                                                <h5><a href="{{url ('author-2') }}">Courtney Henry</a></h5>
                                                 <h6 class="price gem style-1"><i class="icon-gem"></i>7,080.95</h6>
                                             </div>
                                         </div>
@@ -1030,7 +970,7 @@
                         <div class="col-md-12">
                             <div class="heading-section pb-30">
                                 <h2 class="tf-title ">Discover item</h2>
-                                <a href="explore-3.html" class="">Discover more <i class="icon-arrow-right2"></i></a>
+                                <a href="explore-3.html') }}" class="">Discover more <i class="icon-arrow-right2"></i></a>
                             </div>
                         </div>
                         <div class="col-md-12 pb-30">
@@ -1229,14 +1169,14 @@
                                         <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                     </div>
                                 </div>
-                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                 <div class="author flex items-center">
                                     <div class="avatar">
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                     </div>
                                     <div class="info">
                                         <span>Posted by:</span>
-                                        <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                        <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -1260,14 +1200,14 @@
                                         <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                     </div>
                                 </div>
-                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                 <div class="author flex items-center">
                                     <div class="avatar">
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                     </div>
                                     <div class="info">
                                         <span>Posted by:</span>
-                                        <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                        <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -1291,14 +1231,14 @@
                                         <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                     </div>
                                 </div>
-                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                 <div class="author flex items-center">
                                     <div class="avatar">
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                     </div>
                                     <div class="info">
                                         <span>Posted by:</span>
-                                        <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                        <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -1322,14 +1262,14 @@
                                         <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                     </div>
                                 </div>
-                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                 <div class="author flex items-center">
                                     <div class="avatar">
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                     </div>
                                     <div class="info">
                                         <span>Posted by:</span>
-                                        <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                        <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -1353,14 +1293,14 @@
                                         <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                     </div>
                                 </div>
-                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                 <div class="author flex items-center">
                                     <div class="avatar">
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-box-05.jpg')}}" alt="Image">
                                     </div>
                                     <div class="info">
                                         <span>Posted by:</span>
-                                        <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                        <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -1384,14 +1324,14 @@
                                         <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                     </div>
                                 </div>
-                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                 <div class="author flex items-center">
                                     <div class="avatar">
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-box-06.jpg')}}" alt="Image">
                                     </div>
                                     <div class="info">
                                         <span>Posted by:</span>
-                                        <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                        <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -1415,14 +1355,14 @@
                                         <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                     </div>
                                 </div>
-                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                 <div class="author flex items-center">
                                     <div class="avatar">
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-box-07.jpg')}}" alt="Image">
                                     </div>
                                     <div class="info">
                                         <span>Posted by:</span>
-                                        <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                        <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -1446,14 +1386,14 @@
                                         <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                     </div>
                                 </div>
-                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                 <div class="author flex items-center">
                                     <div class="avatar">
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                     </div>
                                     <div class="info">
                                         <span>Posted by:</span>
-                                        <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                        <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -1505,7 +1445,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">EHT senders</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">EHT senders</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1515,7 +1455,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Girls riding things</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Girls riding things</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1525,7 +1465,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">The lobstars</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">The lobstars</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1535,7 +1475,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Nakamigos</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Nakamigos</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1545,7 +1485,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Beanz office</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Beanz office</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1555,7 +1495,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Sproto gremilins</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Sproto gremilins</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1565,7 +1505,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Psyop gang</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Psyop gang</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1575,7 +1515,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">EHT senders</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">EHT senders</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1585,7 +1525,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Girls riding things</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Girls riding things</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1595,7 +1535,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">The lobstars</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">The lobstars</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1605,7 +1545,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Nakamigos</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Nakamigos</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1615,7 +1555,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Beanz office</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Beanz office</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1651,7 +1591,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Psyop gang</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Psyop gang</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1661,7 +1601,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">EHT</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">EHT</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1671,7 +1611,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">EHT senders</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">EHT senders</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1681,7 +1621,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Sproto gremilins</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Sproto gremilins</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1691,7 +1631,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Beanz office</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Beanz office</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1701,7 +1641,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Nakamigos</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Nakamigos</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1711,7 +1651,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">The lobstars</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">The lobstars</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1721,7 +1661,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Girls riding things</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Girls riding things</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1731,7 +1671,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Nakamigos</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Nakamigos</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1741,7 +1681,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">EHT senders</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">EHT senders</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1751,7 +1691,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Sproto gremilins</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Sproto gremilins</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1761,7 +1701,7 @@
                                         <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="" class="avatar">
                                     </div>
                                     <div class="author-infor ">
-                                        <h5><a href="author-2.html">Girls riding things</a></h5>
+                                        <h5><a href="{{url ('author-2') }}">Girls riding things</a></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1776,7 +1716,7 @@
                         <div class="col-md-12">
                             <div class="heading-section pb-20">
                                 <h2 class="tf-title ">Top collections in week</h2>
-                                <a href="explore-3.html" class="">Discover more <i class="icon-arrow-right2"></i></a>
+                                <a href="explore-3.html') }}" class="">Discover more <i class="icon-arrow-right2"></i></a>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -1798,7 +1738,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="tf-card-collection">
-                                            <a href="author-2.html">
+                                            <a href="{{url ('author-2') }}">
                                                 <div class="media-images-collection">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -1811,7 +1751,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1833,7 +1773,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tf-card-collection">
-                                            <a href="author-2.html">
+                                            <a href="{{url ('author-2') }}">
                                                 <div class="media-images-collection">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-05.jpg')}}" alt="">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-06.jpg')}}" alt="">
@@ -1846,7 +1786,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1868,7 +1808,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tf-card-collection">
-                                            <a href="author-2.html">
+                                            <a href="{{url ('author-2') }}">
                                                 <div class="media-images-collection">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-09.jpg')}}" alt="">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-10.jpg')}}" alt="">
@@ -1881,7 +1821,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1903,7 +1843,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tf-card-collection">
-                                            <a href="author-2.html">
+                                            <a href="{{url ('author-2') }}">
                                                 <div class="media-images-collection">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-13.jpg')}}" alt="">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-14.jpg')}}" alt="">
@@ -1916,7 +1856,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1938,7 +1878,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tf-card-collection">
-                                            <a href="author-2.html">
+                                            <a href="{{url ('author-2') }}">
                                                 <div class="media-images-collection">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -1951,7 +1891,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1973,7 +1913,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tf-card-collection">
-                                            <a href="author-2.html">
+                                            <a href="{{url ('author-2') }}">
                                                 <div class="media-images-collection">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                     <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -1986,7 +1926,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -2027,7 +1967,7 @@
                                     <img src="{{asset('/../template/assets/images/box-icon/icon-01.png')}}" alt="">
                                     <p>Step 1</p>
                                 </div>
-                                <h4 class="heading"><a href="contact-us.html">Set Up Your Wallet</a></h4>
+                                <h4 class="heading"><a href="contact-us.html') }}">Set Up Your Wallet</a></h4>
                                 <p class="content">Fusce non dignissim velit, sit amet semper eros. Quisque orci est</p>
                                 <div class="arrow">
                                     <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2051,7 +1991,7 @@
                                     <img src="{{asset('/../template/assets/images/box-icon/icon-02.png')}}" alt="">
                                     <p>Step 2</p>
                                 </div>
-                                <h4 class="heading"><a href="contact-us.html">Create your collection</a></h4>
+                                <h4 class="heading"><a href="contact-us.html') }}">Create your collection</a></h4>
                                 <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus</p>
                                 <div class="arrow">
                                     <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2075,7 +2015,7 @@
                                     <img src="{{asset('/../template/assets/images/box-icon/icon-03.png')}}" alt="">
                                     <p>Step 3</p>
                                 </div>
-                                <h4 class="heading"><a href="contact-us.html">Add your NFTs</a></h4>
+                                <h4 class="heading"><a href="contact-us.html') }}">Add your NFTs</a></h4>
                                 <p class="content">Suspendisse porttitor id est non accumsan. Cras vel viverra velit</p>
                                 <div class="arrow">
                                     <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2099,7 +2039,7 @@
                                     <img src="{{asset('/../template/assets/images/box-icon/icon-04.png')}}" alt="">
                                     <p>Step 4</p>
                                 </div>
-                                <h4 class="heading"><a href="contact-us.html">Sell your NFTs</a></h4>
+                                <h4 class="heading"><a href="contact-us.html') }}">Sell your NFTs</a></h4>
                                 <p class="content">Maecenas non semper quam. Vivamus et arcu condimentum ipsum consectetur</p>
                             </div>
                         </div>
@@ -2203,9 +2143,9 @@
                             <div class="footer-content flex flex-grow">
                                 <div class="widget-logo flex-grow">
                                     <div class="logo-footer" id="logo-footer">
-                                        <a href="index.html">
+                                        <a href="index.html') }}">
                                             <img id="logo_footer" src="{{asset('template/assets/images/logo/logo.png')}}"
-                                            data-retina="{{asset('template/assets/images/logo/logo@2x.png')}}">
+                                            data-retina="{{asset('template/assets/images/logo/logo.png')}}">
                                         </a>
                                     </div>
                                 </div>
@@ -2339,6 +2279,6 @@
 </body>
 
 
-<!-- Mirrored from themesflat.co/html/open9/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Mar 2025 14:16:31 GMT -->
+<!-- Mirrored from themesflat.co/html/open9/index.html') }} by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Mar 2025 14:16:31 GMT -->
 </html>
 

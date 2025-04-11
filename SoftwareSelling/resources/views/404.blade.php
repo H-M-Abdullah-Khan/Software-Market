@@ -18,14 +18,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Theme Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('./template/assets/css/style.css')}}">
 
     <!-- Reponsive -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('../template/assets/css/responsive.css')}}">
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="assets/icon/Favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/icon/Favicon.png">
+    <link rel="shortcut icon" href="{{asset('../template/assets/icon/Favicon.png')}}">
+    <link rel="apple-touch-icon-precomposed" href="{{asset('../template/assets/icon/Favicon.png')}}">
 
 </head>
 
@@ -61,8 +61,8 @@
                                     <div id="site-logo">
                                         <div id="site-logo-inner">
                                             <a href="index.html" rel="home" class="main-logo">
-                                                <img id="logo_header" src="assets/images/logo/logo.png"
-                                                data-retina="assets/images/logo/logo@2x.png" >
+                                                <img id="logo_header" src="{{asset('../template/assets/images/logo/logo.png')}}"
+                                                data-retina="{{asset('../template/assets/images/logo/logo@2x.png')}}" >
                                             </a>
                                         </div>
                                     </div><!-- logo -->
@@ -186,7 +186,7 @@
                     <div class="inner-canvas-nav">
                         <div class="side-bar">
                             <a href="index.html" rel="home" class="main-logo">
-                                <img id="logo_header" src="assets/images/logo/logo.png" data-retina="assets/images/logo/logo@2x.png">
+                                <img id="logo_header" src="{{asset('../template/assets/images/logo/logo.png')}}" data-retina="{{asset('../template/assets/images/logo/logo@2x.png')}}">
                             </a>
                             <div class="canvas-nav-close">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.878 122.88" enable-background="new 0 0 122.878 122.88" xml:space="preserve"><g><path d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z"/></g></svg>
@@ -246,7 +246,7 @@
                     <div class="overlay-mobile-nav"></div>
                     <div class="inner-mobile-nav">
                         <a href="index.html" rel="home" class="main-logo">
-                            <img id="mobile-logo_header" src="assets/images/logo/logo.png" data-retina="assets/images/logo/logo@2x.png">
+                            <img id="mobile-logo_header" src="{{asset('../template/assets/images/logo/logo.png')}}" data-retina="{{asset('../template/assets/images/logo/logo@2x.png')}}">
                         </a>
                         <div class="mobile-nav-close">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.878 122.88" enable-background="new 0 0 122.878 122.88" xml:space="preserve"><g><path d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z"/></g></svg>
@@ -361,22 +361,22 @@
     </div>
 
     <!-- Javascript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/count-down.js"></script>
-    <script src="assets/js/simpleParallax.min.js"></script>
-    <script src="assets/js/gsap.js"></script>
-    <script src="assets/js/SplitText.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/ScrollTrigger.js"></script>
-    <script src="assets/js/gsap-animation.js"></script>
-    <script src="assets/js/tsparticles.min.js"></script>
-    <script src="assets/js/tsparticles.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{asset('../template/assets/js/jquery.min.js')}}"></script>
+    <script src="{{asset('../template/assets/js/popper.min.js')}}"></script>
+    <script src="{{asset('../template/assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('../template/assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('../template/assets/js/swiper-bundle.min.js')}}"></script>
+    <script src="{{asset('../template/assets/js/swiper.js')}}"></script>
+    <script src="{{asset('../template/assets/js/count-down.js')}}"></script>
+    <script src="{{asset('../template/assets/js/simpleParallax.min.js')}}"></script>
+    <script src="{{asset('../template/assets/js/gsap.js')}}"></script>
+    <script src="{{asset('../template/assets/js/SplitText.js')}}"></script>
+    <script src="{{asset('../template/assets/js/wow.min.js')}}"></script>
+    <script src="{{asset('../template/assets/js/ScrollTrigger.js')}}"></script>
+    <script src="{{asset('../template/assets/js/gsap-animation.js')}}"></script>
+    <script src="{{asset('../template/assets/js/tsparticles.min.js')}}"></script>
+    <script src="{{asset('../template/assets/js/tsparticles.js')}}"></script>
+    <script src="{{asset('../template/assets/js/main.js')}}"></script>
 
 </body>
 

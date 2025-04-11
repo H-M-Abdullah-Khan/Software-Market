@@ -18,14 +18,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Theme Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/../template/assets/css/style.css')}}">
 
     <!-- Reponsive -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/../template/assets/css/responsive.css')}}">
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="assets/icon/Favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/icon/Favicon.png">
+    <link rel="shortcut icon" href="{{asset('/../template/assets/icon/Favicon.png')}}')}}">
+    <link rel="apple-touch-icon-precomposed" href="{{asset('/../template/assets/icon/Favicon.png')}}')}}">
 
 </head>
 
@@ -51,6 +51,7 @@
     <div id="wrapper">
         <div id="page" class="market-page">
 
+
             <div id="market-header">
                 <div class="market-header flex items-center justify-between">
                     <div class="widget-search">
@@ -75,7 +76,7 @@
                                 <div class="widget-recently">
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -85,7 +86,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -95,7 +96,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -105,7 +106,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -118,7 +119,7 @@
                         </div>
                         <div class="popup-user relative">
                             <div class="user">
-                                <img src="assets/images/avatar/avatar-small-09.png" alt="">
+                                <img src="{{asset('/../template/assets/images/avatar/avatar-small-09.png')}}" alt="">
                                 <span>Themesflat<i class="icon-keyboard_arrow_down"></i></span>
                             </div>
                             <div class="avatar_popup2">
@@ -160,7 +161,7 @@
             <div class="flat-tabs">
                 <div class="section-menu-left">
                     <div class="box-logo">
-                        <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                        <a href="index.html"><img src="{{asset('/../template/assets/images/logo/logo.png')}}" alt=""></a>
                     </div>
                     <div class="create menu-tab">
                         <a class="tf-button style-1 type-1 tablinks active" data-tabs="create">
@@ -345,7 +346,7 @@
                                         <div class="wrap-upload w-full">
                                             <form action="#">
                                                 <label class="uploadfile">
-                                                    <img src="assets/images/box-icon/upload.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/box-icon/upload.png')}}" alt="">
                                                     <h5>Upload file</h5>
                                                     <p class="text">Drag or choose your file to upload</p>
                                                     <div class="text filename">PNG, GIF, WEBP, MP4 or MP3.Max 1Gb.</div>
@@ -381,23 +382,23 @@
                                                     <label>Blockchain</label>
                                                     <div class="widget-coins flex gap30 flex-wrap">
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-01.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                                             <p><a href="#">Bitcoin</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-02.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                                             <p><a href="#">Ethereum</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-03.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                                             <p><a href="#">Cardano</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-04.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                                             <p><a href="#">Solana</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-05.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                                             <p><a href="#">Litecoin</a></p>
                                                         </div>
                                                     </div>
@@ -422,7 +423,7 @@
                                             <form action="#" class="h-full">
                                                 <label class="uploadfile h-full flex items-center justify-center">
                                                     <div class="text-center">
-                                                        <img src="assets/images/box-icon/upload.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/box-icon/upload.png')}}" alt="">
                                                         <h5>Upload file</h5>
                                                         <p class="text">Drag or choose your file to upload</p>
                                                         <div class="text filename">PNG, GIF, WEBP, MP4 or MP3.Max 1Gb.</div>
@@ -459,23 +460,23 @@
                                                     <label>Blockchain</label>
                                                     <div class="widget-coins flex gap30 flex-wrap">
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-01.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                                             <p><a href="#">Bitcoin</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-02.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                                             <p><a href="#">Ethereum</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-03.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                                             <p><a href="#">Cardano</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-04.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                                             <p><a href="#">Solana</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-05.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                                             <p><a href="#">Litecoin</a></p>
                                                         </div>
                                                     </div>
@@ -499,7 +500,7 @@
                                         <div class="wrap-upload w-full">
                                             <form action="#">
                                                 <label class="uploadfile">
-                                                    <img src="assets/images/box-icon/upload.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/box-icon/upload.png')}}" alt="">
                                                     <h5>Upload file</h5>
                                                     <p class="text">Drag or choose your file to upload</p>
                                                     <div class="text filename">PNG, GIF, WEBP, MP4 or MP3.Max 1Gb.</div>
@@ -535,23 +536,23 @@
                                                     <label>Blockchain</label>
                                                     <div class="widget-coins flex gap30 flex-wrap">
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-01.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                                             <p><a href="#">Bitcoin</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-02.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                                             <p><a href="#">Ethereum</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-03.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                                             <p><a href="#">Cardano</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-04.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                                             <p><a href="#">Solana</a></p>
                                                         </div>
                                                         <div class="widget-coins-item flex items-center">
-                                                            <img src="assets/images/box-icon/coin-05.png" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                                             <p><a href="#">Litecoin</a></p>
                                                         </div>
                                                     </div>
@@ -603,10 +604,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -626,10 +627,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -648,10 +649,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -764,7 +765,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -773,7 +774,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-49.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-49.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -793,7 +794,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -802,7 +803,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-50.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-50.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -822,7 +823,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -831,7 +832,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-51.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-51.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -851,7 +852,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -860,7 +861,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-52.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-52.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -880,7 +881,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -889,7 +890,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-49.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-49.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -909,7 +910,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -918,7 +919,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-50.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-50.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -975,7 +976,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -984,7 +985,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-49.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-49.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1004,7 +1005,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1013,7 +1014,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-50.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-50.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1033,7 +1034,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1042,7 +1043,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-51.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-51.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1062,7 +1063,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1071,7 +1072,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-52.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-52.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1091,7 +1092,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1100,7 +1101,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-49.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-49.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1120,7 +1121,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1129,218 +1130,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-50.jpg" alt="">
-                                                                    </a>
-                                                                    <span class="wishlist-button icon-heart"></span>
-                                                                </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                                <div class="meta-info flex items-center justify-between">
-                                                                    <div>
-                                                                        <span class="text-bid">Current Bid</span>
-                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                                    </div>
-                                                                    <div class="button-place-bid">
-                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-pagination"></div>
-                                                    <div class="swiper-button-next"></div>
-                                                    <div class="swiper-button-prev"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-inner">
-                                            <div class="featured-item style-bottom">
-                                                <div class="featured pt-10 swiper-container carousel1" data-swiper='{
-                                                    "loop":false,
-                                                    "slidesPerView": 1,
-                                                    "spaceBetween": 26.7,
-                                                    "observer": true,
-                                                    "observeParents": true,
-                                                    "navigation": {
-                                                        "clickable": true,
-                                                        "nextEl": ".swiper-button-next",
-                                                        "prevEl": ".swiper-button-prev"
-                                                    },
-                                                    "pagination": {
-                                                        "el": ".swiper-pagination",
-                                                        "clickable": true
-                                                    },
-                                                    "breakpoints": {
-                                                        "768": {
-                                                            "slidesPerView": 2
-                                                        },
-                                                        "1300": {
-                                                            "slidesPerView": 3
-                                                        },
-                                                        "1500": {
-                                                            "slidesPerView": 4
-                                                        }
-                                                    }
-                                                }'>
-                                                    <div class="swiper-wrapper">
-                                                        <div class="swiper-slide">
-                                                            <div class="tf-card-box style-4">
-                                                                <div class="author flex items-center">
-                                                                    <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                                    </div>
-                                                                    <div class="info">
-                                                                        <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card-media">
-                                                                    <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-49.jpg" alt="">
-                                                                    </a>
-                                                                    <span class="wishlist-button icon-heart"></span>
-                                                                </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                                <div class="meta-info flex items-center justify-between">
-                                                                    <div>
-                                                                        <span class="text-bid">Current Bid</span>
-                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                                    </div>
-                                                                    <div class="button-place-bid">
-                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tf-card-box style-4">
-                                                                <div class="author flex items-center">
-                                                                    <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                                    </div>
-                                                                    <div class="info">
-                                                                        <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card-media">
-                                                                    <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-50.jpg" alt="">
-                                                                    </a>
-                                                                    <span class="wishlist-button icon-heart"></span>
-                                                                </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                                <div class="meta-info flex items-center justify-between">
-                                                                    <div>
-                                                                        <span class="text-bid">Current Bid</span>
-                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                                    </div>
-                                                                    <div class="button-place-bid">
-                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tf-card-box style-4">
-                                                                <div class="author flex items-center">
-                                                                    <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                                    </div>
-                                                                    <div class="info">
-                                                                        <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card-media">
-                                                                    <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-52.jpg" alt="">
-                                                                    </a>
-                                                                    <span class="wishlist-button icon-heart"></span>
-                                                                </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                                <div class="meta-info flex items-center justify-between">
-                                                                    <div>
-                                                                        <span class="text-bid">Current Bid</span>
-                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                                    </div>
-                                                                    <div class="button-place-bid">
-                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tf-card-box style-4">
-                                                                <div class="author flex items-center">
-                                                                    <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                                    </div>
-                                                                    <div class="info">
-                                                                        <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card-media">
-                                                                    <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-49.jpg" alt="">
-                                                                    </a>
-                                                                    <span class="wishlist-button icon-heart"></span>
-                                                                </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                                <div class="meta-info flex items-center justify-between">
-                                                                    <div>
-                                                                        <span class="text-bid">Current Bid</span>
-                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                                    </div>
-                                                                    <div class="button-place-bid">
-                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tf-card-box style-4">
-                                                                <div class="author flex items-center">
-                                                                    <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                                    </div>
-                                                                    <div class="info">
-                                                                        <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card-media">
-                                                                    <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-50.jpg" alt="">
-                                                                    </a>
-                                                                    <span class="wishlist-button icon-heart"></span>
-                                                                </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                                <div class="meta-info flex items-center justify-between">
-                                                                    <div>
-                                                                        <span class="text-bid">Current Bid</span>
-                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                                    </div>
-                                                                    <div class="button-place-bid">
-                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="tf-card-box style-4">
-                                                                <div class="author flex items-center">
-                                                                    <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                                    </div>
-                                                                    <div class="info">
-                                                                        <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card-media">
-                                                                    <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-51.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-50.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1397,7 +1187,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1406,7 +1196,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-49.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-49.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1426,7 +1216,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1435,7 +1225,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-50.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-50.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1455,7 +1245,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1464,7 +1254,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-51.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-52.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1484,7 +1274,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1493,7 +1283,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-52.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-49.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1513,7 +1303,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1522,7 +1312,7 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-49.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-50.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1542,7 +1332,7 @@
                                                             <div class="tf-card-box style-4">
                                                                 <div class="author flex items-center">
                                                                     <div class="avatar">
-                                                                        <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
@@ -1551,7 +1341,218 @@
                                                                 </div>
                                                                 <div class="card-media">
                                                                     <a href="#">
-                                                                        <img src="assets/images/box-item/card-item-50.jpg" alt="">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-51.jpg')}}" alt="">
+                                                                    </a>
+                                                                    <span class="wishlist-button icon-heart"></span>
+                                                                </div>
+                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <div class="meta-info flex items-center justify-between">
+                                                                    <div>
+                                                                        <span class="text-bid">Current Bid</span>
+                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                                    </div>
+                                                                    <div class="button-place-bid">
+                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-inner">
+                                            <div class="featured-item style-bottom">
+                                                <div class="featured pt-10 swiper-container carousel1" data-swiper='{
+                                                    "loop":false,
+                                                    "slidesPerView": 1,
+                                                    "spaceBetween": 26.7,
+                                                    "observer": true,
+                                                    "observeParents": true,
+                                                    "navigation": {
+                                                        "clickable": true,
+                                                        "nextEl": ".swiper-button-next",
+                                                        "prevEl": ".swiper-button-prev"
+                                                    },
+                                                    "pagination": {
+                                                        "el": ".swiper-pagination",
+                                                        "clickable": true
+                                                    },
+                                                    "breakpoints": {
+                                                        "768": {
+                                                            "slidesPerView": 2
+                                                        },
+                                                        "1300": {
+                                                            "slidesPerView": 3
+                                                        },
+                                                        "1500": {
+                                                            "slidesPerView": 4
+                                                        }
+                                                    }
+                                                }'>
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="tf-card-box style-4">
+                                                                <div class="author flex items-center">
+                                                                    <div class="avatar">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                                    </div>
+                                                                    <div class="info">
+                                                                        <span>Created by:</span>
+                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-media">
+                                                                    <a href="#">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-49.jpg')}}" alt="">
+                                                                    </a>
+                                                                    <span class="wishlist-button icon-heart"></span>
+                                                                </div>
+                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <div class="meta-info flex items-center justify-between">
+                                                                    <div>
+                                                                        <span class="text-bid">Current Bid</span>
+                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                                    </div>
+                                                                    <div class="button-place-bid">
+                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="tf-card-box style-4">
+                                                                <div class="author flex items-center">
+                                                                    <div class="avatar">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                                    </div>
+                                                                    <div class="info">
+                                                                        <span>Created by:</span>
+                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-media">
+                                                                    <a href="#">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-50.jpg')}}" alt="">
+                                                                    </a>
+                                                                    <span class="wishlist-button icon-heart"></span>
+                                                                </div>
+                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <div class="meta-info flex items-center justify-between">
+                                                                    <div>
+                                                                        <span class="text-bid">Current Bid</span>
+                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                                    </div>
+                                                                    <div class="button-place-bid">
+                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="tf-card-box style-4">
+                                                                <div class="author flex items-center">
+                                                                    <div class="avatar">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                                    </div>
+                                                                    <div class="info">
+                                                                        <span>Created by:</span>
+                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-media">
+                                                                    <a href="#">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-51.jpg')}}" alt="">
+                                                                    </a>
+                                                                    <span class="wishlist-button icon-heart"></span>
+                                                                </div>
+                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <div class="meta-info flex items-center justify-between">
+                                                                    <div>
+                                                                        <span class="text-bid">Current Bid</span>
+                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                                    </div>
+                                                                    <div class="button-place-bid">
+                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="tf-card-box style-4">
+                                                                <div class="author flex items-center">
+                                                                    <div class="avatar">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                                    </div>
+                                                                    <div class="info">
+                                                                        <span>Created by:</span>
+                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-media">
+                                                                    <a href="#">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-52.jpg')}}" alt="">
+                                                                    </a>
+                                                                    <span class="wishlist-button icon-heart"></span>
+                                                                </div>
+                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <div class="meta-info flex items-center justify-between">
+                                                                    <div>
+                                                                        <span class="text-bid">Current Bid</span>
+                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                                    </div>
+                                                                    <div class="button-place-bid">
+                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="tf-card-box style-4">
+                                                                <div class="author flex items-center">
+                                                                    <div class="avatar">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                                    </div>
+                                                                    <div class="info">
+                                                                        <span>Created by:</span>
+                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-media">
+                                                                    <a href="#">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-49.jpg')}}" alt="">
+                                                                    </a>
+                                                                    <span class="wishlist-button icon-heart"></span>
+                                                                </div>
+                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <div class="meta-info flex items-center justify-between">
+                                                                    <div>
+                                                                        <span class="text-bid">Current Bid</span>
+                                                                        <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                                    </div>
+                                                                    <div class="button-place-bid">
+                                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="tf-card-box style-4">
+                                                                <div class="author flex items-center">
+                                                                    <div class="avatar">
+                                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                                    </div>
+                                                                    <div class="info">
+                                                                        <span>Created by:</span>
+                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-media">
+                                                                    <a href="#">
+                                                                        <img src="{{asset('/../template/assets/images/box-item/card-item-50.jpg')}}" alt="">
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
@@ -1655,7 +1656,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-53.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-53.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1665,7 +1666,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1683,7 +1684,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-54.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-54.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1693,7 +1694,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1711,7 +1712,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-55.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-55.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1721,7 +1722,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1739,7 +1740,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-56.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-56.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1749,7 +1750,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1767,7 +1768,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-57.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-57.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1777,7 +1778,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1795,7 +1796,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-58.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-58.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1805,7 +1806,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1823,7 +1824,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-59.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-59.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1833,7 +1834,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1851,7 +1852,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-60.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-60.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1861,7 +1862,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1883,7 +1884,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-53.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-53.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1893,7 +1894,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1911,7 +1912,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-54.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-54.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1921,7 +1922,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1939,7 +1940,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-55.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-55.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1949,7 +1950,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1967,7 +1968,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-56.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-56.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -1977,7 +1978,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -1995,7 +1996,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-57.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-57.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2005,7 +2006,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2023,7 +2024,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-58.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-58.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2033,7 +2034,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2051,7 +2052,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-59.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-59.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2061,7 +2062,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2079,7 +2080,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-60.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-60.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2089,235 +2090,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-inner">
-                                            <div class="wrap-box-card">
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-53.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-54.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-55.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-56.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-57.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-58.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-59.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-60.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2339,7 +2112,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-53.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-53.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2349,7 +2122,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2367,7 +2140,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-54.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-54.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2377,7 +2150,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2395,7 +2168,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-55.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-55.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2405,7 +2178,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2423,7 +2196,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-56.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-56.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2433,7 +2206,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2451,7 +2224,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-57.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-57.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2461,7 +2234,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2479,7 +2252,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-58.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-58.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2489,7 +2262,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2507,7 +2280,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-59.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-59.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2517,7 +2290,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2535,7 +2308,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-60.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-60.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="button-place-bid">
@@ -2545,7 +2318,235 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-inner">
+                                            <div class="wrap-box-card">
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-53.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-54.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-55.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-56.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-57.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-58.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-59.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-60.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2568,7 +2569,7 @@
                                 <div class="widget widget-recently">
                                     <h5 class="title-widget">Recently added</h5>
                                     <div class="card-small-main">
-                                        <img src="assets/images/blog/sidebar-05.jpg" alt="">
+                                        <img src="{{asset('/../template/assets/images/blog/sidebar-05.jpg')}}" alt="">
                                         <div class="card-bottom">
                                             <h5><a href="#">Photography</a></h5>
                                             <span class="date">16hr ago</span>
@@ -2576,7 +2577,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -2586,7 +2587,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-07.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-07.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -2596,7 +2597,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-08.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-08.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -2613,7 +2614,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">1. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -2624,7 +2625,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">2. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -2635,7 +2636,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">3. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -2646,7 +2647,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">4. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -2657,7 +2658,7 @@
                                     <div class="widget-creators-item flex items-center">
                                         <div class="order">5. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -2669,23 +2670,23 @@
                                 <div class="widget widget-coins">
                                     <h5 class="title-widget">Trending coins</h5>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-01.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                         <p><a href="#">Bitcoin</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-02.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                         <p><a href="#">Ethereum</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-03.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                         <p><a href="#">Cardano</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-04.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                         <p><a href="#">Solana</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center">
-                                        <img src="assets/images/box-icon/coin-05.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                         <p><a href="#">Litecoin</a></p>
                                     </div>
                                 </div>
@@ -2696,7 +2697,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Lorem NFT sold</a></h6>
                                                 <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -2706,7 +2707,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">New NFT uploaded</a></h6>
                                                 <span><a href="#">By Marisol Pena</a></span>
@@ -2716,7 +2717,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Jane Cooper</a></span>
@@ -2726,7 +2727,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You placed a bid</a></h6>
                                                 <span><a href="#">Whirl wind NFT</a></span>
@@ -2736,7 +2737,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Courtney Henry</a></span>
@@ -2776,10 +2777,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2799,10 +2800,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2821,10 +2822,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -2909,7 +2910,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -2922,7 +2923,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2940,7 +2941,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -2953,7 +2954,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -2971,7 +2972,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -2984,7 +2985,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3002,7 +3003,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3015,7 +3016,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3033,7 +3034,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3046,7 +3047,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3064,7 +3065,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3077,7 +3078,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3095,7 +3096,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3108,7 +3109,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3126,7 +3127,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3139,7 +3140,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3157,7 +3158,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3170,7 +3171,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3188,7 +3189,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3201,7 +3202,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3219,7 +3220,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3232,7 +3233,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3250,7 +3251,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3263,7 +3264,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3281,7 +3282,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3294,7 +3295,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3312,7 +3313,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3325,7 +3326,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3343,7 +3344,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3356,7 +3357,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3374,7 +3375,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3387,7 +3388,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3410,7 +3411,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3423,7 +3424,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3441,7 +3442,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3454,7 +3455,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3472,7 +3473,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3485,7 +3486,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3503,7 +3504,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3516,7 +3517,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3534,7 +3535,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3547,7 +3548,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3565,7 +3566,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3578,7 +3579,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3596,7 +3597,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3609,7 +3610,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3627,7 +3628,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3640,7 +3641,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3658,7 +3659,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3671,7 +3672,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3689,7 +3690,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3702,7 +3703,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3720,7 +3721,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3733,7 +3734,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3751,7 +3752,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3764,7 +3765,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3782,7 +3783,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3795,7 +3796,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3813,7 +3814,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3826,7 +3827,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3844,7 +3845,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3857,7 +3858,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -3875,7 +3876,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -3888,508 +3889,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-inner">
-                                            <div class="wrap-box-card">
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1">
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4412,7 +3912,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4425,7 +3925,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4443,7 +3943,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4456,7 +3956,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4474,7 +3974,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4487,7 +3987,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4505,7 +4005,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4518,7 +4018,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4536,7 +4036,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4549,7 +4049,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4567,7 +4067,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4580,7 +4080,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4598,7 +4098,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4611,7 +4111,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4629,7 +4129,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4642,7 +4142,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4660,7 +4160,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4673,7 +4173,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4691,7 +4191,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4704,7 +4204,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4722,7 +4222,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4735,7 +4235,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4753,7 +4253,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4766,7 +4266,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4784,7 +4284,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-01.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4797,7 +4297,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4815,7 +4315,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-02.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4828,7 +4328,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4846,7 +4346,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-03.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4859,7 +4359,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4877,7 +4377,7 @@
                                                     <div class="tf-card-box style-1">
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-04.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -4890,7 +4390,508 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-inner">
+                                            <div class="wrap-box-card">
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-01.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-02.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-03.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1">
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-04.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"><div aria-hidden="true" class="countdown__timer"><span class="countdown__item" style="display: none;"><span class="countdown__value countdown__value--0 js-countdown__value--0">0</span><span class="countdown__label">d</span></span><span class="countdown__item"><span class="countdown__value countdown__value--1 js-countdown__value--1">02</span><span class="countdown__label">h</span></span><span class="countdown__item"><span class="countdown__value countdown__value--2 js-countdown__value--2">04</span><span class="countdown__label">m</span></span><span class="countdown__item"><span class="countdown__value countdown__value--3 js-countdown__value--3">55</span><span class="countdown__label">s</span></span></div></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -4914,7 +4915,7 @@
                                 <div class="widget widget-recently">
                                     <h5 class="title-widget">Recently added</h5>
                                     <div class="card-small-main">
-                                        <img src="assets/images/blog/sidebar-05.jpg" alt="">
+                                        <img src="{{asset('/../template/assets/images/blog/sidebar-05.jpg')}}" alt="">
                                         <div class="card-bottom">
                                             <h5><a href="#">Photography</a></h5>
                                             <span class="date">16hr ago</span>
@@ -4922,7 +4923,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -4932,7 +4933,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-07.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-07.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -4942,7 +4943,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-08.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-08.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -4959,7 +4960,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">1. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -4970,7 +4971,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">2. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -4981,7 +4982,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">3. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -4992,7 +4993,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">4. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -5003,7 +5004,7 @@
                                     <div class="widget-creators-item flex items-center">
                                         <div class="order">5. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -5015,23 +5016,23 @@
                                 <div class="widget widget-coins">
                                     <h5 class="title-widget">Trending coins</h5>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-01.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                         <p><a href="#">Bitcoin</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-02.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                         <p><a href="#">Ethereum</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-03.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                         <p><a href="#">Cardano</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-04.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                         <p><a href="#">Solana</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center">
-                                        <img src="assets/images/box-icon/coin-05.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                         <p><a href="#">Litecoin</a></p>
                                     </div>
                                 </div>
@@ -5042,7 +5043,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Lorem NFT sold</a></h6>
                                                 <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -5052,7 +5053,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">New NFT uploaded</a></h6>
                                                 <span><a href="#">By Marisol Pena</a></span>
@@ -5062,7 +5063,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Jane Cooper</a></span>
@@ -5072,7 +5073,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You placed a bid</a></h6>
                                                 <span><a href="#">Whirl wind NFT</a></span>
@@ -5082,7 +5083,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Courtney Henry</a></span>
@@ -5122,10 +5123,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -5145,10 +5146,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -5167,10 +5168,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -5255,7 +5256,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5264,7 +5265,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-17.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-17.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5284,7 +5285,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5293,7 +5294,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-18.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-18.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5313,7 +5314,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5322,7 +5323,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-19.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-19.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5342,7 +5343,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5351,7 +5352,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-20.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-20.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5371,7 +5372,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5380,7 +5381,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-21.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-21.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5400,7 +5401,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5409,7 +5410,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-22.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-22.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5429,7 +5430,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5438,7 +5439,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-23.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-23.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5458,7 +5459,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5467,7 +5468,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-24.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-24.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5487,7 +5488,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5496,7 +5497,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-17.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-17.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5516,7 +5517,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5525,7 +5526,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-18.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-18.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5545,7 +5546,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5554,7 +5555,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-19.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-19.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5574,7 +5575,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5583,7 +5584,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-20.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-20.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5603,7 +5604,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5612,7 +5613,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-21.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-21.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5632,7 +5633,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5641,7 +5642,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-22.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-22.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5661,7 +5662,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5670,7 +5671,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-23.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-23.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5690,7 +5691,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5699,7 +5700,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-24.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-24.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5723,7 +5724,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5732,7 +5733,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-17.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-17.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5752,7 +5753,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5761,7 +5762,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-18.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-18.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5781,7 +5782,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5790,7 +5791,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-19.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-19.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5810,7 +5811,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5819,7 +5820,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-20.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-20.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5839,7 +5840,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5848,7 +5849,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-21.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-21.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5868,7 +5869,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5877,7 +5878,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-22.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-22.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5897,7 +5898,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5906,7 +5907,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-23.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-23.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5926,7 +5927,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5935,7 +5936,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-24.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-24.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5955,7 +5956,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5964,7 +5965,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-17.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-17.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -5984,7 +5985,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -5993,7 +5994,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-18.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-18.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6013,7 +6014,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6022,7 +6023,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-19.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-19.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6042,7 +6043,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6051,7 +6052,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-20.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-20.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6071,7 +6072,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6080,7 +6081,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-21.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-21.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6100,7 +6101,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6109,7 +6110,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-22.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-22.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6129,7 +6130,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6138,7 +6139,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-23.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-23.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6158,7 +6159,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6167,475 +6168,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-24.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-inner">
-                                            <div class="wrap-box-card">
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-17.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-18.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-19.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-20.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-21.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-22.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-23.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-24.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-17.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-18.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-19.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-20.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-21.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-22.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-23.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <div>
-                                                                <span class="text-bid">Current Bid</span>
-                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-4">
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-24.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-24.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6659,7 +6192,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6668,7 +6201,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-17.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-17.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6688,7 +6221,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6697,7 +6230,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-18.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-18.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6717,7 +6250,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6726,7 +6259,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-19.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-19.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6746,7 +6279,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6755,7 +6288,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-20.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-20.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6775,7 +6308,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6784,7 +6317,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-21.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-21.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6804,7 +6337,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6813,7 +6346,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-22.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-22.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6833,7 +6366,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6842,7 +6375,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-23.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-23.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6862,7 +6395,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6871,7 +6404,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-24.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-24.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6891,7 +6424,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6900,7 +6433,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-17.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-17.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6920,7 +6453,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6929,7 +6462,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-18.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-18.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6949,7 +6482,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6958,7 +6491,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-19.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-19.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -6978,7 +6511,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -6987,7 +6520,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-20.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-20.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -7007,7 +6540,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -7016,7 +6549,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-21.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-21.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -7036,7 +6569,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -7045,7 +6578,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-22.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-22.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -7065,7 +6598,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -7074,7 +6607,7 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-23.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-23.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -7094,7 +6627,7 @@
                                                     <div class="tf-card-box style-4">
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
@@ -7103,7 +6636,475 @@
                                                         </div>
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-24.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-24.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-inner">
+                                            <div class="wrap-box-card">
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-17.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-18.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-19.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-20.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-21.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-22.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-23.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-24.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-17.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-18.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-19.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-20.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-21.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-22.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-23.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <div>
+                                                                <span class="text-bid">Current Bid</span>
+                                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-4">
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Created by:</span>
+                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-24.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
@@ -7128,7 +7129,7 @@
                                 <div class="widget widget-recently">
                                     <h5 class="title-widget">Recently added</h5>
                                     <div class="card-small-main">
-                                        <img src="assets/images/blog/sidebar-05.jpg" alt="">
+                                        <img src="{{asset('/../template/assets/images/blog/sidebar-05.jpg')}}" alt="">
                                         <div class="card-bottom">
                                             <h5><a href="#">Photography</a></h5>
                                             <span class="date">16hr ago</span>
@@ -7136,7 +7137,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -7146,7 +7147,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-07.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-07.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -7156,7 +7157,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-08.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-08.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -7173,7 +7174,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">1. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -7184,7 +7185,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">2. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -7195,7 +7196,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">3. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -7206,7 +7207,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">4. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -7217,7 +7218,7 @@
                                     <div class="widget-creators-item flex items-center">
                                         <div class="order">5. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -7229,23 +7230,23 @@
                                 <div class="widget widget-coins">
                                     <h5 class="title-widget">Trending coins</h5>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-01.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                         <p><a href="#">Bitcoin</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-02.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                         <p><a href="#">Ethereum</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-03.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                         <p><a href="#">Cardano</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-04.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                         <p><a href="#">Solana</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center">
-                                        <img src="assets/images/box-icon/coin-05.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                         <p><a href="#">Litecoin</a></p>
                                     </div>
                                 </div>
@@ -7256,7 +7257,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Lorem NFT sold</a></h6>
                                                 <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -7266,7 +7267,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">New NFT uploaded</a></h6>
                                                 <span><a href="#">By Marisol Pena</a></span>
@@ -7276,7 +7277,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Jane Cooper</a></span>
@@ -7286,7 +7287,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You placed a bid</a></h6>
                                                 <span><a href="#">Whirl wind NFT</a></span>
@@ -7296,7 +7297,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Courtney Henry</a></span>
@@ -7336,10 +7337,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -7359,10 +7360,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -7381,10 +7382,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -7430,12 +7431,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7465,12 +7466,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7500,12 +7501,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7535,12 +7536,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7570,12 +7571,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7605,12 +7606,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7675,12 +7676,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7710,12 +7711,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7745,12 +7746,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7780,12 +7781,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7815,12 +7816,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7850,12 +7851,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7920,12 +7921,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7955,12 +7956,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -7990,12 +7991,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -8025,12 +8026,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -8060,12 +8061,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -8095,12 +8096,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -8137,7 +8138,7 @@
                                 <div class="widget widget-recently">
                                     <h5 class="title-widget">Recently added</h5>
                                     <div class="card-small-main">
-                                        <img src="assets/images/blog/sidebar-05.jpg" alt="">
+                                        <img src="{{asset('/../template/assets/images/blog/sidebar-05.jpg')}}" alt="">
                                         <div class="card-bottom">
                                             <h5><a href="#">Photography</a></h5>
                                             <span class="date">16hr ago</span>
@@ -8145,7 +8146,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -8155,7 +8156,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-07.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-07.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -8165,7 +8166,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-08.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-08.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -8182,7 +8183,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">1. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -8193,7 +8194,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">2. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -8204,7 +8205,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">3. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -8215,7 +8216,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">4. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -8226,7 +8227,7 @@
                                     <div class="widget-creators-item flex items-center">
                                         <div class="order">5. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -8238,23 +8239,23 @@
                                 <div class="widget widget-coins">
                                     <h5 class="title-widget">Trending coins</h5>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-01.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                         <p><a href="#">Bitcoin</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-02.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                         <p><a href="#">Ethereum</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-03.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                         <p><a href="#">Cardano</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-04.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                         <p><a href="#">Solana</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center">
-                                        <img src="assets/images/box-icon/coin-05.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                         <p><a href="#">Litecoin</a></p>
                                     </div>
                                 </div>
@@ -8265,7 +8266,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Lorem NFT sold</a></h6>
                                                 <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -8275,7 +8276,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">New NFT uploaded</a></h6>
                                                 <span><a href="#">By Marisol Pena</a></span>
@@ -8285,7 +8286,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Jane Cooper</a></span>
@@ -8295,7 +8296,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You placed a bid</a></h6>
                                                 <span><a href="#">Whirl wind NFT</a></span>
@@ -8305,7 +8306,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Courtney Henry</a></span>
@@ -8345,10 +8346,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -8368,10 +8369,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -8390,10 +8391,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -8432,12 +8433,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -8467,12 +8468,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-05.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-06.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-07.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-08.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-05.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-06.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-07.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-08.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -8502,12 +8503,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-09.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-10.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-11.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-12.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-09.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-10.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-11.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-12.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -8537,12 +8538,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -8572,12 +8573,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -8607,12 +8608,12 @@
                                                 <div class="tf-card-collection">
                                                     <a href="author-2.html">
                                                         <div class="media-images-collection">
-                                                            <img src="assets/images/box-item/img-collection-01.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-02.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-03.jpg" alt="">
-                                                            <img src="assets/images/box-item/img-collection-04.jpg" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-03.jpg')}}" alt="">
+                                                            <img src="{{asset('/../template/assets/images/box-item/img-collection-04.jpg')}}" alt="">
                                                             <div class="author-poster">
-                                                                <img src="assets/images/avatar/avatar-01.png" alt="" class="w-full">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-01.png')}}" alt="" class="w-full">
                                                             </div>
                                                         </div>
                                                     </a>
@@ -8723,7 +8724,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-25.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-25.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -8736,7 +8737,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -8754,7 +8755,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-26.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-26.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -8767,7 +8768,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -8785,7 +8786,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-27.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-27.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -8798,7 +8799,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -8816,7 +8817,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-28.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-28.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -8829,7 +8830,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -8847,7 +8848,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-29.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-29.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -8860,7 +8861,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -8878,7 +8879,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-30.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-30.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -8891,7 +8892,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -8909,7 +8910,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-31.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-31.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -8922,7 +8923,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -8940,7 +8941,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-32.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-32.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -8953,7 +8954,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -8977,7 +8978,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-25.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-25.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -8990,7 +8991,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9008,7 +9009,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-26.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-26.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9021,7 +9022,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9039,7 +9040,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-27.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-27.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9052,7 +9053,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9070,7 +9071,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-28.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-28.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9083,7 +9084,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9101,7 +9102,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-29.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-29.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9114,7 +9115,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9132,7 +9133,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-30.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-30.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9145,7 +9146,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9163,7 +9164,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-31.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-31.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9176,7 +9177,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9194,7 +9195,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-32.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-32.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9207,261 +9208,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="widget-content-inner">
-                                            <div class="wrap-box-card">
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1" >
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-25.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1" >
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-26.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1" >
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-27.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1" >
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-28.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1" >
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-29.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1" >
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-30.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1" >
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-31.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
-                                                            </div>
-                                                            <div class="info">
-                                                                <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="meta-info flex items-center justify-between">
-                                                            <span class="text-bid">Current Bid</span>
-                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-item">
-                                                    <div class="tf-card-box style-1" >
-                                                        <div class="card-media">
-                                                            <a href="#">
-                                                                <img src="assets/images/box-item/card-item-32.jpg" alt="">
-                                                            </a>
-                                                            <span class="wishlist-button icon-heart"></span>
-                                                            <div class="featured-countdown">
-                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                            </div>
-                                                            <div class="button-place-bid">
-                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                        <div class="author flex items-center">
-                                                            <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9485,7 +9232,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-25.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-25.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9498,7 +9245,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9516,7 +9263,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-26.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-26.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9529,7 +9276,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9547,7 +9294,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-27.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-27.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9560,7 +9307,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9578,7 +9325,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-28.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-28.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9591,7 +9338,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9609,7 +9356,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-29.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-29.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9622,7 +9369,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-04.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9640,7 +9387,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-30.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-30.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9653,7 +9400,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-03.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9671,7 +9418,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-31.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-31.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9684,7 +9431,7 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-02.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9702,7 +9449,7 @@
                                                     <div class="tf-card-box style-1" >
                                                         <div class="card-media">
                                                             <a href="#">
-                                                                <img src="assets/images/box-item/card-item-32.jpg" alt="">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-32.jpg')}}" alt="">
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                             <div class="featured-countdown">
@@ -9715,7 +9462,261 @@
                                                         <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
-                                                                <img src="assets/images/avatar/avatar-box-01.jpg" alt="Image">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Posted by:</span>
+                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="widget-content-inner">
+                                            <div class="wrap-box-card">
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1" >
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-25.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Posted by:</span>
+                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1" >
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-26.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Posted by:</span>
+                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1" >
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-27.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Posted by:</span>
+                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1" >
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-28.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Posted by:</span>
+                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1" >
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-29.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Posted by:</span>
+                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1" >
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-30.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Posted by:</span>
+                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1" >
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-31.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span>Posted by:</span>
+                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="meta-info flex items-center justify-between">
+                                                            <span class="text-bid">Current Bid</span>
+                                                            <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-item">
+                                                    <div class="tf-card-box style-1" >
+                                                        <div class="card-media">
+                                                            <a href="#">
+                                                                <img src="{{asset('/../template/assets/images/box-item/card-item-32.jpg')}}" alt="">
+                                                            </a>
+                                                            <span class="wishlist-button icon-heart"></span>
+                                                            <div class="featured-countdown">
+                                                                <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
+                                                            </div>
+                                                            <div class="button-place-bid">
+                                                                <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <div class="author flex items-center">
+                                                            <div class="avatar">
+                                                                <img src="{{asset('/../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
@@ -9740,7 +9741,7 @@
                                 <div class="widget widget-recently">
                                     <h5 class="title-widget">Recently added</h5>
                                     <div class="card-small-main">
-                                        <img src="assets/images/blog/sidebar-05.jpg" alt="">
+                                        <img src="{{asset('/../template/assets/images/blog/sidebar-05.jpg')}}" alt="">
                                         <div class="card-bottom">
                                             <h5><a href="#">Photography</a></h5>
                                             <span class="date">16hr ago</span>
@@ -9748,7 +9749,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -9758,7 +9759,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-07.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-07.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -9768,7 +9769,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-08.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-08.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -9785,7 +9786,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">1. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -9796,7 +9797,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">2. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -9807,7 +9808,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">3. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -9818,7 +9819,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">4. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -9829,7 +9830,7 @@
                                     <div class="widget-creators-item flex items-center">
                                         <div class="order">5. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -9841,23 +9842,23 @@
                                 <div class="widget widget-coins">
                                     <h5 class="title-widget">Trending coins</h5>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-01.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                         <p><a href="#">Bitcoin</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-02.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                         <p><a href="#">Ethereum</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-03.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                         <p><a href="#">Cardano</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-04.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                         <p><a href="#">Solana</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center">
-                                        <img src="assets/images/box-icon/coin-05.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                         <p><a href="#">Litecoin</a></p>
                                     </div>
                                 </div>
@@ -9868,7 +9869,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Lorem NFT sold</a></h6>
                                                 <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -9878,7 +9879,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">New NFT uploaded</a></h6>
                                                 <span><a href="#">By Marisol Pena</a></span>
@@ -9888,7 +9889,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Jane Cooper</a></span>
@@ -9898,7 +9899,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You placed a bid</a></h6>
                                                 <span><a href="#">Whirl wind NFT</a></span>
@@ -9908,7 +9909,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Courtney Henry</a></span>
@@ -9948,10 +9949,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -9971,10 +9972,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -9993,10 +9994,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -10010,98 +10011,98 @@
                                     <div class="wrap-box-card">
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-01.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-01.png')}}" alt="">
                                                 <h6><a href="#">MetaMask</a></h6>
                                                 <p>Throw myself down among the tall</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-02.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-02.png')}}" alt="">
                                                 <h6><a href="#">Coibase Wallet</a></h6>
                                                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-03.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-03.png')}}" alt="">
                                                 <h6><a href="#">WalletConnect</a></h6>
                                                 <p>Sed euismod ante et leo commodo, ac faucibus</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-04.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-04.png')}}" alt="">
                                                 <h6><a href="#">Ledger</a></h6>
                                                 <p>Proin suscipit sem a nunc eleifend</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-05.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-05.png')}}" alt="">
                                                 <h6><a href="#">Phantom</a></h6>
                                                 <p>Vestibulum malesuada tortor vel erat</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-06.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-06.png')}}" alt="">
                                                 <h6><a href="#">Bitkeep</a></h6>
                                                 <p>Morbi vel eros sit amet quam viverra</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-07.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-07.png')}}" alt="">
                                                 <h6><a href="#">Core</a></h6>
                                                 <p>Mauris nec orci ac urna luctus</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-08.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-08.png')}}" alt="">
                                                 <h6><a href="#">Glow</a></h6>
                                                 <p>Pellentesque pretium felis vitae augue</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-09.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-09.png')}}" alt="">
                                                 <h6><a href="#">Fortmatic</a></h6>
                                                 <p>Nunc eget eros at tellus euismod</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-10.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-10.png')}}" alt="">
                                                 <h6><a href="#">Kaikas</a></h6>
                                                 <p>Aenean quis odio ultricies ex faucibus</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-11.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-11.png')}}" alt="">
                                                 <h6><a href="#">Bitski</a></h6>
                                                 <p>Fusce sed felis non purus pellentesque</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-12.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-12.png')}}" alt="">
                                                 <h6><a href="#">Solflare</a></h6>
                                                 <p>Donec in diam vulputate molestie</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-13.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-13.png')}}" alt="">
                                                 <h6><a href="#">OperaTouch</a></h6>
                                                 <p>Morbi vehicula ante eget cursus posuere</p>
                                             </div>
                                         </div>
                                         <div class="col-item">
                                             <div class="box-wallet">
-                                                <img src="assets/images/box-icon/wallet-14.png" alt="">
+                                                <img src="{{asset('/../template/assets/images/box-icon/wallet-14.png')}}" alt="">
                                                 <h6><a href="#">OperaTouch</a></h6>
                                                 <p>Morbi vehicula ante eget cursus posuere</p>
                                             </div>
@@ -10110,7 +10111,7 @@
                                 </div>
                                 <div id="connect-wallet-list">
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-01.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-01.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Glow</a></h6>
                                             <p>Popular</p>
@@ -10118,28 +10119,28 @@
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-02.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-02.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Coibase Wallet</a></h6>
                                         </div>
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-03.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-03.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">WalletConnect</a></h6>
                                         </div>
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-04.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-04.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Ledger</a></h6>
                                         </div>
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-05.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-05.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Phantom</a></h6>
                                             <p>Solana</p>
@@ -10147,7 +10148,7 @@
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-06.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-06.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Bitkeep</a></h6>
                                             <p>BNB Chain</p>
@@ -10155,7 +10156,7 @@
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-07.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-07.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Core</a></h6>
                                             <p>Avalanche</p>
@@ -10163,7 +10164,7 @@
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-08.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-08.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Glow</a></h6>
                                             <p>Solana</p>
@@ -10171,14 +10172,14 @@
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-09.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-09.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Fortmatic</a></h6>
                                         </div>
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-10.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-10.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Kaikas</a></h6>
                                             <p>Klaytn</p>
@@ -10186,14 +10187,14 @@
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-11.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-11.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Bitski</a></h6>
                                         </div>
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-12.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-12.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">Solflare</a></h6>
                                             <p>Solana</p>
@@ -10201,7 +10202,7 @@
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-13.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-13.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">OperaTouch</a></h6>
                                             <p>Mobile only</p>
@@ -10209,7 +10210,7 @@
                                         <a href="#" class="tf-button style-3">Connect <i class="icon-arrow-up-right2"></i></a>
                                     </div>
                                     <div class="box-wallet style-1">
-                                        <img src="assets/images/box-icon/wallet-14.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/wallet-14.png')}}" alt="">
                                         <div class="info">
                                             <h6><a href="#">OperaTouch</a></h6>
                                             <p>Mobile only</p>
@@ -10222,7 +10223,7 @@
                                 <div class="widget widget-recently">
                                     <h5 class="title-widget">Recently added</h5>
                                     <div class="card-small-main">
-                                        <img src="assets/images/blog/sidebar-05.jpg" alt="">
+                                        <img src="{{asset('/../template/assets/images/blog/sidebar-05.jpg')}}" alt="">
                                         <div class="card-bottom">
                                             <h5><a href="#">Photography</a></h5>
                                             <span class="date">16hr ago</span>
@@ -10230,7 +10231,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -10240,7 +10241,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-07.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-07.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -10250,7 +10251,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-08.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-08.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -10267,7 +10268,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">1. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -10278,7 +10279,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">2. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -10289,7 +10290,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">3. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -10300,7 +10301,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">4. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -10311,7 +10312,7 @@
                                     <div class="widget-creators-item flex items-center">
                                         <div class="order">5. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -10323,23 +10324,23 @@
                                 <div class="widget widget-coins">
                                     <h5 class="title-widget">Trending coins</h5>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-01.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                         <p><a href="#">Bitcoin</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-02.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                         <p><a href="#">Ethereum</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-03.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                         <p><a href="#">Cardano</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-04.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                         <p><a href="#">Solana</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center">
-                                        <img src="assets/images/box-icon/coin-05.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                         <p><a href="#">Litecoin</a></p>
                                     </div>
                                 </div>
@@ -10350,7 +10351,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Lorem NFT sold</a></h6>
                                                 <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -10360,7 +10361,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">New NFT uploaded</a></h6>
                                                 <span><a href="#">By Marisol Pena</a></span>
@@ -10370,7 +10371,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Jane Cooper</a></span>
@@ -10380,7 +10381,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You placed a bid</a></h6>
                                                 <span><a href="#">Whirl wind NFT</a></span>
@@ -10390,7 +10391,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Courtney Henry</a></span>
@@ -10430,10 +10431,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -10453,10 +10454,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -10475,10 +10476,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -10546,7 +10547,7 @@
                                             <div class="widget-history">
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">Lorem NFT sold</a></h6>
                                                             <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -10556,7 +10557,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">New NFT uploaded</a></h6>
                                                             <span><a href="#">By Marisol Pena</a></span>
@@ -10566,7 +10567,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Jane Cooper</a></span>
@@ -10576,7 +10577,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You placed a bid</a></h6>
                                                             <span><a href="#">Whirl wind NFT</a></span>
@@ -10586,7 +10587,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Courtney Henry</a></span>
@@ -10596,7 +10597,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">Lorem NFT sold</a></h6>
                                                             <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -10606,7 +10607,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">New NFT uploaded</a></h6>
                                                             <span><a href="#">By Marisol Pena</a></span>
@@ -10616,7 +10617,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Jane Cooper</a></span>
@@ -10626,7 +10627,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You placed a bid</a></h6>
                                                             <span><a href="#">Whirl wind NFT</a></span>
@@ -10636,7 +10637,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Courtney Henry</a></span>
@@ -10646,7 +10647,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Jane Cooper</a></span>
@@ -10656,7 +10657,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You placed a bid</a></h6>
                                                             <span><a href="#">Whirl wind NFT</a></span>
@@ -10670,7 +10671,7 @@
                                             <div class="widget-history">
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">Lorem NFT sold</a></h6>
                                                             <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -10680,7 +10681,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">New NFT uploaded</a></h6>
                                                             <span><a href="#">By Marisol Pena</a></span>
@@ -10690,7 +10691,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Jane Cooper</a></span>
@@ -10700,7 +10701,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You placed a bid</a></h6>
                                                             <span><a href="#">Whirl wind NFT</a></span>
@@ -10710,7 +10711,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Courtney Henry</a></span>
@@ -10720,7 +10721,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">Lorem NFT sold</a></h6>
                                                             <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -10734,7 +10735,7 @@
                                             <div class="widget-history">
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">Lorem NFT sold</a></h6>
                                                             <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -10744,7 +10745,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">New NFT uploaded</a></h6>
                                                             <span><a href="#">By Marisol Pena</a></span>
@@ -10754,7 +10755,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Jane Cooper</a></span>
@@ -10764,7 +10765,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You placed a bid</a></h6>
                                                             <span><a href="#">Whirl wind NFT</a></span>
@@ -10774,7 +10775,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Courtney Henry</a></span>
@@ -10784,7 +10785,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">Lorem NFT sold</a></h6>
                                                             <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -10798,7 +10799,7 @@
                                             <div class="widget-history">
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">Lorem NFT sold</a></h6>
                                                             <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -10808,7 +10809,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">New NFT uploaded</a></h6>
                                                             <span><a href="#">By Marisol Pena</a></span>
@@ -10818,7 +10819,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Jane Cooper</a></span>
@@ -10828,7 +10829,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You placed a bid</a></h6>
                                                             <span><a href="#">Whirl wind NFT</a></span>
@@ -10838,7 +10839,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">You followed a creator</a></h6>
                                                             <span><a href="#">Courtney Henry</a></span>
@@ -10848,7 +10849,7 @@
                                                 </div>
                                                 <div class="widget-creators-item flex items-center">
                                                     <div class="author flex items-center flex-grow">
-                                                        <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                                        <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                                         <div class="info">
                                                             <h6><a href="#">Lorem NFT sold</a></h6>
                                                             <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -10865,7 +10866,7 @@
                                 <div class="widget widget-recently">
                                     <h5 class="title-widget">Recently added</h5>
                                     <div class="card-small-main">
-                                        <img src="assets/images/blog/sidebar-05.jpg" alt="">
+                                        <img src="{{asset('/../template/assets/images/blog/sidebar-05.jpg')}}" alt="">
                                         <div class="card-bottom">
                                             <h5><a href="#">Photography</a></h5>
                                             <span class="date">16hr ago</span>
@@ -10873,7 +10874,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -10883,7 +10884,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-07.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-07.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -10893,7 +10894,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-08.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-08.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -10910,7 +10911,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">1. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -10921,7 +10922,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">2. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -10932,7 +10933,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">3. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -10943,7 +10944,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">4. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -10954,7 +10955,7 @@
                                     <div class="widget-creators-item flex items-center">
                                         <div class="order">5. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -10966,23 +10967,23 @@
                                 <div class="widget widget-coins">
                                     <h5 class="title-widget">Trending coins</h5>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-01.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                         <p><a href="#">Bitcoin</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-02.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                         <p><a href="#">Ethereum</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-03.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                         <p><a href="#">Cardano</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-04.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                         <p><a href="#">Solana</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center">
-                                        <img src="assets/images/box-icon/coin-05.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                         <p><a href="#">Litecoin</a></p>
                                     </div>
                                 </div>
@@ -11017,10 +11018,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -11040,10 +11041,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -11062,10 +11063,10 @@
                                     }'>
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="assets/images/item-background/bg-action-1.png" alt="">
+                                                    <img src="{{asset('/../template/assets/images/item-background/bg-action-1.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -11081,7 +11082,7 @@
                                     </div>
                                     <form action="#">
                                         <div class="uploadfile flex">
-                                            <img src="assets/images/avatar/avatar-07.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-07.png')}}" alt="">
                                             <div>
                                                 <h6>Upload a new avatar”</h6>
                                                 <label>
@@ -11243,7 +11244,7 @@
                                 <div class="widget widget-recently">
                                     <h5 class="title-widget">Recently added</h5>
                                     <div class="card-small-main">
-                                        <img src="assets/images/blog/sidebar-05.jpg" alt="">
+                                        <img src="{{asset('/../template/assets/images/blog/sidebar-05.jpg')}}" alt="">
                                         <div class="card-bottom">
                                             <h5><a href="#">Photography</a></h5>
                                             <span class="date">16hr ago</span>
@@ -11251,7 +11252,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-06.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-06.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -11261,7 +11262,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-07.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-07.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -11271,7 +11272,7 @@
                                     </div>
                                     <div class="card-small">
                                         <div class="author">
-                                            <img src="assets/images/blog/sidebar-08.jpg" alt="">
+                                            <img src="{{asset('/../template/assets/images/blog/sidebar-08.jpg')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Propw</a></h6>
                                                 <p><a href="#">@themes</a></p>
@@ -11288,7 +11289,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">1. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -11299,7 +11300,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">2. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -11310,7 +11311,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">3. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -11321,7 +11322,7 @@
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="order">4. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -11332,7 +11333,7 @@
                                     <div class="widget-creators-item flex items-center">
                                         <div class="order">5. </div>
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Brooklyn Simmons</a></h6>
                                                 <span><a href="#">@themes</a></span>
@@ -11344,23 +11345,23 @@
                                 <div class="widget widget-coins">
                                     <h5 class="title-widget">Trending coins</h5>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-01.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-01.png')}}" alt="">
                                         <p><a href="#">Bitcoin</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-02.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-02.png')}}" alt="">
                                         <p><a href="#">Ethereum</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-03.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-03.png')}}" alt="">
                                         <p><a href="#">Cardano</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center mb-20">
-                                        <img src="assets/images/box-icon/coin-04.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-04.png')}}" alt="">
                                         <p><a href="#">Solana</a></p>
                                     </div>
                                     <div class="widget-coins-item flex items-center">
-                                        <img src="assets/images/box-icon/coin-05.png" alt="">
+                                        <img src="{{asset('/../template/assets/images/box-icon/coin-05.png')}}" alt="">
                                         <p><a href="#">Litecoin</a></p>
                                     </div>
                                 </div>
@@ -11371,7 +11372,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">Lorem NFT sold</a></h6>
                                                 <span><a href="#">Sold at 1.32 ETH</a></span>
@@ -11381,7 +11382,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-02.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-02.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">New NFT uploaded</a></h6>
                                                 <span><a href="#">By Marisol Pena</a></span>
@@ -11391,7 +11392,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-03.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-03.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Jane Cooper</a></span>
@@ -11401,7 +11402,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center mb-20">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-04.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-04.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You placed a bid</a></h6>
                                                 <span><a href="#">Whirl wind NFT</a></span>
@@ -11411,7 +11412,7 @@
                                     </div>
                                     <div class="widget-creators-item flex items-center">
                                         <div class="author flex items-center flex-grow">
-                                            <img src="assets/images/avatar/avatar-small-01.png" alt="">
+                                            <img src="{{asset('/../template/assets/images/avatar/avatar-small-01.png')}}" alt="">
                                             <div class="info">
                                                 <h6><a href="#">You followed a creator</a></h6>
                                                 <span><a href="#">Courtney Henry</a></span>
@@ -11438,10 +11439,10 @@
                     </button>
                     <div class="modal-body">
                         <div class="image">
-                            <img src="assets/images/backgroup-section/popup.png" alt="">
+                            <img src="{{asset('/../template/assets/images/backgroup-section/popup.png')}}" alt="">
                         </div>
                         <div class="logo-rotate">
-                            <img class="" src="assets/images/item-background/item6-img.png" alt="">
+                            <img class="" src="{{asset('/../template/assets/images/item-background/item6-img.png')}}" alt="">
                         </div>
                         <h2>Subscribe to our newsletter</h2>
                         <p>Subscribe for our newsletter to stay in the loop</p>
@@ -11467,22 +11468,22 @@
     </div>
 
     <!-- Javascript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/countto.js"></script>
-    <script src="assets/js/count-down.js"></script>
-    <script src="assets/js/simpleParallax.min.js"></script>
-    <script src="assets/js/gsap.js"></script>
-    <script src="assets/js/SplitText.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/ScrollTrigger.js"></script>
-    <script src="assets/js/gsap-animation.js"></script>
-    <script src="assets/js/tsparticles.min.js"></script>
-    <script src="assets/js/tsparticles.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/jquery.min.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/popper.min.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/swiper-bundle.min.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/swiper.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/count-down.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/simpleParallax.min.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/gsap.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/SplitText.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/wow.min.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/ScrollTrigger.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/gsap-animation.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/tsparticles.min.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/tsparticles.js')}}"></script>
+    <script src="{{asset('/../template/{{asset('/../template/assets/js/main.js')}}"></script>
 
 </body>
 
