@@ -7,6 +7,7 @@ use App\Http\Requests\Auth\LoginRequest;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 use Illuminate\View\View;
 
 class AuthenticatedSessionController extends Controller
@@ -25,20 +26,18 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request): RedirectResponse
     {
         $request->authenticate();
-
-        $request->session()->regenerate();
         if(Auth::user()->role == "admin")
         {
-            return redirect()->route('admin.dashboard');
+            return redirect('admin/dashboard');
         }
         else if(Auth::user()->role == "company")
         {
-            return redirect()->route('company.dashboard');
+            return redirect('company/dashboard');
         }
-        else
-        {
-            return redirect()->route('user.dashboard');
-        }
+        
+            return redirect('dashboard');
+
+        $request->session()->regenerate();
         // return redirect()->intended(route('dashboard', absolute: false));
     }
 
