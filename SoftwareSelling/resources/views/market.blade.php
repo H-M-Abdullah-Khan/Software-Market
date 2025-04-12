@@ -130,13 +130,13 @@
                                             </svg>
                                             <span>My Profile</span>
                                         </a>
-                                        <a class="block mb-30" class="mt-10" href="profile.html">
+                                        <a class="block mb-30" class="mt-10" href="{{url ('dashboard') }}">
                                             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M17.1154 0.730469H2.88461C1.29402 0.730469 0 2.02449 0 3.61508V14.3843C0 15.9749 1.29402 17.2689 2.88461 17.2689H17.1154C18.706 17.2689 20 15.9749 20 14.3843V3.61508C20 2.02449 18.706 0.730469 17.1154 0.730469ZM18.7529 10.6035H14.6154C13.6611 10.6035 13 9.95407 13 8.99969C13 8.04532 13.661 7.34544 14.6154 7.34544H18.7529V10.6035ZM18.7529 6.11508H14.6154C13.0248 6.11508 11.7308 7.40911 11.7308 8.99969C11.7308 10.5903 13.0248 11.8843 14.6154 11.8843H18.7529V14.3843C18.7529 15.3386 18.0698 15.9996 17.1154 15.9996H2.88461C1.93027 15.9996 1.29231 15.3387 1.29231 14.3843V3.61508C1.29231 2.66074 1.93023 1.99963 2.88461 1.99963H17.1266C18.0809 1.99963 18.7529 2.6607 18.7529 3.61508V6.11508Z" fill="white"></path>
                                             </svg>
                                             <span>Wallet</span>
                                         </a>
-                                        <a class="block" href="login.html" id="logout">
+                                        <a class="block" href="{{ url('welcome') }}" id="logout">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9.9668 18.3057H2.49168C2.0332 18.3057 1.66113 17.9335 1.66113 17.4751V2.52492C1.66113 2.06644 2.03324 1.69437 2.49168 1.69437H9.9668C10.4261 1.69437 10.7973 1.32312 10.7973 0.863828C10.7973 0.404531 10.4261 0.0332031 9.9668 0.0332031H2.49168C1.11793 0.0332031 0 1.15117 0 2.52492V17.4751C0 18.8488 1.11793 19.9668 2.49168 19.9668H9.9668C10.4261 19.9668 10.7973 19.5955 10.7973 19.1362C10.7973 18.6769 10.4261 18.3057 9.9668 18.3057Z" fill="white"></path>
                                                 <path d="M19.7525 9.40904L14.7027 4.42564C14.3771 4.10337 13.8505 4.10755 13.5282 4.43396C13.206 4.76036 13.2093 5.28611 13.5366 5.60837L17.1454 9.16982H7.47508C7.01578 9.16982 6.64453 9.54107 6.64453 10.0004C6.64453 10.4597 7.01578 10.8309 7.47508 10.8309H17.1454L13.5366 14.3924C13.2093 14.7147 13.2068 15.2404 13.5282 15.5668C13.691 15.7313 13.9053 15.8143 14.1196 15.8143C14.3306 15.8143 14.5415 15.7346 14.7027 15.5751L19.7525 10.5917C19.9103 10.4356 20 10.2229 20 10.0003C20 9.77783 19.9111 9.56603 19.7525 9.40904Z" fill="white"></path>
@@ -160,7 +160,7 @@
             <div class="flat-tabs">
                 <div class="section-menu-left">
                     <div class="box-logo">
-                        <a href="index.html"><img src="{{asset('../template/assets/images/logo/logo.png')}}" alt=""></a>
+                        <a href="{{ url('welcome') }}"><img src="{{asset('../template/assets/images/logo/logo.png')}}" alt=""></a>
                     </div>
                     <div class="create menu-tab">
                         <a class="tf-button style-1 type-1 tablinks" data-tabs="create">
@@ -301,7 +301,7 @@
                                     Settings
                                 </li>
                                 <li>
-                                    <a href="index.html">Logout</a>
+                                    <a href="{{ url('welcome') }}">Logout</a>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g opacity="0.2">
                                         <path d="M13.7627 6.77369V5.91844C13.7627 4.05303 12.2502 2.54053 10.3848 2.54053H5.91606C4.05156 2.54053 2.53906 4.05303 2.53906 5.91844V16.1209C2.53906 17.9864 4.05156 19.4989 5.91606 19.4989H10.394C12.2539 19.4989 13.7627 17.9909 13.7627 16.131V15.2666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -768,7 +768,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -777,7 +777,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -797,7 +797,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -806,7 +806,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -826,7 +826,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -835,7 +835,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -855,7 +855,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -864,7 +864,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -884,7 +884,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -893,7 +893,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -913,7 +913,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -922,7 +922,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -979,7 +979,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -988,7 +988,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1008,7 +1008,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1017,7 +1017,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1037,7 +1037,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1046,7 +1046,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1066,7 +1066,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1075,7 +1075,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1095,7 +1095,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1104,7 +1104,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1124,7 +1124,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1133,7 +1133,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1190,7 +1190,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1199,7 +1199,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1219,7 +1219,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1228,7 +1228,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1248,7 +1248,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1257,7 +1257,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1277,7 +1277,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1286,7 +1286,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1306,7 +1306,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1315,7 +1315,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1335,7 +1335,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1344,7 +1344,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1401,7 +1401,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1410,7 +1410,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1430,7 +1430,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1439,7 +1439,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1459,7 +1459,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1468,7 +1468,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1488,7 +1488,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1497,7 +1497,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1517,7 +1517,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1526,7 +1526,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1546,7 +1546,7 @@
                                                                     </div>
                                                                     <div class="info">
                                                                         <span>Created by:</span>
-                                                                        <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                        <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                                     </div>
                                                                 </div>
                                                                 <div class="card-media">
@@ -1555,7 +1555,7 @@
                                                                     </a>
                                                                     <span class="wishlist-button icon-heart"></span>
                                                                 </div>
-                                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                                <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                                 <div class="meta-info flex items-center justify-between">
                                                                     <div>
                                                                         <span class="text-bid">Current Bid</span>
@@ -1662,14 +1662,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1690,14 +1690,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1718,14 +1718,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1746,14 +1746,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1774,14 +1774,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1802,14 +1802,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1830,14 +1830,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1858,14 +1858,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1890,14 +1890,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1918,14 +1918,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1946,14 +1946,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -1974,14 +1974,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2002,14 +2002,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2030,14 +2030,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2058,14 +2058,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2086,14 +2086,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2118,14 +2118,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2146,14 +2146,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2174,14 +2174,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2202,14 +2202,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2230,14 +2230,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2258,14 +2258,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2286,14 +2286,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2314,14 +2314,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2346,14 +2346,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2374,14 +2374,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2402,14 +2402,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2430,14 +2430,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2458,14 +2458,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2486,14 +2486,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2514,14 +2514,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2542,14 +2542,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2919,14 +2919,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2950,14 +2950,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -2981,14 +2981,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3012,14 +3012,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3043,14 +3043,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3074,14 +3074,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3105,14 +3105,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3136,14 +3136,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3167,14 +3167,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3198,14 +3198,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3229,14 +3229,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3260,14 +3260,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3291,14 +3291,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3322,14 +3322,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3353,14 +3353,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3384,14 +3384,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3420,14 +3420,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3451,14 +3451,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3482,14 +3482,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3513,14 +3513,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3544,14 +3544,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3575,14 +3575,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3606,14 +3606,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3637,14 +3637,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3668,14 +3668,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3699,14 +3699,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3730,14 +3730,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3761,14 +3761,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3792,14 +3792,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3823,14 +3823,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3854,14 +3854,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3885,14 +3885,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3921,14 +3921,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3952,14 +3952,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -3983,14 +3983,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4014,14 +4014,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4045,14 +4045,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4076,14 +4076,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4107,14 +4107,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4138,14 +4138,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4169,14 +4169,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4200,14 +4200,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4231,14 +4231,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4262,14 +4262,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4293,14 +4293,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4324,14 +4324,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4355,14 +4355,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4386,14 +4386,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4422,14 +4422,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4453,14 +4453,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4484,14 +4484,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4515,14 +4515,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4546,14 +4546,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4577,14 +4577,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4608,14 +4608,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4639,14 +4639,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4670,14 +4670,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4701,14 +4701,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4732,14 +4732,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4763,14 +4763,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4794,14 +4794,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4825,14 +4825,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4856,14 +4856,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -4887,14 +4887,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -5259,7 +5259,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5268,7 +5268,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5288,7 +5288,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5297,7 +5297,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5317,7 +5317,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5326,7 +5326,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5346,7 +5346,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5355,7 +5355,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5375,7 +5375,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5384,7 +5384,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5404,7 +5404,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5413,7 +5413,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5433,7 +5433,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5442,7 +5442,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5462,7 +5462,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5471,7 +5471,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5491,7 +5491,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5500,7 +5500,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5520,7 +5520,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5529,7 +5529,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5549,7 +5549,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5558,7 +5558,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5578,7 +5578,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5587,7 +5587,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5607,7 +5607,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5616,7 +5616,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5636,7 +5636,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5645,7 +5645,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5665,7 +5665,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5674,7 +5674,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5694,7 +5694,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5703,7 +5703,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5727,7 +5727,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5736,7 +5736,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5756,7 +5756,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5765,7 +5765,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5785,7 +5785,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5794,7 +5794,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5814,7 +5814,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5823,7 +5823,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5843,7 +5843,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5852,7 +5852,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5872,7 +5872,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5881,7 +5881,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5901,7 +5901,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5910,7 +5910,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5930,7 +5930,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5939,7 +5939,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5959,7 +5959,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5968,7 +5968,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -5988,7 +5988,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -5997,7 +5997,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6017,7 +6017,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6026,7 +6026,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6046,7 +6046,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6055,7 +6055,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6075,7 +6075,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6084,7 +6084,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6104,7 +6104,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6113,7 +6113,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6133,7 +6133,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6142,7 +6142,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6162,7 +6162,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6171,7 +6171,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6195,7 +6195,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6204,7 +6204,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6224,7 +6224,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6233,7 +6233,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6253,7 +6253,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6262,7 +6262,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6282,7 +6282,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6291,7 +6291,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6311,7 +6311,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6320,7 +6320,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6340,7 +6340,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6349,7 +6349,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6369,7 +6369,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6378,7 +6378,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6398,7 +6398,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6407,7 +6407,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6427,7 +6427,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6436,7 +6436,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6456,7 +6456,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6465,7 +6465,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6485,7 +6485,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6494,7 +6494,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6514,7 +6514,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6523,7 +6523,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6543,7 +6543,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6552,7 +6552,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6572,7 +6572,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6581,7 +6581,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6601,7 +6601,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6610,7 +6610,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6630,7 +6630,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6639,7 +6639,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6663,7 +6663,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6672,7 +6672,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6692,7 +6692,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6701,7 +6701,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6721,7 +6721,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6730,7 +6730,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6750,7 +6750,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6759,7 +6759,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6779,7 +6779,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6788,7 +6788,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6808,7 +6808,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6817,7 +6817,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6837,7 +6837,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6846,7 +6846,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6866,7 +6866,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6875,7 +6875,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6895,7 +6895,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6904,7 +6904,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6924,7 +6924,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6933,7 +6933,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6953,7 +6953,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6962,7 +6962,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -6982,7 +6982,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -6991,7 +6991,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -7011,7 +7011,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -7020,7 +7020,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -7040,7 +7040,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -7049,7 +7049,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -7069,7 +7069,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -7078,7 +7078,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -7098,7 +7098,7 @@
                                                             </div>
                                                             <div class="info">
                                                                 <span>Created by:</span>
-                                                                <h6><a href="author-2.html">Marvin McKinney</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Marvin McKinney</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="card-media">
@@ -7107,7 +7107,7 @@
                                                             </a>
                                                             <span class="wishlist-button icon-heart"></span>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="meta-info flex items-center justify-between">
                                                             <div>
                                                                 <span class="text-bid">Current Bid</span>
@@ -7428,7 +7428,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7441,7 +7441,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7463,7 +7463,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7476,7 +7476,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7498,7 +7498,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7511,7 +7511,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7533,7 +7533,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7546,7 +7546,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7568,7 +7568,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7581,7 +7581,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7603,7 +7603,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7616,7 +7616,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7673,7 +7673,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7686,7 +7686,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7708,7 +7708,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7721,7 +7721,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7743,7 +7743,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7756,7 +7756,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7778,7 +7778,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7791,7 +7791,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7813,7 +7813,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7826,7 +7826,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7848,7 +7848,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7861,7 +7861,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7918,7 +7918,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7931,7 +7931,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7953,7 +7953,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -7966,7 +7966,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -7988,7 +7988,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -8001,7 +8001,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -8023,7 +8023,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -8036,7 +8036,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -8058,7 +8058,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -8071,7 +8071,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -8093,7 +8093,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -8106,7 +8106,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -8430,7 +8430,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -8443,7 +8443,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -8465,7 +8465,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-05.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-06.jpg')}}" alt="">
@@ -8478,7 +8478,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -8500,7 +8500,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-09.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-10.jpg')}}" alt="">
@@ -8513,7 +8513,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -8535,7 +8535,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -8548,7 +8548,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -8570,7 +8570,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -8583,7 +8583,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -8605,7 +8605,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="tf-card-collection">
-                                                    <a href="author-2.html">
+                                                    <a href="{{url ('author-2') }}">
                                                         <div class="media-images-collection">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-01.jpg')}}" alt="">
                                                             <img src="{{asset('../template/assets/images/box-item/img-collection-02.jpg')}}" alt="">
@@ -8618,7 +8618,7 @@
                                                     </a>
                                                     <div class="card-bottom">
                                                         <div class="author">
-                                                            <h5><a href="author-1.html">Bored ape#21</a></h5>
+                                                            <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                             <div class="infor">@Themesflat</div>
                                                         </div>
                                                         <div class="bottom-right">
@@ -8733,14 +8733,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -8764,14 +8764,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -8795,14 +8795,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -8826,14 +8826,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -8857,14 +8857,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -8888,14 +8888,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -8919,14 +8919,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -8950,14 +8950,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -8987,14 +8987,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9018,14 +9018,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9049,14 +9049,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9080,14 +9080,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9111,14 +9111,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9142,14 +9142,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9173,14 +9173,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9204,14 +9204,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9241,14 +9241,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9272,14 +9272,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9303,14 +9303,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9334,14 +9334,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9365,14 +9365,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9396,14 +9396,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9427,14 +9427,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9458,14 +9458,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9495,14 +9495,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9526,14 +9526,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9557,14 +9557,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9588,14 +9588,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9619,14 +9619,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-04.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9650,14 +9650,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-03.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9681,14 +9681,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-02.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
@@ -9712,14 +9712,14 @@
                                                                 <a href="#" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
                                                             </div>
                                                         </div>
-                                                        <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
+                                                        <h5 class="name"><a href="{{url ('nft-detail-2') }}">Dayco serpentine belt</a></h5>
                                                         <div class="author flex items-center">
                                                             <div class="avatar">
                                                                 <img src="{{asset('../template/assets/images/avatar/avatar-box-01.jpg')}}" alt="Image">
                                                             </div>
                                                             <div class="info">
                                                                 <span>Posted by:</span>
-                                                                <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                                                <h6><a href="{{url ('author-2') }}">Cody Fisher</a> </h6>
                                                             </div>
                                                         </div>
                                                         <div class="divider"></div>
