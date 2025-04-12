@@ -161,7 +161,7 @@
             <div class="flat-tabs">
                 <div class="section-menu-left">
                     <div class="box-logo">
-                        <a href="index.html"><img src="{{asset('/../template/assets/images/logo/logo.png')}}" alt=""></a>
+                        <a href="{{ url('welcome') }}"><img src="{{asset('/../template/assets/images/logo/logo.png')}}" alt=""></a>
                     </div>
                     <div class="create menu-tab">
                         <a class="tf-button style-1 type-1 tablinks active" data-tabs="create">
@@ -302,7 +302,7 @@
                                     Settings
                                 </li>
                                 <li>
-                                    <a href="index.html">Logout</a>
+                                    <a href="{{ url('welcome') }}">Logout</a>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g opacity="0.2">
                                         <path d="M13.7627 6.77369V5.91844C13.7627 4.05303 12.2502 2.54053 10.3848 2.54053H5.91606C4.05156 2.54053 2.53906 4.05303 2.53906 5.91844V16.1209C2.53906 17.9864 4.05156 19.4989 5.91606 19.4989H10.394C12.2539 19.4989 13.7627 17.9909 13.7627 16.131V15.2666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -11468,22 +11468,22 @@
     </div>
 
     <!-- Javascript -->
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/jquery.min.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/popper.min.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/swiper-bundle.min.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/swiper.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/count-down.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/simpleParallax.min.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/gsap.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/SplitText.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/wow.min.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/ScrollTrigger.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/gsap-animation.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/tsparticles.min.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/tsparticles.js')}}"></script>
-    <script src="{{asset('/../template/{{asset('/../template/assets/js/main.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/jquery.min.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/popper.min.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/swiper-bundle.min.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/swiper.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/count-down.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/simpleParallax.min.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/gsap.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/SplitText.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/wow.min.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/ScrollTrigger.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/gsap-animation.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/tsparticles.min.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/tsparticles.js')}}"></script>
+    <script src="{{asset('/../template/assets/js/main.js')}}"></script>
 
 </body>
 

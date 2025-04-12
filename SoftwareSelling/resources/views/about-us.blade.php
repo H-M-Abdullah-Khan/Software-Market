@@ -70,10 +70,10 @@
                                     </div><!-- /.mobile-button -->
                                     <nav id="main-nav" class="main-nav">
                                         <ul id="menu-primary-menu" class="menu">
-                                            <li class="menu-item current-menu-item">
+                                            <li class="menu-item">
                                                 <a href="{{ url('welcome') }}">Home</a>
                                             </li>
-                                            <li class="menu-item">
+                                            <li class="menu-item current-menu-item">
                                                 <a href="{{url('about-us')}}">About us</a>
                                             </li>
                                             <li class="menu-item">

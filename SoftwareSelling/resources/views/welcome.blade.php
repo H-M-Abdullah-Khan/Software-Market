@@ -265,7 +265,7 @@
                                     <a class="item-menu-mobile" href="{{ url('about-us') }}">About us</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a class="item-menu-mobile" href="{{ url('explore-1.html') }}">Explore</a>
+                                    <a class="item-menu-mobile" href="{{ url('explore-1') }}">Explore</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children-mobile">
                                     <a class="item-menu-mobile">Market</a>
@@ -518,7 +518,7 @@
                         <div class="col-md-12">
                             <div class="heading-section pb-20">
                                 <h2 class="tf-title ">Featured Item</h2>
-                                <a href="explore-3.html') }}">Discover more <i class="icon-arrow-right2"></i></a>
+                                <a href="explore-3') }}">Discover more <i class="icon-arrow-right2"></i></a>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -970,7 +970,7 @@
                         <div class="col-md-12">
                             <div class="heading-section pb-30">
                                 <h2 class="tf-title ">Discover item</h2>
-                                <a href="explore-3.html') }}" class="">Discover more <i class="icon-arrow-right2"></i></a>
+                                <a href="explore-3') }}" class="">Discover more <i class="icon-arrow-right2"></i></a>
                             </div>
                         </div>
                         <div class="col-md-12 pb-30">
@@ -1716,7 +1716,7 @@
                         <div class="col-md-12">
                             <div class="heading-section pb-20">
                                 <h2 class="tf-title ">Top collections in week</h2>
-                                <a href="explore-3.html') }}" class="">Discover more <i class="icon-arrow-right2"></i></a>
+                                <a href="explore-3') }}" class="">Discover more <i class="icon-arrow-right2"></i></a>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -1751,7 +1751,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
+                                                    <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1786,7 +1786,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
+                                                    <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1821,7 +1821,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
+                                                    <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1856,7 +1856,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
+                                                    <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1891,7 +1891,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
+                                                    <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1926,7 +1926,7 @@
                                             </a>
                                             <div class="card-bottom">
                                                 <div class="author">
-                                                    <h5><a href="author-1.html') }}">Bored ape#21</a></h5>
+                                                    <h5><a href="{{url ('author-1') }}">Bored ape#21</a></h5>
                                                     <div class="infor">@Themesflat</div>
                                                 </div>
                                                 <div class="bottom-right">
@@ -1967,7 +1967,7 @@
                                     <img src="{{asset('/../template/assets/images/box-icon/icon-01.png')}}" alt="">
                                     <p>Step 1</p>
                                 </div>
-                                <h4 class="heading"><a href="contact-us.html') }}">Set Up Your Wallet</a></h4>
+                                <h4 class="heading"><a href="{{url ('contact-us') }}">Set Up Your Wallet</a></h4>
                                 <p class="content">Fusce non dignissim velit, sit amet semper eros. Quisque orci est</p>
                                 <div class="arrow">
                                     <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1991,7 +1991,7 @@
                                     <img src="{{asset('/../template/assets/images/box-icon/icon-02.png')}}" alt="">
                                     <p>Step 2</p>
                                 </div>
-                                <h4 class="heading"><a href="contact-us.html') }}">Create your collection</a></h4>
+                                <h4 class="heading"><a href="{{url ('contact-us') }}">Create your collection</a></h4>
                                 <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus</p>
                                 <div class="arrow">
                                     <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2015,7 +2015,7 @@
                                     <img src="{{asset('/../template/assets/images/box-icon/icon-03.png')}}" alt="">
                                     <p>Step 3</p>
                                 </div>
-                                <h4 class="heading"><a href="contact-us.html') }}">Add your NFTs</a></h4>
+                                <h4 class="heading"><a href="{{url ('contact-us') }}">Add your NFTs</a></h4>
                                 <p class="content">Suspendisse porttitor id est non accumsan. Cras vel viverra velit</p>
                                 <div class="arrow">
                                     <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2039,7 +2039,7 @@
                                     <img src="{{asset('/../template/assets/images/box-icon/icon-04.png')}}" alt="">
                                     <p>Step 4</p>
                                 </div>
-                                <h4 class="heading"><a href="contact-us.html') }}">Sell your NFTs</a></h4>
+                                <h4 class="heading"><a href="{{url ('contact-us') }}">Sell your NFTs</a></h4>
                                 <p class="content">Maecenas non semper quam. Vivamus et arcu condimentum ipsum consectetur</p>
                             </div>
                         </div>
@@ -2143,7 +2143,7 @@
                             <div class="footer-content flex flex-grow">
                                 <div class="widget-logo flex-grow">
                                     <div class="logo-footer" id="logo-footer">
-                                        <a href="index.html') }}">
+                                        <a href="{{ url('welcome') }}">
                                             <img id="logo_footer" src="{{asset('template/assets/images/logo/logo.png')}}"
                                             data-retina="{{asset('template/assets/images/logo/logo.png')}}">
                                         </a>

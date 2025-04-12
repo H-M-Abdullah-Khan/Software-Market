@@ -74,4 +74,40 @@ class HomeController extends Controller
     {
         return view('author-2');
     }
+    public function author1()
+    {
+        return view('author-1');
+    }
+    public function explore2()
+    {
+        return view('explore-2');
+    }
+    public function explore3()
+    {
+        return view('explore-3');
+    }
+    public function explore4()
+    {
+        return view('explore-4');
+    }  
+    public function maintenance()
+    {
+        return view('maintenance');
+    }
+    public function comingsoon()
+    {
+        return view('coming-soon');
+    }
+    public function nft2()
+    {
+        return view('nft-detail-2');
+    }
+    public function nft3()
+    {
+        return view('nft-detail-3');
+    }
+    public function upcoming()
+    {
+        return view('upcoming');
+    }
 }
