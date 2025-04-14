@@ -1,0 +1,124 @@
+2. Blade Views Structure (resources/views/software_products)
+📁 Folder: software_products
+index.blade.php
+blade
+Copy
+Edit
+@extends('layouts.app')
+
+@section('content')
+    <h1>Software Products</h1>
+    <a href="{{ route('software_products.create') }}">Submit New Software</a>
+    <ul>
+        @foreach ($products as $product)
+            <li>
+                <a href="{{ route('software_products.show', $product) }}">{{ $product->name }}</a>
+                <a href="{{ route('software_products.edit', $product) }}">Edit</a>
+                <form action="{{ route('software_products.destroy', $product) }}" method="POST" style="display:inline;">
+                    @csrf @method('DELETE')
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        @endforeach
+    </ul>
+@endsection
+create.blade.php
+blade
+Copy
+Edit
+@extends('layouts.app')
+
+@section('content')
+    <h1>Submit New Software</h1>
+    <form action="{{ route('software_products.store') }}" method="POST" enctype="multipart/form-data">
+        @csrf
+        @include('software_products.partials.form')
+        <button type="submit">Submit</button>
+    </form>
+@endsection
+edit.blade.php
+blade
+Copy
+Edit
+@extends('layouts.app')
+
+@section('content')
+    <h1>Edit Software</h1>
+    <form action="{{ route('software_products.update', $softwareProduct) }}" method="POST" enctype="multipart/form-data">
+        @csrf @method('PUT')
+        @include('software_products.partials.form', ['softwareProduct' => $softwareProduct])
+        <button type="submit">Update</button>
+    </form>
+@endsection
+show.blade.php
+blade
+Copy
+Edit
+@extends('layouts.app')
+
+@section('content')
+    <h1>{{ $softwareProduct->name }}</h1>
+    <p>{{ $softwareProduct->description }}</p>
+    <p>Category: {{ $softwareProduct->category }}</p>
+    <p>Price: {{ $softwareProduct->pricing_type == 'paid' ? '$' . $softwareProduct->price : 'Free' }}</p>
+    <p>Status: {{ $softwareProduct->status }}</p>
+    <a href="{{ $softwareProduct->demo_url }}" target="_blank">View Demo</a>
+    <br><br>
+    <a href="{{ route('software_products.edit', $softwareProduct) }}">Edit</a>
+@endsection
+partials/form.blade.php
+blade
+Copy
+Edit
+@php
+    $softwareProduct = $softwareProduct ?? null;
+@endphp
+
+<div>
+    <label>Name</label>
+    <input type="text" name="name" value="{{ old('name', $softwareProduct->name ?? '') }}">
+</div>
+
+<div>
+    <label>Description</label>
+    <textarea name="description">{{ old('description', $softwareProduct->description ?? '') }}</textarea>
+</div>
+
+<div>
+    <label>Category</label>
+    <input type="text" name="category" value="{{ old('category', $softwareProduct->category ?? '') }}">
+</div>
+
+<div>
+    <label>Pricing Type</label>
+    <select name="pricing_type">
+        <option value="free" {{ old('pricing_type', $softwareProduct->pricing_type ?? '') == 'free' ? 'selected' : '' }}>Free</option>
+        <option value="paid" {{ old('pricing_type', $softwareProduct->pricing_type ?? '') == 'paid' ? 'selected' : '' }}>Paid</option>
+    </select>
+</div>
+
+<div>
+    <label>Price</label>
+    <input type="number" step="0.01" name="price" value="{{ old('price', $softwareProduct->price ?? '') }}">
+</div>
+
+<div>
+    <label>Main File (ZIP or EXE)</label>
+    <input type="file" name="main_file">
+</div>
+
+<div>
+    <label>Screenshots (Comma-separated URLs)</label>
+    <input type="text" name="screenshots[]" placeholder="URL 1">
+    <input type="text" name="screenshots[]" placeholder="URL 2">
+</div>
+
+<div>
+    <label>Demo URL</label>
+    <input type="url" name="demo_url" value="{{ old('demo_url', $softwareProduct->demo_url ?? '') }}">
+</div>
+✅ 3. Routing (web.php)
+php
+Copy
+Edit
+Route::resource('software_products', SoftwareProductController::class);
