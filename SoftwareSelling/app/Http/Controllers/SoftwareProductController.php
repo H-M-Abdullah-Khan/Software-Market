@@ -35,8 +35,8 @@ class SoftwareProductController extends Controller
         $validated['user_id'] = Auth::id();
         $validated['main_file'] = $request->file('main_file')->store('uploads/software_files');
 
-        $validated['screenshots'] = $request->has('screenshots') 
-            ? json_encode($request->screenshots) 
+        $validated['screenshots'] = $request->has('screenshots')
+            ? json_encode($request->screenshots)
             : null;
 
         SoftwareProduct::create($validated);

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\SoftwareProduct;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -16,7 +17,8 @@ class HomeController extends Controller
     }
     public function explore()
     {
-        return view('explore-1');
+        $products = SoftwareProduct::all();
+        return view('explore-1', compact('products'));
     }
     public function Create()
     {
@@ -89,7 +91,7 @@ class HomeController extends Controller
     public function explore4()
     {
         return view('explore-4');
-    }  
+    }
     public function maintenance()
     {
         return view('maintenance');

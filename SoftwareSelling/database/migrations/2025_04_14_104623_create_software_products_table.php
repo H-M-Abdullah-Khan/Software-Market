@@ -40,5 +40,4 @@ class CreateSoftwareProductsTable extends Migration
     {
         Schema::dropIfExists('software_products');
     }
-
 }

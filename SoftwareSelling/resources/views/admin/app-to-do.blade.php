@@ -35,602 +35,602 @@
 
 <body>
 
-  <!--start header-->
-  <header class="top-header">
-    <nav class="navbar navbar-expand align-items-center gap-4">
-      <div class="btn-toggle">
-        <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
-      </div>
-      <div class="search-bar flex-grow-1">
-        <div class="position-relative">
-          <input class="form-control rounded-5 px-5 search-control d-lg-block d-none" type="text" placeholder="Search">
-          <span class="material-icons-outlined position-absolute d-lg-block d-none ms-3 translate-middle-y start-0 top-50">search</span>
-          <span class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 search-close">close</span>
-          <div class="search-popup p-3">
-            <div class="card rounded-4 overflow-hidden">
-              <div class="card-header d-lg-none">
-                <div class="position-relative">
-                  <input class="form-control rounded-5 px-5 mobile-search-control" type="text" placeholder="Search">
-                  <span class="material-icons-outlined position-absolute ms-3 translate-middle-y start-0 top-50">search</span>
-                  <span class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 mobile-search-close">close</span>
-                 </div>
+ <!--start header-->
+ <header class="top-header">
+  <nav class="navbar navbar-expand align-items-center gap-4">
+    <div class="btn-toggle">
+      <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
+    </div>
+    <div class="search-bar flex-grow-1">
+      <div class="position-relative">
+        <input class="form-control rounded-5 px-5 search-control d-lg-block d-none" type="text" placeholder="Search">
+        <span class="material-icons-outlined position-absolute d-lg-block d-none ms-3 translate-middle-y start-0 top-50">search</span>
+        <span class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 search-close">close</span>
+        <div class="search-popup p-3">
+          <div class="card rounded-4 overflow-hidden">
+            <div class="card-header d-lg-none">
+              <div class="position-relative">
+                <input class="form-control rounded-5 px-5 mobile-search-control" type="text" placeholder="Search">
+                <span class="material-icons-outlined position-absolute ms-3 translate-middle-y start-0 top-50">search</span>
+                <span class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 mobile-search-close">close</span>
+               </div>
+            </div>
+            <div class="card-body search-content">
+              <p class="search-title">Recent Searches</p>
+              <div class="d-flex align-items-start flex-wrap gap-2 kewords-wrapper">
+                <a href="javascript:;" class="kewords"><span>Angular Template</span><i
+                    class="material-icons-outlined fs-6">search</i></a>
+                <a href="javascript:;" class="kewords"><span>Dashboard</span><i
+                    class="material-icons-outlined fs-6">search</i></a>
+                <a href="javascript:;" class="kewords"><span>Admin Template</span><i
+                    class="material-icons-outlined fs-6">search</i></a>
+                <a href="javascript:;" class="kewords"><span>Bootstrap 5 Admin</span><i
+                    class="material-icons-outlined fs-6">search</i></a>
+                <a href="javascript:;" class="kewords"><span>Html eCommerce</span><i
+                    class="material-icons-outlined fs-6">search</i></a>
+                <a href="javascript:;" class="kewords"><span>Sass</span><i
+                    class="material-icons-outlined fs-6">search</i></a>
+                <a href="javascript:;" class="kewords"><span>laravel 9</span><i
+                    class="material-icons-outlined fs-6">search</i></a>
               </div>
-              <div class="card-body search-content">
-                <p class="search-title">Recent Searches</p>
-                <div class="d-flex align-items-start flex-wrap gap-2 kewords-wrapper">
-                  <a href="javascript:;" class="kewords"><span>Angular Template</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>Dashboard</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>Admin Template</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>Bootstrap 5 Admin</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>Html eCommerce</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>Sass</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>laravel 9</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                </div>
-                <hr>
-                <p class="search-title">Tutorials</p>
-                <div class="search-list d-flex flex-column gap-2">
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="list-icon">
-                      <i class="material-icons-outlined fs-5">play_circle</i>
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title ">Wordpress Tutorials</h5>
-                    </div>
+              <hr>
+              <p class="search-title">Tutorials</p>
+              <div class="search-list d-flex flex-column gap-2">
+                <div class="search-list-item d-flex align-items-center gap-3">
+                  <div class="list-icon">
+                    <i class="material-icons-outlined fs-5">play_circle</i>
                   </div>
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="list-icon">
-                      <i class="material-icons-outlined fs-5">shopping_basket</i>
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title">eCommerce Website Tutorials</h5>
-                    </div>
-                  </div>
-  
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="list-icon">
-                      <i class="material-icons-outlined fs-5">laptop</i>
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title">Responsive Design</h5>
-                    </div>
+                  <div class="">
+                    <h5 class="mb-0 search-list-title ">Wordpress Tutorials</h5>
                   </div>
                 </div>
-  
-                <hr>
-                <p class="search-title">Members</p>
-  
-                <div class="search-list d-flex flex-column gap-2">
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="memmber-img">
-                      <img src="assets/images/avatars/01.png" width="32" height="32" class="rounded-circle" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title ">Andrew Stark</h5>
-                    </div>
+                <div class="search-list-item d-flex align-items-center gap-3">
+                  <div class="list-icon">
+                    <i class="material-icons-outlined fs-5">shopping_basket</i>
                   </div>
-  
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="memmber-img">
-                      <img src="assets/images/avatars/02.png" width="32" height="32" class="rounded-circle" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title ">Snetro Jhonia</h5>
-                    </div>
+                  <div class="">
+                    <h5 class="mb-0 search-list-title">eCommerce Website Tutorials</h5>
                   </div>
-  
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="memmber-img">
-                      <img src="assets/images/avatars/03.png" width="32" height="32" class="rounded-circle" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title">Michle Clark</h5>
-                    </div>
+                </div>
+
+                <div class="search-list-item d-flex align-items-center gap-3">
+                  <div class="list-icon">
+                    <i class="material-icons-outlined fs-5">laptop</i>
                   </div>
-  
+                  <div class="">
+                    <h5 class="mb-0 search-list-title">Responsive Design</h5>
+                  </div>
                 </div>
               </div>
-              <div class="card-footer text-center bg-transparent">
-                <a href="javascript:;" class="btn w-100">See All Search Results</a>
+
+              <hr>
+              <p class="search-title">Members</p>
+
+              <div class="search-list d-flex flex-column gap-2">
+                <div class="search-list-item d-flex align-items-center gap-3">
+                  <div class="memmber-img">
+                    <img src="{{asset('/../admin/assets/images/avatars/01.png')}}" width="32" height="32" class="rounded-circle" alt="">
+                  </div>
+                  <div class="">
+                    <h5 class="mb-0 search-list-title ">Andrew Stark</h5>
+                  </div>
+                </div>
+
+                <div class="search-list-item d-flex align-items-center gap-3">
+                  <div class="memmber-img">
+                    <img src="{{asset('/../admin/assets/images/avatars/02.png')}}" width="32" height="32" class="rounded-circle" alt="">
+                  </div>
+                  <div class="">
+                    <h5 class="mb-0 search-list-title ">Snetro Jhonia</h5>
+                  </div>
+                </div>
+
+                <div class="search-list-item d-flex align-items-center gap-3">
+                  <div class="memmber-img">
+                    <img src="{{asset('/../admin/assets/images/avatars/03.png')}}" width="32" height="32" class="rounded-circle" alt="">
+                  </div>
+                  <div class="">
+                    <h5 class="mb-0 search-list-title">Michle Clark</h5>
+                  </div>
+                </div>
+
               </div>
+            </div>
+            <div class="card-footer text-center bg-transparent">
+              <a href="javascript:;" class="btn w-100">See All Search Results</a>
             </div>
           </div>
         </div>
       </div>
-      <ul class="navbar-nav gap-1 nav-right-links align-items-center">
-        <li class="nav-item d-lg-none mobile-search-btn">
-          <a class="nav-link" href="javascript:;"><i class="material-icons-outlined">search</i></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="avascript:;" data-bs-toggle="dropdown"><img src="assets/images/county/02.png" width="22" alt="">
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/01.png" width="20" alt=""><span class="ms-2">English</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/02.png" width="20" alt=""><span class="ms-2">Catalan</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/03.png" width="20" alt=""><span class="ms-2">French</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/04.png" width="20" alt=""><span class="ms-2">Belize</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/05.png" width="20" alt=""><span class="ms-2">Colombia</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/06.png" width="20" alt=""><span class="ms-2">Spanish</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/07.png" width="20" alt=""><span class="ms-2">Georgian</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/08.png" width="20" alt=""><span class="ms-2">Hindi</span></a>
-            </li>
-          </ul>
-        </li>
+    </div>
+    <ul class="navbar-nav gap-1 nav-right-links align-items-center">
+      <li class="nav-item d-lg-none mobile-search-btn">
+        <a class="nav-link" href="javascript:;"><i class="material-icons-outlined">search</i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="avascript:;" data-bs-toggle="dropdown"><img src="{{asset('/../admin/assets/images/county/02.png')}}" width="22" alt="">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="{{asset('/../admin/assets/images/county/01.png')}}" width="20" alt=""><span class="ms-2">English</span></a>
+          </li>
+          <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="{{asset('/../admin/assets/images/county/02.png')}}" width="20" alt=""><span class="ms-2">Catalan</span></a>
+          </li>
+          <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="{{asset('/../admin/assets/images/county/03.png')}}" width="20" alt=""><span class="ms-2">French</span></a>
+          </li>
+          <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="{{asset('/../admin/assets/images/county/04.png')}}" width="20" alt=""><span class="ms-2">Belize</span></a>
+          </li>
+          <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="{{asset('/../admin/assets/images/county/05.png')}}" width="20" alt=""><span class="ms-2">Colombia</span></a>
+          </li>
+          <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="{{asset('/../admin/assets/images/county/06.png')}}" width="20" alt=""><span class="ms-2">Spanish</span></a>
+          </li>
+          <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="{{asset('/../admin/assets/images/county/07.png')}}" width="20" alt=""><span class="ms-2">Georgian</span></a>
+          </li>
+          <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="{{asset('/../admin/assets/images/county/08.png')}}" width="20" alt=""><span class="ms-2">Hindi</span></a>
+          </li>
+        </ul>
+      </li>
 
-        <li class="nav-item dropdown position-static  d-md-flex d-none">
-          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-auto-close="outside"
-          data-bs-toggle="dropdown" href="javascript:;"><i class="material-icons-outlined">done_all</i></a>
-          <div class="dropdown-menu dropdown-menu-end mega-menu shadow-lg p-4 p-lg-5">
-            <div class="mega-menu-widgets">
-             <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 g-lg-5">
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <div class="mega-menu-icon flex-shrink-0 bg-danger">
-                          <i class="material-icons-outlined">question_answer</i>
-                        </div>
-                        <div class="mega-menu-content">
-                           <h5>Marketing</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
+      <li class="nav-item dropdown position-static  d-md-flex d-none">
+        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-auto-close="outside"
+        data-bs-toggle="dropdown" href="javascript:;"><i class="material-icons-outlined">done_all</i></a>
+        <div class="dropdown-menu dropdown-menu-end mega-menu shadow-lg p-4 p-lg-5">
+          <div class="mega-menu-widgets">
+           <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 g-lg-5">
+              <div class="col">
+                <div class="card rounded-4 shadow-none border mb-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="mega-menu-icon flex-shrink-0 bg-danger">
+                        <i class="material-icons-outlined">question_answer</i>
+                      </div>
+                      <div class="mega-menu-content">
+                         <h5>Marketing</h5>
+                         <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                           the visual form of a document.</p>
+                      </div>
+                   </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/02.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Website</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-4 shadow-none border mb-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start gap-3">
+                      <img src="{{asset('/../admin/assets/images/megaIcons/02.png')}}" width="40" alt="">
+                      <div class="mega-menu-content">
+                         <h5>Website</h5>
+                         <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                           the visual form of a document.</p>
+                      </div>
+                   </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/03.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                            <h5>Subscribers</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-4 shadow-none border mb-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start gap-3">
+                      <img src="{{asset('/../admin/assets/images/megaIcons/03.png')}}" width="40" alt="">
+                      <div class="mega-menu-content">
+                          <h5>Subscribers</h5>
+                         <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                           the visual form of a document.</p>
+                      </div>
+                   </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/01.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Hubspot</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-4 shadow-none border mb-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start gap-3">
+                      <img src="{{asset('/../admin/assets/images/megaIcons/01.png')}}" width="40" alt="">
+                      <div class="mega-menu-content">
+                         <h5>Hubspot</h5>
+                         <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                           the visual form of a document.</p>
+                      </div>
+                   </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/11.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Templates</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-4 shadow-none border mb-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start gap-3">
+                      <img src="{{asset('/../admin/assets/images/megaIcons/11.png')}}" width="40" alt="">
+                      <div class="mega-menu-content">
+                         <h5>Templates</h5>
+                         <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                           the visual form of a document.</p>
+                      </div>
+                   </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/13.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Ebooks</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-4 shadow-none border mb-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start gap-3">
+                      <img src="{{asset('/../admin/assets/images/megaIcons/13.png')}}" width="40" alt="">
+                      <div class="mega-menu-content">
+                         <h5>Ebooks</h5>
+                         <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                           the visual form of a document.</p>
+                      </div>
+                   </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/12.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Sales</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-4 shadow-none border mb-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start gap-3">
+                      <img src="{{asset('/../admin/assets/images/megaIcons/12.png')}}" width="40" alt="">
+                      <div class="mega-menu-content">
+                         <h5>Sales</h5>
+                         <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                           the visual form of a document.</p>
+                      </div>
+                   </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/08.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Tools</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-4 shadow-none border mb-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start gap-3">
+                      <img src="{{asset('/../admin/assets/images/megaIcons/08.png')}}" width="40" alt="">
+                      <div class="mega-menu-content">
+                         <h5>Tools</h5>
+                         <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                           the visual form of a document.</p>
+                      </div>
+                   </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/09.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Academy</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-4 shadow-none border mb-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start gap-3">
+                      <img src="{{asset('/../admin/assets/images/megaIcons/09.png')}}" width="40" alt="">
+                      <div class="mega-menu-content">
+                         <h5>Academy</h5>
+                         <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
+                           the visual form of a document.</p>
+                      </div>
+                   </div>
                   </div>
                 </div>
-             </div><!--end row-->
-            </div>
+              </div>
+           </div><!--end row-->
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-auto-close="outside"
-            data-bs-toggle="dropdown" href="javascript:;"><i class="material-icons-outlined">apps</i></a>
-          <div class="dropdown-menu dropdown-menu-end dropdown-apps shadow-lg p-3">
-            <div class="border rounded-4 overflow-hidden">
-              <div class="row row-cols-3 g-0 border-bottom">
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/01.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Gmail</p>
-                    </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-auto-close="outside"
+          data-bs-toggle="dropdown" href="javascript:;"><i class="material-icons-outlined">apps</i></a>
+        <div class="dropdown-menu dropdown-menu-end dropdown-apps shadow-lg p-3">
+          <div class="border rounded-4 overflow-hidden">
+            <div class="row row-cols-3 g-0 border-bottom">
+              <div class="col border-end">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/01.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Gmail</p>
                   </div>
                 </div>
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/02.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Skype</p>
-                    </div>
+              </div>
+              <div class="col border-end">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/02.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Skype</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/03.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Slack</p>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/03.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Slack</p>
                   </div>
                 </div>
-              </div><!--end row-->
+              </div>
+            </div><!--end row-->
 
-              <div class="row row-cols-3 g-0 border-bottom">
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/04.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">YouTube</p>
-                    </div>
+            <div class="row row-cols-3 g-0 border-bottom">
+              <div class="col border-end">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/04.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">YouTube</p>
                   </div>
                 </div>
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/05.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Google</p>
-                    </div>
+              </div>
+              <div class="col border-end">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/05.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Google</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/06.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Instagram</p>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/06.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Instagram</p>
                   </div>
                 </div>
-              </div><!--end row-->
+              </div>
+            </div><!--end row-->
 
-              <div class="row row-cols-3 g-0 border-bottom">
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/07.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Spotify</p>
-                    </div>
+            <div class="row row-cols-3 g-0 border-bottom">
+              <div class="col border-end">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/07.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Spotify</p>
                   </div>
                 </div>
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/08.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Yahoo</p>
-                    </div>
+              </div>
+              <div class="col border-end">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/08.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Yahoo</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/09.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Facebook</p>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/09.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Facebook</p>
                   </div>
                 </div>
-              </div><!--end row-->
+              </div>
+            </div><!--end row-->
 
-              <div class="row row-cols-3 g-0">
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/10.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Figma</p>
-                    </div>
+            <div class="row row-cols-3 g-0">
+              <div class="col border-end">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/10.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Figma</p>
                   </div>
                 </div>
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/11.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Paypal</p>
-                    </div>
+              </div>
+              <div class="col border-end">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/11.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Paypal</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/12.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Photo</p>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                  <div class="app-icon">
+                    <img src="{{asset('/../admin/assets/images/apps/12.png')}}" width="36" alt="">
+                  </div>
+                  <div class="app-name">
+                    <p class="mb-0">Photo</p>
                   </div>
                 </div>
-              </div><!--end row-->
-            </div>
+              </div>
+            </div><!--end row-->
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" data-bs-auto-close="outside"
-            data-bs-toggle="dropdown" href="javascript:;"><i class="material-icons-outlined">notifications</i>
-            <span class="badge-notify">5</span>
-          </a>
-          <div class="dropdown-menu dropdown-notify dropdown-menu-end shadow">
-            <div class="px-3 py-1 d-flex align-items-center justify-content-between border-bottom">
-              <h5 class="notiy-title mb-0">Notifications</h5>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle dropdown-toggle-nocaret option" type="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="material-icons-outlined">
-                    more_vert
-                  </span>
-                </button>
-                <div class="dropdown-menu dropdown-option dropdown-menu-end shadow">
-                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                        class="material-icons-outlined fs-6">inventory_2</i>Archive All</a></div>
-                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                        class="material-icons-outlined fs-6">done_all</i>Mark all as read</a></div>
-                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                        class="material-icons-outlined fs-6">mic_off</i>Disable Notifications</a></div>
-                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                        class="material-icons-outlined fs-6">grade</i>What's new ?</a></div>
-                  <div>
-                    <hr class="dropdown-divider">
-                  </div>
-                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                        class="material-icons-outlined fs-6">leaderboard</i>Reports</a></div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" data-bs-auto-close="outside"
+          data-bs-toggle="dropdown" href="javascript:;"><i class="material-icons-outlined">notifications</i>
+          <span class="badge-notify">5</span>
+        </a>
+        <div class="dropdown-menu dropdown-notify dropdown-menu-end shadow">
+          <div class="px-3 py-1 d-flex align-items-center justify-content-between border-bottom">
+            <h5 class="notiy-title mb-0">Notifications</h5>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle dropdown-toggle-nocaret option" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-icons-outlined">
+                  more_vert
+                </span>
+              </button>
+              <div class="dropdown-menu dropdown-option dropdown-menu-end shadow">
+                <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                      class="material-icons-outlined fs-6">inventory_2</i>Archive All</a></div>
+                <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                      class="material-icons-outlined fs-6">done_all</i>Mark all as read</a></div>
+                <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                      class="material-icons-outlined fs-6">mic_off</i>Disable Notifications</a></div>
+                <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                      class="material-icons-outlined fs-6">grade</i>What's new ?</a></div>
+                <div>
+                  <hr class="dropdown-divider">
                 </div>
-              </div>
-            </div>
-            <div class="notify-list">
-              <div>
-                <a class="dropdown-item border-bottom py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="">
-                      <img src="assets/images/avatars/01.png" class="rounded-circle" width="45" height="45" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">Congratulations Jhon</h5>
-                      <p class="mb-0 notify-desc">Many congtars jhon. You have won the gifts.</p>
-                      <p class="mb-0 notify-time">Today</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a class="dropdown-item border-bottom py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="user-wrapper bg-primary text-primary bg-opacity-10">
-                      <span>RS</span>
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">New Account Created</h5>
-                      <p class="mb-0 notify-desc">From USA an user has registered.</p>
-                      <p class="mb-0 notify-time">Yesterday</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a class="dropdown-item border-bottom py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="">
-                      <img src="assets/images/apps/13.png" class="rounded-circle" width="45" height="45" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">Payment Recived</h5>
-                      <p class="mb-0 notify-desc">New payment recived successfully</p>
-                      <p class="mb-0 notify-time">1d ago</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a class="dropdown-item border-bottom py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="">
-                      <img src="assets/images/apps/14.png" class="rounded-circle" width="45" height="45" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">New Order Recived</h5>
-                      <p class="mb-0 notify-desc">Recived new order from michle</p>
-                      <p class="mb-0 notify-time">2:15 AM</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a class="dropdown-item border-bottom py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="">
-                      <img src="assets/images/avatars/06.png" class="rounded-circle" width="45" height="45" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">Congratulations Jhon</h5>
-                      <p class="mb-0 notify-desc">Many congtars jhon. You have won the gifts.</p>
-                      <p class="mb-0 notify-time">Today</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a class="dropdown-item py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="user-wrapper bg-danger text-danger bg-opacity-10">
-                      <span>PK</span>
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">New Account Created</h5>
-                      <p class="mb-0 notify-desc">From USA an user has registered.</p>
-                      <p class="mb-0 notify-time">Yesterday</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
+                <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                      class="material-icons-outlined fs-6">leaderboard</i>Reports</a></div>
               </div>
             </div>
           </div>
-        </li>
-        <li class="nav-item d-md-flex d-none">
-          <a class="nav-link position-relative" data-bs-toggle="offcanvas" href="#offcanvasCart"><i
-              class="material-icons-outlined">shopping_cart</i>
-            <span class="badge-notify">8</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="javascrpt:;" class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
-             <img src="assets/images/avatars/01.png" class="rounded-circle p-1 border" width="45" height="45" alt="">
-          </a>
-          <div class="dropdown-menu dropdown-user dropdown-menu-end shadow">
-            <a class="dropdown-item  gap-2 py-2" href="javascript:;">
-              <div class="text-center">
-                <img src="assets/images/avatars/01.png" class="rounded-circle p-1 shadow mb-3" width="90" height="90"
-                  alt="">
-                <h5 class="user-name mb-0 fw-bold">Hello, Jhon</h5>
-              </div>
-            </a>
-            <hr class="dropdown-divider">
-            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-              class="material-icons-outlined">person_outline</i>Profile</a>
-            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-              class="material-icons-outlined">local_bar</i>Setting</a>
-            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-              class="material-icons-outlined">dashboard</i>Dashboard</a>
-            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-              class="material-icons-outlined">account_balance</i>Earning</a>
-              <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                class="material-icons-outlined">cloud_download</i>Downloads</a>
-            <hr class="dropdown-divider">
-            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-            class="material-icons-outlined">power_settings_new</i>Logout</a>
+          <div class="notify-list">
+            <div>
+              <a class="dropdown-item border-bottom py-2" href="javascript:;">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="">
+                    <img src="{{asset('/../admin/assets/images/avatars/01.png')}}" class="rounded-circle" width="45" height="45" alt="">
+                  </div>
+                  <div class="">
+                    <h5 class="notify-title">Congratulations Jhon</h5>
+                    <p class="mb-0 notify-desc">Many congtars jhon. You have won the gifts.</p>
+                    <p class="mb-0 notify-time">Today</p>
+                  </div>
+                  <div class="notify-close position-absolute end-0 me-3">
+                    <i class="material-icons-outlined fs-6">close</i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a class="dropdown-item border-bottom py-2" href="javascript:;">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="user-wrapper bg-primary text-primary bg-opacity-10">
+                    <span>RS</span>
+                  </div>
+                  <div class="">
+                    <h5 class="notify-title">New Account Created</h5>
+                    <p class="mb-0 notify-desc">From USA an user has registered.</p>
+                    <p class="mb-0 notify-time">Yesterday</p>
+                  </div>
+                  <div class="notify-close position-absolute end-0 me-3">
+                    <i class="material-icons-outlined fs-6">close</i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a class="dropdown-item border-bottom py-2" href="javascript:;">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="">
+                    <img src="{{asset('/../admin/assets/images/apps/13.png')}}" class="rounded-circle" width="45" height="45" alt="">
+                  </div>
+                  <div class="">
+                    <h5 class="notify-title">Payment Recived</h5>
+                    <p class="mb-0 notify-desc">New payment recived successfully</p>
+                    <p class="mb-0 notify-time">1d ago</p>
+                  </div>
+                  <div class="notify-close position-absolute end-0 me-3">
+                    <i class="material-icons-outlined fs-6">close</i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a class="dropdown-item border-bottom py-2" href="javascript:;">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="">
+                    <img src="{{asset('/../admin/assets/images/apps/14.png')}}" class="rounded-circle" width="45" height="45" alt="">
+                  </div>
+                  <div class="">
+                    <h5 class="notify-title">New Order Recived</h5>
+                    <p class="mb-0 notify-desc">Recived new order from michle</p>
+                    <p class="mb-0 notify-time">2:15 AM</p>
+                  </div>
+                  <div class="notify-close position-absolute end-0 me-3">
+                    <i class="material-icons-outlined fs-6">close</i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a class="dropdown-item border-bottom py-2" href="javascript:;">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="">
+                    <img src="{{asset('/../admin/assets/images/avatars/06.png')}}" class="rounded-circle" width="45" height="45" alt="">
+                  </div>
+                  <div class="">
+                    <h5 class="notify-title">Congratulations Jhon</h5>
+                    <p class="mb-0 notify-desc">Many congtars jhon. You have won the gifts.</p>
+                    <p class="mb-0 notify-time">Today</p>
+                  </div>
+                  <div class="notify-close position-absolute end-0 me-3">
+                    <i class="material-icons-outlined fs-6">close</i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a class="dropdown-item py-2" href="javascript:;">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="user-wrapper bg-danger text-danger bg-opacity-10">
+                    <span>PK</span>
+                  </div>
+                  <div class="">
+                    <h5 class="notify-title">New Account Created</h5>
+                    <p class="mb-0 notify-desc">From USA an user has registered.</p>
+                    <p class="mb-0 notify-time">Yesterday</p>
+                  </div>
+                  <div class="notify-close position-absolute end-0 me-3">
+                    <i class="material-icons-outlined fs-6">close</i>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </li>
+      <li class="nav-item d-md-flex d-none">
+        <a class="nav-link position-relative" data-bs-toggle="offcanvas" href="#offcanvasCart"><i
+            class="material-icons-outlined">shopping_cart</i>
+          <span class="badge-notify">8</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="javascrpt:;" class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
+           <img src="{{asset('/../admin/assets/images/avatars/01.png')}}" class="rounded-circle p-1 border" width="45" height="45" alt="">
+        </a>
+        <div class="dropdown-menu dropdown-user dropdown-menu-end shadow">
+          <a class="dropdown-item  gap-2 py-2" href="javascript:;">
+            <div class="text-center">
+              <img src="{{asset('/../admin/assets/images/avatars/01.png')}}" class="rounded-circle p-1 shadow mb-3" width="90" height="90"
+                alt="">
+              <h5 class="user-name mb-0 fw-bold">Hello, Jhon</h5>
+            </div>
+          </a>
+          <hr class="dropdown-divider">
+          <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+            class="material-icons-outlined">person_outline</i>Profile</a>
+          <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+            class="material-icons-outlined">local_bar</i>Setting</a>
+          <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+            class="material-icons-outlined">dashboard</i>Dashboard</a>
+          <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+            class="material-icons-outlined">account_balance</i>Earning</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+              class="material-icons-outlined">cloud_download</i>Downloads</a>
+          <hr class="dropdown-divider">
+          <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+          class="material-icons-outlined">power_settings_new</i>Logout</a>
+        </div>
+      </li>
+    </ul>
 
-    </nav>
-  </header>
-  <!--end top header-->
+  </nav>
+</header>
+<!--end top header-->
 
 
   <!--start sidebar-->
   <aside class="sidebar-wrapper" data-simplebar="true">
     <div class="sidebar-header">
       <div class="logo-icon">
-        <img src="assets/images/logo-icon.png" class="logo-img" alt="">
+        <img src="{{asset('/../admin/assets/images/logo-icon.png')}}" class="logo-img" alt="">
       </div>
       <div class="logo-name flex-grow-1">
         <h5 class="mb-0">Maxton</h5>
@@ -649,9 +649,9 @@
               <div class="menu-title">Dashboard</div>
             </a>
             <ul>
-              <li><a href="index.html"><i class="material-icons-outlined">arrow_right</i>Analysis</a>
+              <li><a href="{{ url ('admin/dashboard') }}"><i class="material-icons-outlined">arrow_right</i>Analysis</a>
               </li>
-              <li><a href="index2.html"><i class="material-icons-outlined">arrow_right</i>eCommerce</a>
+              <li><a href="{{ url ('admin/dashboard-ecommerce') }}"><i class="material-icons-outlined">arrow_right</i>eCommerce</a>
               </li>
             </ul>
           </li>
@@ -662,9 +662,9 @@
               <div class="menu-title">Widgets</div>
             </a>
             <ul>
-              <li><a href="widgets-data.html"><i class="material-icons-outlined">arrow_right</i>Data</a>
+              <li><a href="{{ url ('admin/widgets-data')}}"><i class="material-icons-outlined">arrow_right</i>Data</a>
               </li>
-              <li><a href="widgets-static.html"><i class="material-icons-outlined">arrow_right</i>Static</a>
+              <li><a href="{{ url ('admin/widgets-static')}}"><i class="material-icons-outlined">arrow_right</i>Static</a>
               </li>
             </ul>
           </li>
@@ -675,23 +675,23 @@
               <div class="menu-title">Apps</div>
             </a>
             <ul>
-              <li><a href="app-emailbox.html"><i class="material-icons-outlined">arrow_right</i>Email Box</a>
+              <li><a href="{{ url ('admin/app-emailbox')}}"><i class="material-icons-outlined">arrow_right</i>Email Box</a>
               </li>
-              <li><a href="app-emailread.html"><i class="material-icons-outlined">arrow_right</i>Email Read</a>
+              <li><a href="{{ url ('admin/app-emailread')}}"><i class="material-icons-outlined">arrow_right</i>Email Read</a>
               </li>
-              <li><a href="app-chat-box.html"><i class="material-icons-outlined">arrow_right</i>Chat</a>
+              <li><a href="{{ url ('admin/app-chat-box')}}"><i class="material-icons-outlined">arrow_right</i>Chat</a>
               </li>
-              <li><a href="app-fullcalender.html"><i class="material-icons-outlined">arrow_right</i>Calendar</a>
+              <li><a href="{{ url ('admin/app-fullcalender')}}"><i class="material-icons-outlined">arrow_right</i>Calendar</a>
               </li>
-              <li><a href="app-to-do.html"><i class="material-icons-outlined">arrow_right</i>To do</a>
+              <li><a href="{{ url ('admin/app-to-do')}}"><i class="material-icons-outlined">arrow_right</i>To do</a>
               </li>
-              <li><a href="app-invoice.html"><i class="material-icons-outlined">arrow_right</i>Invoice</a>
+              <li><a href="{{ url ('admin/app-invoice')}}"><i class="material-icons-outlined">arrow_right</i>Invoice</a>
               </li>
             </ul>
           </li>
           <li class="menu-label">UI Elements</li>
           <li>
-            <a href="cards.html">
+            <a href="{{ url ('admin/cards')}}">
               <div class="parent-icon"><i class="material-icons-outlined">inventory_2</i>
               </div>
               <div class="menu-title">Cards</div>
@@ -705,17 +705,17 @@
               <div class="menu-title">eCommerce</div>
             </a>
             <ul>
-              <li><a href="ecommerce-add-product.html"><i class="material-icons-outlined">arrow_right</i>Add Product</a>
+              <li><a href="{{ url ('admin/ecommerce-add-product')}}"><i class="material-icons-outlined">arrow_right</i>Add Product</a>
               </li>
-              <li><a href="ecommerce-products.html"><i class="material-icons-outlined">arrow_right</i>Products</a>
+              <li><a href="{{ url ('admin/ecommerce-products')}}"><i class="material-icons-outlined">arrow_right</i>Products</a>
               </li>
-              <li><a href="ecommerce-customers.html"><i class="material-icons-outlined">arrow_right</i>Customers</a>
+              <li><a href="{{ url ('admin/ecommerce-customers')}}"><i class="material-icons-outlined">arrow_right</i>Customers</a>
               </li>
-              <li><a href="ecommerce-customer-details.html"><i class="material-icons-outlined">arrow_right</i>Customer Details</a>
+              <li><a href="{{ url ('admin/ecommerce-customer-details')}}"><i class="material-icons-outlined">arrow_right</i>Customer Details</a>
               </li>
-              <li><a href="ecommerce-orders.html"><i class="material-icons-outlined">arrow_right</i>Orders</a>
+              <li><a href="{{ url ('admin/ecommerce-orders')}}"><i class="material-icons-outlined">arrow_right</i>Orders</a>
               </li>
-              <li><a href="ecommerce-order-details.html"><i class="material-icons-outlined">arrow_right</i>Order Details</a>
+              <li><a href="{{ url ('admin/ecommerce-order-details')}}"><i class="material-icons-outlined">arrow_right</i>Order Details</a>
               </li>
             </ul>     
           </li>
@@ -726,43 +726,43 @@
               <div class="menu-title">Components</div>
             </a>
             <ul>
-              <li><a href="component-alerts.html"><i class="material-icons-outlined">arrow_right</i>Alerts</a>
+              <li><a href="{{ url ('admin/component-alerts')}}"><i class="material-icons-outlined">arrow_right</i>Alerts</a>
               </li>
-              <li><a href="component-accordions.html"><i class="material-icons-outlined">arrow_right</i>Accordions</a>
+              <li><a href="{{ url ('admin/component-accordions')}}"><i class="material-icons-outlined">arrow_right</i>Accordions</a>
               </li>
-              <li><a href="component-badges.html"><i class="material-icons-outlined">arrow_right</i>Badges</a>
+              <li><a href="{{ url ('admin/component-badges')}}"><i class="material-icons-outlined">arrow_right</i>Badges</a>
               </li>
-              <li><a href="component-buttons.html"><i class="material-icons-outlined">arrow_right</i>Buttons</a>
+              <li><a href="{{ url ('admin/component-buttons')}}"><i class="material-icons-outlined">arrow_right</i>Buttons</a>
               </li>
-              <li><a href="component-carousels.html"><i class="material-icons-outlined">arrow_right</i>Carousels</a>
+              <li><a href="{{ url ('admin/component-carousels')}}"><i class="material-icons-outlined">arrow_right</i>Carousels</a>
               </li>
-              <li><a href="component-media-object.html"><i class="material-icons-outlined">arrow_right</i>Media
+              <li><a href="{{ url ('admin/component-media-object')}}"><i class="material-icons-outlined">arrow_right</i>Media
                   Objects</a>
               </li>
-              <li><a href="component-modals.html"><i class="material-icons-outlined">arrow_right</i>Modals</a>
+              <li><a href="{{ url ('admin/component-modals')}}"><i class="material-icons-outlined">arrow_right</i>Modals</a>
               </li>
-              <li><a href="component-navs-tabs.html"><i class="material-icons-outlined">arrow_right</i>Navs & Tabs</a>
+              <li><a href="{{ url ('admin/component-navs-tabs')}}"><i class="material-icons-outlined">arrow_right</i>Navs & Tabs</a>
               </li>
-              <li><a href="component-navbar.html"><i class="material-icons-outlined">arrow_right</i>Navbar</a>
+              <li><a href="{{ url ('admin/component-navbar')}}"><i class="material-icons-outlined">arrow_right</i>Navbar</a>
               </li>
-              <li><a href="component-paginations.html"><i class="material-icons-outlined">arrow_right</i>Pagination</a>
+              <li><a href="{{ url ('admin/component-paginations')}}"><i class="material-icons-outlined">arrow_right</i>Pagination</a>
               </li>
-              <li><a href="component-popovers-tooltips.html"><i class="material-icons-outlined">arrow_right</i>Popovers
+              <li><a href="{{ url ('admin/component-popovers-tooltips')}}"><i class="material-icons-outlined">arrow_right</i>Popovers
                   & Tooltips</a>    
               </li>
-              <li><a href="component-progress-bars.html"><i class="material-icons-outlined">arrow_right</i>Progress</a>
+              <li><a href="{{ url ('admin/component-progress-bars')}}"><i class="material-icons-outlined">arrow_right</i>Progress</a>
               </li>
-              <li><a href="component-spinners.html"><i class="material-icons-outlined">arrow_right</i>Spinners</a>
+              <li><a href="{{ url ('admin/component-spinners')}}"><i class="material-icons-outlined">arrow_right</i>Spinners</a>
               </li>
-              <li><a href="component-notifications.html"><i
+              <li><a href="{{ url ('admin/component-notifications')}}"><i
                     class="material-icons-outlined">arrow_right</i>Notifications</a>
               </li>
-              <li><a href="component-avtars-chips.html"><i class="material-icons-outlined">arrow_right</i>Avatrs &
+              <li><a href="{{ url ('admin/component-avtars-chips')}}"><i class="material-icons-outlined">arrow_right</i>Avatrs &
                   Chips</a>
               </li>
-              <li><a href="component-typography.html"><i class="material-icons-outlined">arrow_right</i>Typography</a>
+              <li><a href="{{ url ('admin/component-typography')}}"><i class="material-icons-outlined">arrow_right</i>Typography</a>
                </li>
-               <li><a href="component-text-utilities.html"><i class="material-icons-outlined">arrow_right</i>Utilities</a>
+               <li><a href="{{ url ('admin/component-text-utilities')}}"><i class="material-icons-outlined">arrow_right</i>Utilities</a>
                </li>
             </ul>
           </li>
@@ -773,11 +773,11 @@
               <div class="menu-title">Icons</div>
             </a>
             <ul>
-              <li><a href="icons-line-icons.html"><i class="material-icons-outlined">arrow_right</i>Line Icons</a>
+              <li><a href="{{ url ('admin/icons-line-icons')}}"><i class="material-icons-outlined">arrow_right</i>Line Icons</a>
               </li>
-              <li><a href="icons-boxicons.html"><i class="material-icons-outlined">arrow_right</i>Boxicons</a>
+              <li><a href="{{ url ('admin/icons-boxicons')}}"><i class="material-icons-outlined">arrow_right</i>Boxicons</a>
               </li>
-              <li><a href="icons-feather-icons.html"><i class="material-icons-outlined">arrow_right</i>Feather
+              <li><a href="{{ url ('admin/icons-feather-icons')}}"><i class="material-icons-outlined">arrow_right</i>Feather
                   Icons</a>
               </li>
             </ul>
@@ -790,27 +790,27 @@
               <div class="menu-title">Forms</div>
             </a>
             <ul>
-              <li><a href="form-elements.html"><i class="material-icons-outlined">arrow_right</i>Form Elements</a>
+              <li><a href="{{ url ('admin/form-elements')}}"><i class="material-icons-outlined">arrow_right</i>Form Elements</a>
               </li>
-              <li><a href="form-input-group.html"><i class="material-icons-outlined">arrow_right</i>Input Groups</a>
+              <li><a href="{{ url ('admin/form-input-group')}}"><i class="material-icons-outlined">arrow_right</i>Input Groups</a>
               </li>
-              <li><a href="form-radios-and-checkboxes.html"><i class="material-icons-outlined">arrow_right</i>Radios &
+              <li><a href="{{ url ('admin/form-radios-and-checkboxes')}}"><i class="material-icons-outlined">arrow_right</i>Radios &
                   Checkboxes</a>
               </li>
-              <li><a href="form-layouts.html"><i class="material-icons-outlined">arrow_right</i>Forms Layouts</a>
+              <li><a href="{{ url ('admin/form-layouts')}}"><i class="material-icons-outlined">arrow_right</i>Forms Layouts</a>
               </li>
-              <li><a href="form-validations.html"><i class="material-icons-outlined">arrow_right</i>Form Validation</a>
+              <li><a href="{{ url ('admin/form-validations')}}"><i class="material-icons-outlined">arrow_right</i>Form Validation</a>
               </li>
-              <li><a href="form-wizard.html"><i class="material-icons-outlined">arrow_right</i>Form Wizard</a>
+              <li><a href="{{ url ('admin/form-wizard')}}"><i class="material-icons-outlined">arrow_right</i>Form Wizard</a>
               </li>
-              <li><a href="form-file-upload.html"><i class="material-icons-outlined">arrow_right</i>File Upload</a>
+              <li><a href="{{ url ('admin/form-file-upload')}}"><i class="material-icons-outlined">arrow_right</i>File Upload</a>
               </li>
-              <li><a href="form-date-time-pickes.html"><i class="material-icons-outlined">arrow_right</i>Date
+              <li><a href="{{ url ('admin/form-date-time-pickes')}}"><i class="material-icons-outlined">arrow_right</i>Date
                   Pickers</a>
               </li>
-              <li><a href="form-select2.html"><i class="material-icons-outlined">arrow_right</i>Select2</a>
+              <li><a href="{{ url ('admin/form-select2')}}"><i class="material-icons-outlined">arrow_right</i>Select2</a>
               </li>
-              <li><a href="form-repeater.html"><i class="material-icons-outlined">arrow_right</i>Form Repeater</a>
+              <li><a href="{{ url ('admin/form-repeater')}}"><i class="material-icons-outlined">arrow_right</i>Form Repeater</a>
               </li>
             </ul>
           </li>
@@ -821,9 +821,9 @@
               <div class="menu-title">Tables</div>
             </a>
             <ul>
-              <li><a href="table-basic-table.html"><i class="material-icons-outlined">arrow_right</i>Basic Table</a>
+              <li><a href="{{ url ('admin/table-basic-table')}}"><i class="material-icons-outlined">arrow_right</i>Basic Table</a>
               </li>
-              <li><a href="table-datatable.html"><i class="material-icons-outlined">arrow_right</i>Data Table</a>
+              <li><a href="{{ url ('admin/table-datatable')}}"><i class="material-icons-outlined">arrow_right</i>Data Table</a>
               </li>
             </ul>
           </li>
@@ -837,39 +837,39 @@
             <ul>
               <li><a class="has-arrow" href="javascript:;"><i class="material-icons-outlined">arrow_right</i>Basic</a>
                 <ul>
-                  <li><a href="auth-basic-login.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Login</a></li>
-                  <li><a href="auth-basic-register.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Register</a></li>
-                  <li><a href="auth-basic-forgot-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
-                  <li><a href="auth-basic-reset-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
+                  <li><a href="{{ url ('admin/auth-basic-login')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Login</a></li>
+                  <li><a href="{{ url ('admin/auth-basic-register')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Register</a></li>
+                  <li><a href="{{ url ('admin/auth-basic-forgot-password')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
+                  <li><a href="{{ url ('admin/auth-basic-reset-password')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
                 </ul>
               </li>
               <li><a class="has-arrow" href="javascript:;"><i class="material-icons-outlined">arrow_right</i>Cover</a>
                 <ul>
-                  <li><a href="auth-cover-login.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Login</a></li>
-                  <li><a href="auth-cover-register.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Register</a></li>
-                  <li><a href="auth-cover-forgot-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
-                  <li><a href="auth-cover-reset-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
+                  <li><a href="{{ url ('admin/auth-cover-login')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Login</a></li>
+                  <li><a href="{{ url ('admin/auth-cover-register')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Register</a></li>
+                  <li><a href="{{ url ('admin/auth-cover-forgot-password')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
+                  <li><a href="{{ url ('admin/auth-cover-reset-password')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
                 </ul>
               </li>
               <li><a class="has-arrow" href="javascript:;"><i class="material-icons-outlined">arrow_right</i>Boxed</a>
                   <ul>
-                    <li><a href="auth-boxed-login.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Login</a></li>
-                    <li><a href="auth-boxed-register.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Register</a></li>
-                    <li><a href="auth-boxed-forgot-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
-                    <li><a href="auth-boxed-reset-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
+                    <li><a href="{{ url ('admin/auth-boxed-login')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Login</a></li>
+                    <li><a href="{{ url ('admin/auth-boxed-register')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Register</a></li>
+                    <li><a href="{{ url ('admin/auth-boxed-forgot-password')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
+                    <li><a href="{{ url ('admin/auth-boxed-reset-password')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
                   </ul>
               </li>
             </ul>
           </li>
           <li>
-            <a href="user-profile.html">
+            <a href="{{ url ('admin/user-profile')}}">
               <div class="parent-icon"><i class="material-icons-outlined">person</i>
               </div>
               <div class="menu-title">User Profile</div>
             </a>
           </li>
           <li>
-            <a href="timeline.html">
+            <a href="{{ url ('admin/timeline')}}">
               <div class="parent-icon"><i class="material-icons-outlined">join_right</i>
               </div>
               <div class="menu-title">Timeline</div>
@@ -882,29 +882,29 @@
               <div class="menu-title">Pages</div>
             </a>
             <ul>
-              <li><a href="pages-error-404.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>404
+              <li><a href="{{ url ('admin/pages-error-404')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>404
                   Error</a>
               </li>
-              <li><a href="pages-error-505.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>505
+              <li><a href="{{ url ('admin/pages-error-505')}}" target="_blank"><i class="material-icons-outlined">arrow_right</i>505
                   Error</a>
               </li>
-              <li><a href="pages-coming-soon.html" target="_blank"><i
+              <li><a href="{{ url ('admin/pages-coming-soon')}}" target="_blank"><i
                     class="material-icons-outlined">arrow_right</i>Coming Soon</a>
               </li>
-              <li><a href="pages-starter-page.html" target="_blank"><i
+              <li><a href="{{ url ('admin/pages-starter-page')}}" target="_blank"><i
                     class="material-icons-outlined">arrow_right</i>Blank Page</a> 
               </li>
             </ul>
           </li>
           <li>
-            <a href="faq.html">
+            <a href="{{ url ('admin/faq')}}">
               <div class="parent-icon"><i class="material-icons-outlined">help_outline</i>
               </div>
               <div class="menu-title">FAQ</div>
             </a>
           </li>
           <li>
-            <a href="pricing-table.html">
+            <a href="{{ url ('admin/pricing-table')}}">
               <div class="parent-icon"><i class="material-icons-outlined">sports_football</i>
               </div>
               <div class="menu-title">Pricing</div>
@@ -918,9 +918,9 @@
               <div class="menu-title">Charts</div>
             </a>
             <ul>
-              <li><a href="charts-apex-chart.html"><i class="material-icons-outlined">arrow_right</i>Apex</a>
+              <li><a href="{{ url ('admin/charts-apex-chart')}}"><i class="material-icons-outlined">arrow_right</i>Apex</a>
               </li>
-              <li><a href="charts-chartjs.html"><i class="material-icons-outlined">arrow_right</i>Chartjs</a>
+              <li><a href="{{ url ('admin/charts-chartjs')}}"><i class="material-icons-outlined">arrow_right</i>Chartjs</a>
               </li>   
             </ul>
           </li>
@@ -931,9 +931,9 @@
               <div class="menu-title">Maps</div>
             </a>
             <ul>
-              <li><a href="map-google-maps.html"><i class="material-icons-outlined">arrow_right</i>Google Maps</a>
+              <li><a href="{{ url ('admin/map-google-maps')}}"><i class="material-icons-outlined">arrow_right</i>Google Maps</a>
               </li>
-              <li><a href="map-vector-maps.html"><i class="material-icons-outlined">arrow_right</i>Vector Maps</a>
+              <li><a href="{{ url ('admin/map-vector-maps')}}"><i class="material-icons-outlined">arrow_right</i>Vector Maps</a>
               </li>
             </ul>
           </li>
@@ -977,6 +977,7 @@
         <!--end navigation-->
     </div>
   </aside>
+<!--end sidebar-->
 <!--end sidebar-->
 
 
@@ -1073,7 +1074,7 @@
       <div class="order-list">
         <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div class="order-img">
-            <img src="assets/images/orders/01.png" class="img-fluid rounded-3" width="75" alt="">
+            <img src="{{asset('/../admin/assets/images/orders/01.png')}}" class="img-fluid rounded-3" width="75" alt="">
           </div>
           <div class="order-info flex-grow-1">
             <h5 class="mb-1 order-title">White Men Shoes</h5>
@@ -1087,7 +1088,7 @@
 
         <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div class="order-img">
-            <img src="assets/images/orders/02.png" class="img-fluid rounded-3" width="75" alt="">
+            <img src="{{asset('/../admin/assets/images/orders/02.png')}}" class="img-fluid rounded-3" width="75" alt="">
           </div>
           <div class="order-info flex-grow-1">
             <h5 class="mb-1 order-title">Red Airpods</h5>
@@ -1101,7 +1102,7 @@
 
         <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div class="order-img">
-            <img src="assets/images/orders/03.png" class="img-fluid rounded-3" width="75" alt="">
+            <img src="{{asset('/../admin/assets/images/orders/03.png')}}" class="img-fluid rounded-3" width="75" alt="">
           </div>
           <div class="order-info flex-grow-1">
             <h5 class="mb-1 order-title">Men Polo Tshirt</h5>
@@ -1115,7 +1116,7 @@
 
         <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div class="order-img">
-            <img src="assets/images/orders/04.png" class="img-fluid rounded-3" width="75" alt="">
+            <img src="{{asset('/../admin/assets/images/orders/04.png')}}" class="img-fluid rounded-3" width="75" alt="">
           </div>
           <div class="order-info flex-grow-1">
             <h5 class="mb-1 order-title">Blue Jeans Casual</h5>
@@ -1129,7 +1130,7 @@
 
         <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div class="order-img">
-            <img src="assets/images/orders/05.png" class="img-fluid rounded-3" width="75" alt="">
+            <img src="{{asset('/../admin/assets/images/orders/05.png')}}" class="img-fluid rounded-3" width="75" alt="">
           </div>
           <div class="order-info flex-grow-1">
             <h5 class="mb-1 order-title">Fancy Shirts</h5>
@@ -1143,7 +1144,7 @@
 
         <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div class="order-img">
-            <img src="assets/images/orders/06.png" class="img-fluid rounded-3" width="75" alt="">
+            <img src="{{asset('/../admin/assets/images/orders/06.png')}}" class="img-fluid rounded-3" width="75" alt="">
           </div>
           <div class="order-info flex-grow-1">
             <h5 class="mb-1 order-title">Home Sofa Set </h5>
@@ -1157,7 +1158,7 @@
 
         <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div class="order-img">
-            <img src="assets/images/orders/07.png" class="img-fluid rounded-3" width="75" alt="">
+            <img src="{{asset('/../admin/assets/images/orders/07.png')}}" class="img-fluid rounded-3" width="75" alt="">
           </div>
           <div class="order-info flex-grow-1">
             <h5 class="mb-1 order-title">Black iPhone</h5>
@@ -1171,7 +1172,7 @@
 
         <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
           <div class="order-img">
-            <img src="assets/images/orders/08.png" class="img-fluid rounded-3" width="75" alt="">
+            <img src="{{asset('/../admin/assets/images/orders/08.png')}}" class="img-fluid rounded-3" width="75" alt="">
           </div>
           <div class="order-info flex-grow-1">
             <h5 class="mb-1 order-title">Goldan Watch</h5>
@@ -1256,13 +1257,13 @@
   <!--start switcher-->
 
   <!--bootstrap js-->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="{{asset('/../admin/assets/js/bootstrap.bundle.min.js')}}"></script>
 
   <!--plugins-->
-  <script src="assets/js/jquery.min.js"></script>
+  <script src="{{asset('/../admin/assets/js/jquery.min.js')}}"></script>
   <!--plugins-->
-  <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-  <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
+  <script src="{{asset('/../admin/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
+  <script src="{{asset('/../admin/assets/plugins/metismenu/metisMenu.min.js')}}"></script>
   <script>
     // to do list 
      var todos = [{
@@ -1355,9 +1356,8 @@
       RenderAllTodos();
     }
   </script>
-  <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
+  <script src="{{asset('/../admin/assets/plugins/simplebar/js/simplebar.min.js')}}"></script>
+  <script src="{{asset('/../admin/assets/js/main.js')}}"></script>
 
 </body>
 

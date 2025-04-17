@@ -92,11 +92,11 @@ class CompanyController extends Controller
     }
     public function chartsapexchart()
     {
-        return view ('company/chart-apex-chart');
+        return view ('company/charts-apex-chart');
     }
     public function chartsjs()
     {
-        return view ('company/chart-chartjs');
+        return view ('company/charts-chartjs');
     }
     public function componentaccordions()
     {
