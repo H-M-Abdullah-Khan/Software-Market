@@ -127,8 +127,8 @@
                                             @if (Route::has('login'))
                                             @auth
                                             <li>
-                                                <a class="tf-button style-1"
-                                                    href="{{ url('/dashboard') }}"  
+                                                <a class=""
+                                                    href="{{ url('dashboard') }}"  
                                                 >
                                                     Dashboard
                                                 </a>

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\SoftwareProductController;
 use App\Models\User;
+use App\Models\SoftwareProduct;
 
 use Illuminate\Http\Request;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
@@ -177,7 +179,8 @@ class AdminController extends Controller
     }
     public function ecommerceaddproduct()
     {
-        return view('admin/ecommerce-add-product');
+        $products = SoftwareProduct::all();
+        return view('admin/ecommerce-add-product', compact('products'));
     }
     public function ecommercecustomerdetail()
     {
@@ -197,7 +200,8 @@ class AdminController extends Controller
     }
     public function ecommerceproduct()
     {
-        return view('admin/ecommerce-products');
+        $products = SoftwareProduct::all();
+        return view('admin/ecommerce-products', compact('products'));
     }
     public function faq()
     {

@@ -350,6 +350,7 @@ Route::get('/upcoming', [HomeController::class, 'upcoming']);
 Route::get('/nft-detail-3', [HomeController::class, 'nft3']);
 Route::get('/nft-detail-2', [HomeController::class, 'nft2']);
 Route::get('/nft-detail-4', [HomeController::class, 'nft4']);
+Route::get('/explore-1', [SoftwareProductController::class, 'Search'])->name('products.Search');
 
 
 

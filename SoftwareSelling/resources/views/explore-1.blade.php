@@ -348,6 +348,29 @@
                 </div>
             </div>
 
+            {{-- Product Search & Filter --}}
+            <div class="themesflat-container">
+                <div class="soft-left">
+            <form method="GET" action="{{ route('products.Search') }}" class="search-form w-100">
+                <input type="text" name="search" placeholder="Search by name" value="{{ request('search') }}" type="search" class="search-field style-1 __web-inspector-hide-shortcut__" title="Search for">
+                <button class="search search-submit" type="submit" title="Search">
+                    <i class="icon-search"></i>
+                </button>
+                {{-- <select name="category">
+                    <option value="">All Categories</option>
+                    @foreach ($categories as $cat)
+                        <option value="{{ $cat->id }}" {{ request('category') == $cat->id ? 'selected' : '' }}>
+                            {{ $cat->name }}
+                        </option>
+                    @endforeach
+                </select> --}}
+            
+                <input type="number" name="min_price" placeholder="Min Price" value="{{ request('min_price') }}">
+                <input type="number" name="max_price" placeholder="Max Price" value="{{ request('max_price') }}">
+            
+                
+            </form>
+        </div>
             <div class="tf-section-2 discover-item loadmore-12-item">
                 <div class="themesflat-container">
                     <div class="row">
@@ -564,7 +587,9 @@
                                 </div>
                             </div>
                         </div>
+
                         {{-- Card Start --}}
+                        @if($products->count())
                         @foreach ($products as $product)
                             <div data-wow-delay="0s" class="wow fadeInUp fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                 <div class="tf-card-box style-1">
@@ -614,8 +639,12 @@
                                 </div>
                             </div>
                         @endforeach
+                        @else
+                        <p>No products found.</p>
+                        @endif 
                         {{-- Card End --}}
-                        <div data-wow-delay="0.1s" class="wow fadeInUp fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        
+                        {{-- <div data-wow-delay="0.1s" class="wow fadeInUp fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div class="tf-card-box style-1">
                                 <div class="card-media">
                                     <a href="#">
@@ -1079,7 +1108,7 @@
                                     <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="col-md-12 load-more">
                             <a id="button-loadmore" class="tf-button-loadmore">
                                 <span>Load More</span>

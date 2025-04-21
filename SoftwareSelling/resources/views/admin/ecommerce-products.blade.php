@@ -30,6 +30,11 @@
   <link href="sass/semi-dark.css" rel="stylesheet">
   <link href="sass/bordered-theme.css" rel="stylesheet">
   <link href="sass/responsive.css" rel="stylesheet">
+  <style>
+.m_title::first-letter {
+  text-transform: uppercase
+}
+  </style>
 
 </head>
 
@@ -1087,9 +1092,6 @@
               <table class="table align-middle">
                 <thead class="table-light">
                   <tr>
-                    <th>
-                      <input class="form-check-input" type="checkbox">
-                    </th>
                     <th>Product Name</th>
                     <th>Price</th>
                     <th>Category</th>
@@ -1101,22 +1103,82 @@
                   </tr>
                 </thead>
                 <tbody>
+                                          {{-- Card Start --}}
+                                          @if($products->count())
+                                          @foreach ($products as $product)
+                                              <div data-wow-delay="0s" class="wow fadeInUp fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                                                  <div class="tf-card-box style-1">
+                                                      <div class="card-media">
+                                                          <a href="{{ route('software_products.show', $product->id) }}">
+                                                              @if (is_array($product->screenshots) && count($product->screenshots) > 0)
+                                                                  <img src="{{ asset('storage/' . $product->screenshots[0]) }}"
+                                                                      alt="{{ $product->name }}">
+                                                              @else
+                                                                  <img src="{{ asset('/../template/assets/images/box-item/default-placeholder.png') }}"
+                                                                      alt="No image">
+                                                              @endif
+                                                          </a>
+                                                          <span class="wishlist-button icon-heart"></span>
+                                                          <div class="button-place-bid">
+                                                              <a href="{{ route('software_products.show', $product->id) }}"
+                                                                  class="tf-button">
+                                                                  <span>{{ $product->pricing_type === 'free' ? 'Download' : 'Buy Now' }}</span>
+                                                              </a>
+                                                          </div>
+                                                      </div>
+                                                      <h5 class="name">
+                                                          <a href="{{ route('software_products.show', $product->id) }}">
+                                                              {{ Str::limit($product->name, 30) }}
+                                                          </a>
+                                                      </h5>
+                                                      <div class="author flex items-center">
+                                                          <div class="avatar">
+                                                              <img src="{{ asset('/../template/assets/images/avatar/avatar-box-01.jpg') }}"
+                                                                  alt="Creator Avatar">
+                                                          </div>
+                                                          <div class="info">
+                                                              <span>Created by:</span>
+                                                              <h6>
+                                                                  <a href="#">{{ $product->user->name ?? 'Unknown' }}</a>
+                                                              </h6>
+                                                          </div>
+                                                      </div>
+                                                      <div class="divider"></div>
+                                                      <div class="meta-info flex items-center justify-between">
+                                                          <span class="text-bid">Price</span>
+                                                          <h6 class="price gem">
+                                                              <i class="icon-gem"></i>
+                                                              {{ $product->pricing_type === 'free' ? 'Free' : number_format($product->price, 2) }}
+                                                          </h6>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          @endforeach
+                                          @else
+                                          <p>No products found.</p>
+                                          @endif 
+                                          {{-- Card End --}}
                   <tr>
-                    <td>
-                      <input class="form-check-input" type="checkbox">
-                    </td>
                     <td>
                       <div class="d-flex align-items-center gap-3">
                         <div class="product-box">
                           <img src="assets/images/orders/01.png" width="70" class="rounded-3" alt="">
                         </div>
                         <div class="product-info">
-                          <a href="javascript:;" class="product-title">Women Pink Floral Printed</a>
-                          <p class="mb-0 product-category">Category : Fashion</p>
+                          <h5 class="name">
+                            <a style="color: white; text-transform: capitalize;" href="{{ route('software_products.show', $product->id) }}">
+                                {{ Str::limit($product->name, 30) }}
+                            </a>
+                        </h5>
                         </div>
                       </div>
                     </td>
-                    <td>$49</td>
+                    <td>                                                      <div class="meta-info flex items-center justify-between">
+                      <h6 class="price gem">
+                          <i class="icon-gem"></i>
+                          {{ $product->pricing_type === 'free' ? 'Free' : number_format($product->price, 2) }}
+                      </h6>
+                  </div></td>
                     <td>Palazzos</td>
                     <td>
                       <div class="product-tags">
@@ -1152,7 +1214,7 @@
                       </div>
                     </td>
                   </tr>
-                  <tr>
+                  {{-- <tr>
                     <td>
                       <input class="form-check-input" type="checkbox">
                     </td>
@@ -1534,7 +1596,7 @@
                         <a href="javascript:;" class="btn-tags">Mobiles</a>
                         <a href="javascript:;" class="btn-tags">Wallets</a>
                       </div>
-                    </td>
+                    </td> 
                     <td>
                       <div class="product-rating">
                         <i class="bi bi-star-fill text-warning me-2"></i><span>5.0</span>
@@ -1559,7 +1621,7 @@
                         </ul>
                       </div>
                     </td>
-                  </tr>
+                  </tr> --}}
 
                 </tbody>
               </table>

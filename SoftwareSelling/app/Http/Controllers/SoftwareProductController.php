@@ -11,12 +11,17 @@ class SoftwareProductController extends Controller
     public function index()
     {
         $products = SoftwareProduct::all();
-        return view('software_products.index', compact('products'));
+        return view('explore-1', compact('products'));
     }
-
+    public function index2()
+    {
+        $products = SoftwareProduct::all();
+        return view('admin/ecommerce-products', compact('products'));
+    }
     public function create()
     {
-        return view('software_products.create');
+        $products = SoftwareProduct::all();
+        return view('admin/ecommerce-add-product', compact('products'));
     }
 
     public function store(Request $request)
@@ -26,7 +31,7 @@ class SoftwareProductController extends Controller
             'description' => 'nullable|string',
             'category' => 'nullable|string',
             'pricing_type' => 'required|in:free,paid',
-            'price' => 'nullable|numeric',
+            'price' => 'nullable|bignit',
             'main_file' => 'required|file',
             'screenshots' => 'nullable|array',
             'demo_url' => 'nullable|url',
@@ -83,4 +88,33 @@ class SoftwareProductController extends Controller
         $softwareProduct->delete();
         return redirect()->route('software_products.index')->with('success', 'Software deleted.');
     }
+
+    public function Search(Request $request)
+{
+    $query = SoftwareProduct::query();
+
+    // Search by name
+    if ($request->filled('search')) {
+        $query->where('name', 'like', '%' . $request->search . '%');
+    }
+
+    // Filter by category
+    if ($request->filled('category')) {
+        $query->where('category_id', $request->category);
+    }
+
+    // Filter by price range
+    if ($request->filled('min_price')) {
+        $query->where('price', '>=', $request->min_price);
+    }
+
+    if ($request->filled('max_price')) {
+        $query->where('price', '<=', $request->max_price);
+    }
+
+    // $products = $query->get(); // or paginate() if needed
+    // $categories = category::all(); // for dropdown
+    $products = $query->get();
+    return view('explore-1', compact('products'));
+}
 }
