@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\SoftwareProduct;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Notifications\SoftwareStatusNotification;
+
 
 class SoftwareProductController extends Controller
 {
@@ -100,7 +102,7 @@ class SoftwareProductController extends Controller
 
     // Filter by category
     if ($request->filled('category')) {
-        $query->where('category_id', $request->category);
+        $query->where('category', $request->category);
     }
 
     // Filter by price range
@@ -108,7 +110,7 @@ class SoftwareProductController extends Controller
         $query->where('price', '>=', $request->min_price);
     }
 
-    if ($request->filled('max_price')) {
+    if ($request->filled('max_price')) { 
         $query->where('price', '<=', $request->max_price);
     }
 
@@ -116,5 +118,47 @@ class SoftwareProductController extends Controller
     // $categories = category::all(); // for dropdown
     $products = $query->get();
     return view('explore-1', compact('products'));
+    }
+    public function Search1(Request $request)
+    {
+    $queryy = SoftwareProduct::query();
+
+    // Search by name
+    if ($request->filled('search')) {
+        $queryy->where('name', 'like', '%' . $request->search . '%');
+    }
+
+    // Filter by category
+    if ($request->filled('category')) {
+        $queryy->where('category', $request->category);
+    }
+
+    // Filter by price range
+    if ($request->filled('min_price')) {
+        $queryy->where('price', '>=', $request->min_price);
+    }
+
+    if ($request->filled('max_price')) {
+        $queryy->where('price', '<=', $request->max_price);
+    }
+
+    // $products = $query->get(); // or paginate() if needed
+    // $categories = category::all(); // for dropdown
+    $products = $queryy->get();
+    return view('admin/ecommerce-products', compact('products'));
 }
+public function approve(SoftwareProduct $softwareProduct)
+{
+    $softwareProduct->update(['status' => 'approved']);
+    $softwareProduct->user->notify(new SoftwareStatusNotification('approved', $softwareProduct->name));
+    return redirect()->back()->with('success', 'Software approved.');
+}
+
+public function reject(SoftwareProduct $softwareProduct)
+{
+    $softwareProduct->update(['status' => 'rejected']);
+    $softwareProduct->user->notify(new SoftwareStatusNotification('rejected', $softwareProduct->name));
+    return redirect()->back()->with('error', 'Software rejected.');
+}
+
 }

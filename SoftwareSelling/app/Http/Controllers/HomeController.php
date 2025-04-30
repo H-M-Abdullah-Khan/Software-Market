@@ -4,9 +4,26 @@ namespace App\Http\Controllers;
 
 use App\Models\SoftwareProduct;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth; 
+/**
+ * @method \Illuminate\Routing\Controller middleware(string|array $middleware, array $options = [])
+ */
+
 
 class HomeController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    public function company()
+    {
+        return view('company/dashboard');
+    }
+    public function admin()
+    {
+        return view('admin/dashboard');
+    }
     public function home()
     {
         return view('welcome');
@@ -17,7 +34,7 @@ class HomeController extends Controller
     }
     public function explore()
     {
-        $products = SoftwareProduct::all();
+         $products = SoftwareProduct::where('status','=','approved')->get();
         return view('explore-1', compact('products'));
     }
     public function Create()

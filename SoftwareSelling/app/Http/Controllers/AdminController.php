@@ -5,21 +5,33 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\SoftwareProductController;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;  
 use App\Models\SoftwareProduct;
-
 use Illuminate\Http\Request;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+/**
+ * @method \Illuminate\Routing\Controller middleware(string|array $middleware, array $options = [])
+ */
+
 
 class AdminController extends Controller
 {
-    public function users()
+    public function __construct()
     {
-        $users = User::all(); // Fetch all users
-        return view('admin/ecommerce-customers', compact('users')); // Send to view
+        $this->middleware('auth');
+    }
+    public function company()
+    {
+        return view('company/dashboard');
     }
     public function admin()
     {
         return view('admin/dashboard');
+    }
+    public function users()
+    {
+        $users = User::all(); // Fetch all users
+        return view('admin/ecommerce-customers', compact('users')); // Send to view
     }
     public function admin2()
     {

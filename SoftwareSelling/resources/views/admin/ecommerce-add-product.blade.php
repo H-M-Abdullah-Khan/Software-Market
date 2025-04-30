@@ -1165,7 +1165,7 @@
                 </div>
             </div>
             <!--end breadcrumb-->
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-12 col-lg-8">
                     <div class="card">
                         <div class="card-body">
@@ -1501,7 +1501,8 @@
 
                 </div>
 
-            </div><!--end row-->
+            </div> --}}
+            <!--end row-->
         </div>
         <div class="container">
 
@@ -1523,7 +1524,7 @@
 
             <!-- CREATE SOFTWARE PRODUCT -->
             <div class="card mb-4">
-                <div class="card-header"><strong>Add New Software Product</strong></div>
+                <div class="card-header"><h1 class="text-center"><strong>Add New Software Product</strong></h1></div>
                 <div class="card-body">
                     <form action="{{ route('software_products.store') }}" method="POST"
                         enctype="multipart/form-data">
@@ -1550,9 +1551,11 @@
                                 placeholder="Demo URL (optional)">
                         </div>
                         <div class="mb-3">
+                            <h6>Your Software Files</h6>
                             <input type="file" name="main_file" required class="form-control">
                         </div>
                         <div class="mb-3">
+                            <h6>Your Software Screenshot</h6>
                             <input type="file" name="screenshots[]" multiple class="form-control">
                         </div>
                         <div class="mb-3">
@@ -1570,7 +1573,7 @@
 
             <!-- LIST OF SOFTWARE PRODUCTS -->
             <div class="card">
-                <div class="card-header"><strong>All Software Products</strong></div>
+                <div class="card-header"><h1 class="text-center"><strong>All Software Products</strong></h1></div>
                 <div class="card-body">
                     @foreach ($products as $product)
                         <div class="border p-3 mb-3">
@@ -1584,9 +1587,9 @@
                             @endif
 
                             {{-- Actions --}}
-                            <a href="{{ route('software-products.edit', $product->id) }}"
+                            <a href="{{ route('software_products.edit', $product->id) }}"
                                 class="btn btn-sm btn-warning">Edit</a>
-                            <form action="{{ route('software-products.destroy', $product->id) }}" method="POST"
+                            <form action="{{ route('software_products.destroy', $product->id) }}" method="POST"
                                 style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')

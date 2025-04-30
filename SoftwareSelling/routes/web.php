@@ -7,6 +7,14 @@ use App\Http\Controllers\SoftwareProductController;
 use App\Http\Controllers\StoreSoftwareRequest;
 use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\SoftwareDownloadController;
+use App\Http\Controllers\UserActivityLogController;
+use App\Http\Controllers\SoftwareLicenseController;
+use App\Http\Controllers\SoftwareAnalyticsController;
+use App\Http\Controllers\PaymentMethodController;
+use App\Http\Controllers\PurchaseRequestController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -23,7 +31,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 })->name('dashboard');
 
-Route::prefix('admin')->group(function () {
+Route::prefix('admin')->middleware(['auth', 'user-access:admin'] )->group(function () {
     // =======================
     // 🧭 Dashboard & App Pages
     // =======================
@@ -97,11 +105,12 @@ Route::prefix('admin')->group(function () {
     Route::get('/ecommerce-customers', [AdminController::class, 'ecommercecustomer']);
     Route::get('/ecommerce-order-details', [AdminController::class, 'ecommerceorderdetail']);
     Route::get('/ecommerce-orders', [AdminController::class, 'ecommerceorder']);
+    Route::get('/ecommerce-orders', [PurchaseRequestController::class, 'index'])->name('orders.index');
     Route::get('/ecommerce-products', [AdminController::class, 'ecommerceproduct']);
-    Route::resource('software_products', SoftwareProductController::class);
-    Route::post('/software-products', [SoftwareProductController::class, 'store'])->name('software_products.store');
-    Route::get('/software-products/{id}/download', [SoftwareProductController::class, 'download'])->name('software_products.download');
-    Route::get('/software-products/{id}/download/{file}', [
+    Route::resource('/software_products', SoftwareProductController::class);
+    Route::post('/software_products', [SoftwareProductController::class, 'store'])->name('software_products.store');
+    Route::get('/software_products/{id}/download', [SoftwareProductController::class, 'download'])->name('software_products.download');
+    Route::get('/software_products/{id}/download/{file}', [
         SoftwareProductController::class,
         'download_file'
     ])->name('software_products.download_file');
@@ -110,6 +119,13 @@ Route::prefix('admin')->group(function () {
     Route::post('/users/{id}/approve', [UserManagementController::class, 'approve'])->name('admin.users.approve');
     Route::post('/users/{id}/reject', [UserManagementController::class, 'reject'])->name('admin.users.reject');
     Route::delete('/users/{id}', [UserManagementController::class, 'destroy'])->name('admin.users.destroy');
+    Route::patch('/software_products/{softwareProduct}/approve', [SoftwareProductController::class, 'approve'])->name('software_products.approve');
+    Route::patch('/software_products/{softwareProduct}/reject', [SoftwareProductController::class, 'reject'])->name('software_products.reject');
+    Route::get('/purchase-requests/create', [PurchaseRequestController::class, 'create'])->name('orders.create');
+    Route::post('/purchase-requests', [PurchaseRequestController::class, 'store'])->name('orders.store');
+    Route::post('/purchase-requests/{id}/approve', [PurchaseRequestController::class, 'approve'])->name('orders.approve');
+    Route::post('/purchase-requests/{id}/reject', [PurchaseRequestController::class, 'reject'])->name('orders.reject');
+
 
     // =======================
     // ❓ Help & FAQ
@@ -176,9 +192,32 @@ Route::prefix('admin')->group(function () {
     // =======================
     Route::get('/widgets-data', [AdminController::class, 'widgetsdata']);
     Route::get('/widgets-static', [AdminController::class, 'widgetsstatic']);
+    // User Management Routes
+    Route::resource('/users', UserManagementController::class);
+    
+    // Order Management Routes
+    Route::resource('/orders', OrderController::class);
+    
+    // Payment Management Routes
+    Route::resource('/payments', PaymentController::class);
+    
+    // Software Download Management Routes
+    Route::resource('/software-downloads', SoftwareDownloadController::class);
+    
+    // User Activity Log Management Routes
+    Route::resource('/user-activity-logs', UserActivityLogController::class);
+    
+    // Software License Management Routes
+    Route::resource('/software-licenses', SoftwareLicenseController::class);
+    
+    // Software Analytics Management Routes
+    Route::resource('/software-analytics', SoftwareAnalyticsController::class);
+    
+    // Payment Method Management Routes
+    Route::resource('/payment-methods', PaymentMethodController::class);
 })->name('admin.dashboard');
 
-Route::prefix('company')->group(function () {
+Route::prefix('company')->middleware(['auth', 'user-access:company'] )->group(function () {
     // =======================
     // 🧭 Dashboard & App Pages
     // =======================
@@ -350,8 +389,9 @@ Route::get('/upcoming', [HomeController::class, 'upcoming']);
 Route::get('/nft-detail-3', [HomeController::class, 'nft3']);
 Route::get('/nft-detail-2', [HomeController::class, 'nft2']);
 Route::get('/nft-detail-4', [HomeController::class, 'nft4']);
-Route::get('/explore-1', [SoftwareProductController::class, 'Search'])->name('products.Search');
+Route::get('/explore-1-search', [SoftwareProductController::class, 'Search'])->name('products.Search');
 
+Route::get('software_products/{id}', [SoftwareProductController::class,'']);
 
 
 

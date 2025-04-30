@@ -6,30 +6,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maxton | Bootstrap 5 Admin Dashboard Template</title>
+  <title>Admin Dashboard</title>
   <!--favicon-->
-	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png">
+  <link rel="icon" href="{{ asset('/../admin/assets/images/favicon-32x32.png') }}" type="image/png">
   <!-- loader-->
-	<link href="assets/css/pace.min.css" rel="stylesheet">
-	<script src="assets/js/pace.min.js"></script>
+  <link href="{{ asset('/../admin/assets/css/pace.min.css') }}" rel="stylesheet">
+  <script src="{{ asset('/../admin/assets/js/pace.min.js') }}"></script>
 
   <!--plugins-->
-  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css">
-  <link rel="stylesheet" type="text/css" href="assets/plugins/simplebar/css/simplebar.css">
+  <link href="{{ asset('/../admin/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ asset('/../admin/assets/plugins/metismenu/metisMenu.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('/../admin/assets/plugins/metismenu/mm-vertical.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('/../admin/assets/plugins/simplebar/css/simplebar.css') }}">
   <!--bootstrap css-->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="{{ asset('/../admin/assets/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
   <!--main css-->
-  <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
-  <link href="sass/main.css" rel="stylesheet">
-  <link href="sass/dark-theme.css" rel="stylesheet">
-  <link href="sass/blue-theme.css" rel="stylesheet">
-  <link href="sass/semi-dark.css" rel="stylesheet">
-  <link href="sass/bordered-theme.css" rel="stylesheet">
-  <link href="sass/responsive.css" rel="stylesheet">
+  <link href="{{ asset('/../admin/assets/css/bootstrap-extended.css') }}" rel="stylesheet">
+  <link href="{{ asset('/../admin/sass/main.css') }}" rel="stylesheet">
+  <link href="{{ asset('/../admin/sass/dark-theme.css') }}" rel="stylesheet">
+  <link href="{{ asset('/../admin/sass/blue-theme.css') }}" rel="stylesheet">
+  <link href="{{ asset('/../admin/sass/semi-dark.css') }}" rel="stylesheet">
+  <link href="{{ asset('/../admin/sass/bordered-theme.css') }}" rel="stylesheet">
+  <link href="{{ asset('/../admin/sass/responsive.css') }}" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <style>
 .m_title::first-letter {
   text-transform: uppercase
@@ -40,948 +42,1104 @@
 
 <body>
 
-  <!--start header-->
-  <header class="top-header">
-    <nav class="navbar navbar-expand align-items-center gap-4">
-      <div class="btn-toggle">
-        <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
-      </div>
-      <div class="search-bar flex-grow-1">
-        <div class="position-relative">
-          <input class="form-control rounded-5 px-5 search-control d-lg-block d-none" type="text" placeholder="Search">
-          <span class="material-icons-outlined position-absolute d-lg-block d-none ms-3 translate-middle-y start-0 top-50">search</span>
-          <span class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 search-close">close</span>
-          <div class="search-popup p-3">
-            <div class="card rounded-4 overflow-hidden">
-              <div class="card-header d-lg-none">
-                <div class="position-relative">
-                  <input class="form-control rounded-5 px-5 mobile-search-control" type="text" placeholder="Search">
-                  <span class="material-icons-outlined position-absolute ms-3 translate-middle-y start-0 top-50">search</span>
-                  <span class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 mobile-search-close">close</span>
-                 </div>
-              </div>
-              <div class="card-body search-content">
-                <p class="search-title">Recent Searches</p>
-                <div class="d-flex align-items-start flex-wrap gap-2 kewords-wrapper">
-                  <a href="javascript:;" class="kewords"><span>Angular Template</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>Dashboard</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>Admin Template</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>Bootstrap 5 Admin</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>Html eCommerce</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>Sass</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                  <a href="javascript:;" class="kewords"><span>laravel 9</span><i
-                      class="material-icons-outlined fs-6">search</i></a>
-                </div>
-                <hr>
-                <p class="search-title">Tutorials</p>
-                <div class="search-list d-flex flex-column gap-2">
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="list-icon">
-                      <i class="material-icons-outlined fs-5">play_circle</i>
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title ">Wordpress Tutorials</h5>
-                    </div>
-                  </div>
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="list-icon">
-                      <i class="material-icons-outlined fs-5">shopping_basket</i>
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title">eCommerce Website Tutorials</h5>
-                    </div>
-                  </div>
-  
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="list-icon">
-                      <i class="material-icons-outlined fs-5">laptop</i>
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title">Responsive Design</h5>
-                    </div>
-                  </div>
-                </div>
-  
-                <hr>
-                <p class="search-title">Members</p>
-  
-                <div class="search-list d-flex flex-column gap-2">
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="memmber-img">
-                      <img src="assets/images/avatars/01.png" width="32" height="32" class="rounded-circle" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title ">Andrew Stark</h5>
-                    </div>
-                  </div>
-  
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="memmber-img">
-                      <img src="assets/images/avatars/02.png" width="32" height="32" class="rounded-circle" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title ">Snetro Jhonia</h5>
-                    </div>
-                  </div>
-  
-                  <div class="search-list-item d-flex align-items-center gap-3">
-                    <div class="memmber-img">
-                      <img src="assets/images/avatars/03.png" width="32" height="32" class="rounded-circle" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="mb-0 search-list-title">Michle Clark</h5>
-                    </div>
-                  </div>
-  
-                </div>
-              </div>
-              <div class="card-footer text-center bg-transparent">
-                <a href="javascript:;" class="btn w-100">See All Search Results</a>
-              </div>
-            </div>
+
+    <!--start header-->
+    <header class="top-header">
+      <nav class="navbar navbar-expand align-items-center gap-4">
+          <div class="btn-toggle">
+              <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
           </div>
-        </div>
-      </div>
-      <ul class="navbar-nav gap-1 nav-right-links align-items-center">
-        <li class="nav-item d-lg-none mobile-search-btn">
-          <a class="nav-link" href="javascript:;"><i class="material-icons-outlined">search</i></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="avascript:;" data-bs-toggle="dropdown"><img src="assets/images/county/02.png" width="22" alt="">
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/01.png" width="20" alt=""><span class="ms-2">English</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/02.png" width="20" alt=""><span class="ms-2">Catalan</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/03.png" width="20" alt=""><span class="ms-2">French</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/04.png" width="20" alt=""><span class="ms-2">Belize</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/05.png" width="20" alt=""><span class="ms-2">Colombia</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/06.png" width="20" alt=""><span class="ms-2">Spanish</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/07.png" width="20" alt=""><span class="ms-2">Georgian</span></a>
-            </li>
-            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img src="assets/images/county/08.png" width="20" alt=""><span class="ms-2">Hindi</span></a>
-            </li>
+          <div class="search-bar flex-grow-1">
+              <div class="position-relative">
+                  <input class="form-control rounded-5 px-5 search-control d-lg-block d-none" type="text"
+                      placeholder="Search">
+                  <span
+                      class="material-icons-outlined position-absolute d-lg-block d-none ms-3 translate-middle-y start-0 top-50">search</span>
+                  <span
+                      class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 search-close">close</span>
+                  <div class="search-popup p-3">
+                      <div class="card rounded-4 overflow-hidden">
+                          <div class="card-header d-lg-none">
+                              <div class="position-relative">
+                                  <input class="form-control rounded-5 px-5 mobile-search-control" type="text"
+                                      placeholder="Search">
+                                  <span
+                                      class="material-icons-outlined position-absolute ms-3 translate-middle-y start-0 top-50">search</span>
+                                  <span
+                                      class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 mobile-search-close">close</span>
+                              </div>
+                          </div>
+                          <div class="card-body search-content">
+                              <p class="search-title">Recent Searches</p>
+                              <div class="d-flex align-items-start flex-wrap gap-2 kewords-wrapper">
+                                  <a href="javascript:;" class="kewords"><span>Angular Template</span><i
+                                          class="material-icons-outlined fs-6">search</i></a>
+                                  <a href="javascript:;" class="kewords"><span>Dashboard</span><i
+                                          class="material-icons-outlined fs-6">search</i></a>
+                                  <a href="javascript:;" class="kewords"><span>Admin Template</span><i
+                                          class="material-icons-outlined fs-6">search</i></a>
+                                  <a href="javascript:;" class="kewords"><span>Bootstrap 5 Admin</span><i
+                                          class="material-icons-outlined fs-6">search</i></a>
+                                  <a href="javascript:;" class="kewords"><span>Html eCommerce</span><i
+                                          class="material-icons-outlined fs-6">search</i></a>
+                                  <a href="javascript:;" class="kewords"><span>Sass</span><i
+                                          class="material-icons-outlined fs-6">search</i></a>
+                                  <a href="javascript:;" class="kewords"><span>laravel 9</span><i
+                                          class="material-icons-outlined fs-6">search</i></a>
+                              </div>
+                              <hr>
+                              <p class="search-title">Tutorials</p>
+                              <div class="search-list d-flex flex-column gap-2">
+                                  <div class="search-list-item d-flex align-items-center gap-3">
+                                      <div class="list-icon">
+                                          <i class="material-icons-outlined fs-5">play_circle</i>
+                                      </div>
+                                      <div class="">
+                                          <h5 class="mb-0 search-list-title ">Wordpress Tutorials</h5>
+                                      </div>
+                                  </div>
+                                  <div class="search-list-item d-flex align-items-center gap-3">
+                                      <div class="list-icon">
+                                          <i class="material-icons-outlined fs-5">shopping_basket</i>
+                                      </div>
+                                      <div class="">
+                                          <h5 class="mb-0 search-list-title">eCommerce Website Tutorials</h5>
+                                      </div>
+                                  </div>
+
+                                  <div class="search-list-item d-flex align-items-center gap-3">
+                                      <div class="list-icon">
+                                          <i class="material-icons-outlined fs-5">laptop</i>
+                                      </div>
+                                      <div class="">
+                                          <h5 class="mb-0 search-list-title">Responsive Design</h5>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <hr>
+                              <p class="search-title">Members</p>
+
+                              <div class="search-list d-flex flex-column gap-2">
+                                  <div class="search-list-item d-flex align-items-center gap-3">
+                                      <div class="memmber-img">
+                                          <img src="{{ asset('/../admin/assets/images/avatars/01.png') }}"
+                                              width="32" height="32" class="rounded-circle" alt="">
+                                      </div>
+                                      <div class="">
+                                          <h5 class="mb-0 search-list-title ">Andrew Stark</h5>
+                                      </div>
+                                  </div>
+
+                                  <div class="search-list-item d-flex align-items-center gap-3">
+                                      <div class="memmber-img">
+                                          <img src="{{ asset('/../admin/assets/images/avatars/02.png') }}"
+                                              width="32" height="32" class="rounded-circle" alt="">
+                                      </div>
+                                      <div class="">
+                                          <h5 class="mb-0 search-list-title ">Snetro Jhonia</h5>
+                                      </div>
+                                  </div>
+
+                                  <div class="search-list-item d-flex align-items-center gap-3">
+                                      <div class="memmber-img">
+                                          <img src="{{ asset('/../admin/assets/images/avatars/03.png') }}"
+                                              width="32" height="32" class="rounded-circle" alt="">
+                                      </div>
+                                      <div class="">
+                                          <h5 class="mb-0 search-list-title">Michle Clark</h5>
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>
+                          <div class="card-footer text-center bg-transparent">
+                              <a href="javascript:;" class="btn w-100">See All Search Results</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <ul class="navbar-nav gap-1 nav-right-links align-items-center">
+              <li class="nav-item d-lg-none mobile-search-btn">
+                  <a class="nav-link" href="javascript:;"><i class="material-icons-outlined">search</i></a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="avascript:;"
+                      data-bs-toggle="dropdown"><img src="{{ asset('/../admin/assets/images/county/02.png') }}"
+                          width="22" alt="">
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                                  src="{{ asset('/../admin/assets/images/county/01.png') }}" width="20"
+                                  alt=""><span class="ms-2">English</span></a>
+                      </li>
+                      <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                                  src="{{ asset('/../admin/assets/images/county/02.png') }}" width="20"
+                                  alt=""><span class="ms-2">Catalan</span></a>
+                      </li>
+                      <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                                  src="{{ asset('/../admin/assets/images/county/03.png') }}" width="20"
+                                  alt=""><span class="ms-2">French</span></a>
+                      </li>
+                      <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                                  src="{{ asset('/../admin/assets/images/county/04.png') }}" width="20"
+                                  alt=""><span class="ms-2">Belize</span></a>
+                      </li>
+                      <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                                  src="{{ asset('/../admin/assets/images/county/05.png') }}" width="20"
+                                  alt=""><span class="ms-2">Colombia</span></a>
+                      </li>
+                      <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                                  src="{{ asset('/../admin/assets/images/county/06.png') }}" width="20"
+                                  alt=""><span class="ms-2">Spanish</span></a>
+                      </li>
+                      <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                                  src="{{ asset('/../admin/assets/images/county/07.png') }}" width="20"
+                                  alt=""><span class="ms-2">Georgian</span></a>
+                      </li>
+                      <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                                  src="{{ asset('/../admin/assets/images/county/08.png') }}" width="20"
+                                  alt=""><span class="ms-2">Hindi</span></a>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="nav-item dropdown position-static d-md-flex d-none">
+                  <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-auto-close="outside"
+                      data-bs-toggle="dropdown" href="javascript:;"><i
+                          class="material-icons-outlined">done_all</i></a>
+                  <div class="dropdown-menu dropdown-menu-end mega-menu shadow-lg p-4 p-lg-5">
+                      <div class="mega-menu-widgets">
+                          <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 g-lg-5">
+                              <div class="col">
+                                  <div class="card rounded-4 shadow-none border mb-0">
+                                      <div class="card-body">
+                                          <div class="d-flex align-items-start gap-3">
+                                              <div class="mega-menu-icon flex-shrink-0 bg-danger">
+                                                  <i class="material-icons-outlined">question_answer</i>
+                                              </div>
+                                              <div class="mega-menu-content">
+                                                  <h5>Marketing</h5>
+                                                  <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum
+                                                      is a placeholder text commonly used to demonstrate
+                                                      the visual form of a document.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card rounded-4 shadow-none border mb-0">
+                                      <div class="card-body">
+                                          <div class="d-flex align-items-start gap-3">
+                                              <img src="{{ asset('/../admin/assets/images/megaIcons/02.png') }}"
+                                                  width="40" alt="">
+                                              <div class="mega-menu-content">
+                                                  <h5>Website</h5>
+                                                  <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum
+                                                      is a placeholder text commonly used to demonstrate
+                                                      the visual form of a document.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card rounded-4 shadow-none border mb-0">
+                                      <div class="card-body">
+                                          <div class="d-flex align-items-start gap-3">
+                                              <img src="{{ asset('/../admin/assets/images/megaIcons/03.png') }}"
+                                                  width="40" alt="">
+                                              <div class="mega-menu-content">
+                                                  <h5>Subscribers</h5>
+                                                  <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum
+                                                      is a placeholder text commonly used to demonstrate
+                                                      the visual form of a document.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card rounded-4 shadow-none border mb-0">
+                                      <div class="card-body">
+                                          <div class="d-flex align-items-start gap-3">
+                                              <img src="{{ asset('/../admin/assets/images/megaIcons/01.png') }}"
+                                                  width="40" alt="">
+                                              <div class="mega-menu-content">
+                                                  <h5>Hubspot</h5>
+                                                  <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum
+                                                      is a placeholder text commonly used to demonstrate
+                                                      the visual form of a document.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card rounded-4 shadow-none border mb-0">
+                                      <div class="card-body">
+                                          <div class="d-flex align-items-start gap-3">
+                                              <img src="{{ asset('/../admin/assets/images/megaIcons/11.png') }}"
+                                                  width="40" alt="">
+                                              <div class="mega-menu-content">
+                                                  <h5>Templates</h5>
+                                                  <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum
+                                                      is a placeholder text commonly used to demonstrate
+                                                      the visual form of a document.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card rounded-4 shadow-none border mb-0">
+                                      <div class="card-body">
+                                          <div class="d-flex align-items-start gap-3">
+                                              <img src="{{ asset('/../admin/assets/images/megaIcons/13.png') }}"
+                                                  width="40" alt="">
+                                              <div class="mega-menu-content">
+                                                  <h5>Ebooks</h5>
+                                                  <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum
+                                                      is a placeholder text commonly used to demonstrate
+                                                      the visual form of a document.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card rounded-4 shadow-none border mb-0">
+                                      <div class="card-body">
+                                          <div class="d-flex align-items-start gap-3">
+                                              <img src="{{ asset('/../admin/assets/images/megaIcons/12.png') }}"
+                                                  width="40" alt="">
+                                              <div class="mega-menu-content">
+                                                  <h5>Sales</h5>
+                                                  <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum
+                                                      is a placeholder text commonly used to demonstrate
+                                                      the visual form of a document.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card rounded-4 shadow-none border mb-0">
+                                      <div class="card-body">
+                                          <div class="d-flex align-items-start gap-3">
+                                              <img src="{{ asset('/../admin/assets/images/megaIcons/08.png') }}"
+                                                  width="40" alt="">
+                                              <div class="mega-menu-content">
+                                                  <h5>Tools</h5>
+                                                  <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum
+                                                      is a placeholder text commonly used to demonstrate
+                                                      the visual form of a document.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card rounded-4 shadow-none border mb-0">
+                                      <div class="card-body">
+                                          <div class="d-flex align-items-start gap-3">
+                                              <img src="{{ asset('/../admin/assets/images/megaIcons/09.png') }}"
+                                                  width="40" alt="">
+                                              <div class="mega-menu-content">
+                                                  <h5>Academy</h5>
+                                                  <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum
+                                                      is a placeholder text commonly used to demonstrate
+                                                      the visual form of a document.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!--end row-->
+                      </div>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-auto-close="outside"
+                      data-bs-toggle="dropdown" href="javascript:;"><i class="material-icons-outlined">apps</i></a>
+                  <div class="dropdown-menu dropdown-menu-end dropdown-apps shadow-lg p-3">
+                      <div class="border rounded-4 overflow-hidden">
+                          <div class="row row-cols-3 g-0 border-bottom">
+                              <div class="col border-end">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/01.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Gmail</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col border-end">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/02.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Skype</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/03.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Slack</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!--end row-->
+
+                          <div class="row row-cols-3 g-0 border-bottom">
+                              <div class="col border-end">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/04.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">YouTube</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col border-end">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/05.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Google</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/06.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Instagram</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div><!--end row-->
+
+                          <div class="row row-cols-3 g-0 border-bottom">
+                              <div class="col border-end">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/07.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Spotify</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col border-end">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/08.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Yahoo</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/09.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Facebook</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div><!--end row-->
+
+                          <div class="row row-cols-3 g-0">
+                              <div class="col border-end">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/10.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Figma</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col border-end">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/11.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Paypal</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
+                                      <div class="app-icon">
+                                          <img src="{{ asset('/../admin/assets/images/apps/12.png') }}"
+                                              width="36" alt="">
+                                      </div>
+                                      <div class="app-name">
+                                          <p class="mb-0">Photo</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div><!--end row-->
+                      </div>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative"
+                      data-bs-auto-close="outside" data-bs-toggle="dropdown" href="javascript:;"><i
+                          class="material-icons-outlined">notifications</i>
+                      <span class="badge-notify">5</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-notify dropdown-menu-end shadow">
+                      <div class="px-3 py-1 d-flex align-items-center justify-content-between border-bottom">
+                          <h5 class="notiy-title mb-0">Notifications</h5>
+                          <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle dropdown-toggle-nocaret option"
+                                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="material-icons-outlined">
+                                      more_vert
+                                  </span>
+                              </button>
+                              <div class="dropdown-menu dropdown-option dropdown-menu-end shadow">
+                                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2"
+                                          href="javascript:;"><i
+                                              class="material-icons-outlined fs-6">inventory_2</i>Archive All</a>
+                                  </div>
+                                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2"
+                                          href="javascript:;"><i
+                                              class="material-icons-outlined fs-6">done_all</i>Mark all as read</a>
+                                  </div>
+                                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2"
+                                          href="javascript:;"><i
+                                              class="material-icons-outlined fs-6">mic_off</i>Disable
+                                          Notifications</a></div>
+                                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2"
+                                          href="javascript:;"><i
+                                              class="material-icons-outlined fs-6">grade</i>What's new ?</a></div>
+                                  <div>
+                                      <hr class="dropdown-divider">
+                                  </div>
+                                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2"
+                                          href="javascript:;"><i
+                                              class="material-icons-outlined fs-6">leaderboard</i>Reports</a></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="notify-list">
+                        {{-- @foreach(auth()->user()->notifications as $notification)
+    <div class="notification-item">
+        {{ $notification->data['message'] }}
+    </div>
+                      @endforeach --}}
+
+                          <div>
+                            @if(session('success'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{ session('success') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        @endif
+                        
+                        @if(session('error'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                {{ session('error') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        @endif
+                        
+                          </div>
+                          <div>
+                              <a class="dropdown-item border-bottom py-2" href="javascript:;">
+                                  <div class="d-flex align-items-center gap-3">
+                                      <div class="user-wrapper bg-primary text-primary bg-opacity-10">
+                                          <span>RS</span>
+                                      </div>
+                                      <div class="">
+                                          <h5 class="notify-title">New Account Created</h5>
+                                          <p class="mb-0 notify-desc">From USA an user has registered.</p>
+                                          <p class="mb-0 notify-time">Yesterday</p>
+                                      </div>
+                                      <div class="notify-close position-absolute end-0 me-3">
+                                          <i class="material-icons-outlined fs-6">close</i>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <div>
+                              <a class="dropdown-item border-bottom py-2" href="javascript:;">
+                                  <div class="d-flex align-items-center gap-3">
+                                      <div class="">
+                                          <img src="{{ asset('/../admin/assets/images/apps/13.png') }}"
+                                              class="rounded-circle" width="45" height="45" alt="">
+                                      </div>
+                                      <div class="">
+                                          <h5 class="notify-title">Payment Recived</h5>
+                                          <p class="mb-0 notify-desc">New payment recived successfully</p>
+                                          <p class="mb-0 notify-time">1d ago</p>
+                                      </div>
+                                      <div class="notify-close position-absolute end-0 me-3">
+                                          <i class="material-icons-outlined fs-6">close</i>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <div>
+                              <a class="dropdown-item border-bottom py-2" href="javascript:;">
+                                  <div class="d-flex align-items-center gap-3">
+                                      <div class="">
+                                          <img src="{{ asset('/../admin/assets/images/apps/14.png') }}"
+                                              class="rounded-circle" width="45" height="45" alt="">
+                                      </div>
+                                      <div class="">
+                                          <h5 class="notify-title">New Order Recived</h5>
+                                          <p class="mb-0 notify-desc">Recived new order from michle</p>
+                                          <p class="mb-0 notify-time">2:15 AM</p>
+                                      </div>
+                                      <div class="notify-close position-absolute end-0 me-3">
+                                          <i class="material-icons-outlined fs-6">close</i>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <div>
+                              <a class="dropdown-item border-bottom py-2" href="javascript:;">
+                                  <div class="d-flex align-items-center gap-3">
+                                      <div class="">
+                                          <img src="{{ asset('/../admin/assets/images/avatars/06.png') }}"
+                                              class="rounded-circle" width="45" height="45" alt="">
+                                      </div>
+                                      <div class="">
+                                          <h5 class="notify-title">Congratulations Jhon</h5>
+                                          <p class="mb-0 notify-desc">Many congtars jhon. You have won the gifts.</p>
+                                          <p class="mb-0 notify-time">Today</p>
+                                      </div>
+                                      <div class="notify-close position-absolute end-0 me-3">
+                                          <i class="material-icons-outlined fs-6">close</i>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <div>
+                              <a class="dropdown-item py-2" href="javascript:;">
+                                  <div class="d-flex align-items-center gap-3">
+                                      <div class="user-wrapper bg-danger text-danger bg-opacity-10">
+                                          <span>PK</span>
+                                      </div>
+                                      <div class="">
+                                          <h5 class="notify-title">New Account Created</h5>
+                                          <p class="mb-0 notify-desc">From USA an user has registered.</p>
+                                          <p class="mb-0 notify-time">Yesterday</p>
+                                      </div>
+                                      <div class="notify-close position-absolute end-0 me-3">
+                                          <i class="material-icons-outlined fs-6">close</i>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="nav-item d-md-flex d-none">
+                  <a class="nav-link position-relative" data-bs-toggle="offcanvas" href="#offcanvasCart"><i
+                          class="material-icons-outlined">shopping_cart</i>
+                      <span class="badge-notify">8</span>
+                  </a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a href="javascrpt:;" class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
+                      <img src="{{ asset('/../admin/assets/images/avatars/01.png') }}"
+                          class="rounded-circle p-1 border" width="45" height="45" alt="">
+                  </a>
+                  <div class="dropdown-menu dropdown-user dropdown-menu-end shadow">
+                      <a class="dropdown-item  gap-2 py-2" href="javascript:;">
+                          <div class="text-center">
+                              <img src="{{ asset('/../admin/assets/images/avatars/01.png') }}"
+                                  class="rounded-circle p-1 shadow mb-3" width="90" height="90"
+                                  alt="">
+                              <h5 class="user-name mb-0 fw-bold">Admin</h5>
+                          </div>
+                      </a>
+                      <hr class="dropdown-divider">
+                      <a class="dropdown-item d-flex align-items-center gap-2 py-2"
+                          href="{{ url('user-profile') }}"><i
+                              class="material-icons-outlined">person_outline</i>Profile</a>
+                      <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                              class="material-icons-outlined">local_bar</i>Setting</a>
+                      <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                              class="material-icons-outlined">dashboard</i>Dashboard</a>
+                      <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                              class="material-icons-outlined">account_balance</i>Earning</a>
+                      <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                              class="material-icons-outlined">cloud_download</i>Downloads</a>
+                      <hr class="dropdown-divider">
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                          style="display: none;">
+                          @csrf
+                      </form>
+                      <a class="dropdown-item d-flex align-items-center gap-2 py-2"
+                          onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                              class="material-icons-outlined">power_settings_new</i>Logout</a>
+                  </div>
+              </li>
           </ul>
-        </li>
-
-        <li class="nav-item dropdown position-static  d-md-flex d-none">
-          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-auto-close="outside"
-          data-bs-toggle="dropdown" href="javascript:;"><i class="material-icons-outlined">done_all</i></a>
-          <div class="dropdown-menu dropdown-menu-end mega-menu shadow-lg p-4 p-lg-5">
-            <div class="mega-menu-widgets">
-             <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 g-lg-5">
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <div class="mega-menu-icon flex-shrink-0 bg-danger">
-                          <i class="material-icons-outlined">question_answer</i>
-                        </div>
-                        <div class="mega-menu-content">
-                           <h5>Marketing</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/02.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Website</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/03.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                            <h5>Subscribers</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/01.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Hubspot</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/11.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Templates</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/13.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Ebooks</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/12.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Sales</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/08.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Tools</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card rounded-4 shadow-none border mb-0">
-                    <div class="card-body">
-                      <div class="d-flex align-items-start gap-3">
-                        <img src="assets/images/megaIcons/09.png" width="40" alt="">
-                        <div class="mega-menu-content">
-                           <h5>Academy</h5>
-                           <p class="mb-0 f-14">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate
-                             the visual form of a document.</p>
-                        </div>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-             </div><!--end row-->
-            </div>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-auto-close="outside"
-            data-bs-toggle="dropdown" href="javascript:;"><i class="material-icons-outlined">apps</i></a>
-          <div class="dropdown-menu dropdown-menu-end dropdown-apps shadow-lg p-3">
-            <div class="border rounded-4 overflow-hidden">
-              <div class="row row-cols-3 g-0 border-bottom">
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/01.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Gmail</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/02.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Skype</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/03.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Slack</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!--end row-->
-
-              <div class="row row-cols-3 g-0 border-bottom">
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/04.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">YouTube</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/05.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Google</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/06.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Instagram</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!--end row-->
-
-              <div class="row row-cols-3 g-0 border-bottom">
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/07.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Spotify</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/08.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Yahoo</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/09.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Facebook</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!--end row-->
-
-              <div class="row row-cols-3 g-0">
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/10.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Figma</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col border-end">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/11.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Paypal</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="app-wrapper d-flex flex-column gap-2 text-center">
-                    <div class="app-icon">
-                      <img src="assets/images/apps/12.png" width="36" alt="">
-                    </div>
-                    <div class="app-name">
-                      <p class="mb-0">Photo</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!--end row-->
-            </div>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" data-bs-auto-close="outside"
-            data-bs-toggle="dropdown" href="javascript:;"><i class="material-icons-outlined">notifications</i>
-            <span class="badge-notify">5</span>
-          </a>
-          <div class="dropdown-menu dropdown-notify dropdown-menu-end shadow">
-            <div class="px-3 py-1 d-flex align-items-center justify-content-between border-bottom">
-              <h5 class="notiy-title mb-0">Notifications</h5>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle dropdown-toggle-nocaret option" type="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="material-icons-outlined">
-                    more_vert
-                  </span>
-                </button>
-                <div class="dropdown-menu dropdown-option dropdown-menu-end shadow">
-                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                        class="material-icons-outlined fs-6">inventory_2</i>Archive All</a></div>
-                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                        class="material-icons-outlined fs-6">done_all</i>Mark all as read</a></div>
-                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                        class="material-icons-outlined fs-6">mic_off</i>Disable Notifications</a></div>
-                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                        class="material-icons-outlined fs-6">grade</i>What's new ?</a></div>
-                  <div>
-                    <hr class="dropdown-divider">
-                  </div>
-                  <div><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                        class="material-icons-outlined fs-6">leaderboard</i>Reports</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="notify-list">
-              <div>
-                <a class="dropdown-item border-bottom py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="">
-                      <img src="assets/images/avatars/01.png" class="rounded-circle" width="45" height="45" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">Congratulations Jhon</h5>
-                      <p class="mb-0 notify-desc">Many congtars jhon. You have won the gifts.</p>
-                      <p class="mb-0 notify-time">Today</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a class="dropdown-item border-bottom py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="user-wrapper bg-primary text-primary bg-opacity-10">
-                      <span>RS</span>
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">New Account Created</h5>
-                      <p class="mb-0 notify-desc">From USA an user has registered.</p>
-                      <p class="mb-0 notify-time">Yesterday</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a class="dropdown-item border-bottom py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="">
-                      <img src="assets/images/apps/13.png" class="rounded-circle" width="45" height="45" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">Payment Recived</h5>
-                      <p class="mb-0 notify-desc">New payment recived successfully</p>
-                      <p class="mb-0 notify-time">1d ago</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a class="dropdown-item border-bottom py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="">
-                      <img src="assets/images/apps/14.png" class="rounded-circle" width="45" height="45" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">New Order Recived</h5>
-                      <p class="mb-0 notify-desc">Recived new order from michle</p>
-                      <p class="mb-0 notify-time">2:15 AM</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a class="dropdown-item border-bottom py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="">
-                      <img src="assets/images/avatars/06.png" class="rounded-circle" width="45" height="45" alt="">
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">Congratulations Jhon</h5>
-                      <p class="mb-0 notify-desc">Many congtars jhon. You have won the gifts.</p>
-                      <p class="mb-0 notify-time">Today</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a class="dropdown-item py-2" href="javascript:;">
-                  <div class="d-flex align-items-center gap-3">
-                    <div class="user-wrapper bg-danger text-danger bg-opacity-10">
-                      <span>PK</span>
-                    </div>
-                    <div class="">
-                      <h5 class="notify-title">New Account Created</h5>
-                      <p class="mb-0 notify-desc">From USA an user has registered.</p>
-                      <p class="mb-0 notify-time">Yesterday</p>
-                    </div>
-                    <div class="notify-close position-absolute end-0 me-3">
-                      <i class="material-icons-outlined fs-6">close</i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item d-md-flex d-none">
-          <a class="nav-link position-relative" data-bs-toggle="offcanvas" href="#offcanvasCart"><i
-              class="material-icons-outlined">shopping_cart</i>
-            <span class="badge-notify">8</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="javascrpt:;" class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
-             <img src="assets/images/avatars/01.png" class="rounded-circle p-1 border" width="45" height="45" alt="">
-          </a>
-          <div class="dropdown-menu dropdown-user dropdown-menu-end shadow">
-            <a class="dropdown-item  gap-2 py-2" href="javascript:;">
-              <div class="text-center">
-                <img src="assets/images/avatars/01.png" class="rounded-circle p-1 shadow mb-3" width="90" height="90"
-                  alt="">
-                <h5 class="user-name mb-0 fw-bold">Hello, Jhon</h5>
-              </div>
-            </a>
-            <hr class="dropdown-divider">
-            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-              class="material-icons-outlined">person_outline</i>Profile</a>
-            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-              class="material-icons-outlined">local_bar</i>Setting</a>
-            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-              class="material-icons-outlined">dashboard</i>Dashboard</a>
-            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-              class="material-icons-outlined">account_balance</i>Earning</a>
-              <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-                class="material-icons-outlined">cloud_download</i>Downloads</a>
-            <hr class="dropdown-divider">
-            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
-            class="material-icons-outlined">power_settings_new</i>Logout</a>
-          </div>
-        </li>
-      </ul>
-
-    </nav>
+      </nav>
   </header>
   <!--end top header-->
 
-<!--start sidebar-->
-<aside class="sidebar-wrapper" data-simplebar="true">
-  <div class="sidebar-header">
-    <div class="logo-icon">
-      <img src="assets/images/logo-icon.png" class="logo-img" alt="">
-    </div>
-    <div class="logo-name flex-grow-1">
-      <h5 class="mb-0">Maxton</h5>
-    </div>
-    <div class="sidebar-close">
-      <span class="material-icons-outlined">close</span>
-    </div>
-  </div>
-  <div class="sidebar-nav">
-      <!--navigation-->
-      <ul class="metismenu" id="sidenav">
-        <li>
-          <a href="javascript:;" class="has-arrow">
-            <div class="parent-icon"><i class="material-icons-outlined">home</i>
-            </div>
-            <div class="menu-title">Dashboard</div>
-          </a>
-          <ul>
-            <li><a href="index.html"><i class="material-icons-outlined">arrow_right</i>Analysis</a>
-            </li>
-            <li><a href="index2.html"><i class="material-icons-outlined">arrow_right</i>eCommerce</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="javascript:;" class="has-arrow">
-            <div class="parent-icon"><i class="material-icons-outlined">widgets</i>
-            </div>
-            <div class="menu-title">Widgets</div>
-          </a>
-          <ul>
-            <li><a href="widgets-data.html"><i class="material-icons-outlined">arrow_right</i>Data</a>
-            </li>
-            <li><a href="widgets-static.html"><i class="material-icons-outlined">arrow_right</i>Static</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a class="has-arrow" href="javascript:;">
-            <div class="parent-icon"><i class="material-icons-outlined">apps</i>
-            </div>
-            <div class="menu-title">Apps</div>
-          </a>
-          <ul>
-            <li><a href="app-emailbox.html"><i class="material-icons-outlined">arrow_right</i>Email Box</a>
-            </li>
-            <li><a href="app-emailread.html"><i class="material-icons-outlined">arrow_right</i>Email Read</a>
-            </li>
-            <li><a href="app-chat-box.html"><i class="material-icons-outlined">arrow_right</i>Chat</a>
-            </li>
-            <li><a href="app-fullcalender.html"><i class="material-icons-outlined">arrow_right</i>Calendar</a>
-            </li>
-            <li><a href="app-to-do.html"><i class="material-icons-outlined">arrow_right</i>To do</a>
-            </li>
-            <li><a href="app-invoice.html"><i class="material-icons-outlined">arrow_right</i>Invoice</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-label">UI Elements</li>
-        <li>
-          <a href="cards.html">
-            <div class="parent-icon"><i class="material-icons-outlined">inventory_2</i>
-            </div>
-            <div class="menu-title">Cards</div>
-          </a>
-        </li>
-        
-        <li>
-          <a href="javascript:;" class="has-arrow">
-            <div class="parent-icon"><i class="material-icons-outlined">shopping_bag</i>
-            </div>
-            <div class="menu-title">eCommerce</div>
-          </a>
-          <ul>
-            <li><a href="ecommerce-add-product.html"><i class="material-icons-outlined">arrow_right</i>Add Product</a>
-            </li>
-            <li><a href="ecommerce-products.html"><i class="material-icons-outlined">arrow_right</i>Products</a>
-            </li>
-            <li><a href="ecommerce-customers.html"><i class="material-icons-outlined">arrow_right</i>Customers</a>
-            </li>
-            <li><a href="ecommerce-customer-details.html"><i class="material-icons-outlined">arrow_right</i>Customer Details</a>
-            </li>
-            <li><a href="ecommerce-orders.html"><i class="material-icons-outlined">arrow_right</i>Orders</a>
-            </li>
-            <li><a href="ecommerce-order-details.html"><i class="material-icons-outlined">arrow_right</i>Order Details</a>
-            </li>
-          </ul>     
-        </li>
-        <li>
-          <a class="has-arrow" href="javascript:;">
-            <div class="parent-icon"><i class="material-icons-outlined">card_giftcard</i>
-            </div>
-            <div class="menu-title">Components</div>
-          </a>
-          <ul>
-            <li><a href="component-alerts.html"><i class="material-icons-outlined">arrow_right</i>Alerts</a>
-            </li>
-            <li><a href="component-accordions.html"><i class="material-icons-outlined">arrow_right</i>Accordions</a>
-            </li>
-            <li><a href="component-badges.html"><i class="material-icons-outlined">arrow_right</i>Badges</a>
-            </li>
-            <li><a href="component-buttons.html"><i class="material-icons-outlined">arrow_right</i>Buttons</a>
-            </li>
-            <li><a href="component-carousels.html"><i class="material-icons-outlined">arrow_right</i>Carousels</a>
-            </li>
-            <li><a href="component-media-object.html"><i class="material-icons-outlined">arrow_right</i>Media
-                Objects</a>
-            </li>
-            <li><a href="component-modals.html"><i class="material-icons-outlined">arrow_right</i>Modals</a>
-            </li>
-            <li><a href="component-navs-tabs.html"><i class="material-icons-outlined">arrow_right</i>Navs & Tabs</a>
-            </li>
-            <li><a href="component-navbar.html"><i class="material-icons-outlined">arrow_right</i>Navbar</a>
-            </li>
-            <li><a href="component-paginations.html"><i class="material-icons-outlined">arrow_right</i>Pagination</a>
-            </li>
-            <li><a href="component-popovers-tooltips.html"><i class="material-icons-outlined">arrow_right</i>Popovers
-                & Tooltips</a>    
-            </li>
-            <li><a href="component-progress-bars.html"><i class="material-icons-outlined">arrow_right</i>Progress</a>
-            </li>
-            <li><a href="component-spinners.html"><i class="material-icons-outlined">arrow_right</i>Spinners</a>
-            </li>
-            <li><a href="component-notifications.html"><i
-                  class="material-icons-outlined">arrow_right</i>Notifications</a>
-            </li>
-            <li><a href="component-avtars-chips.html"><i class="material-icons-outlined">arrow_right</i>Avatrs &
-                Chips</a>
-            </li>
-            <li><a href="component-typography.html"><i class="material-icons-outlined">arrow_right</i>Typography</a>
-             </li>
-             <li><a href="component-text-utilities.html"><i class="material-icons-outlined">arrow_right</i>Utilities</a>
-             </li>
-          </ul>
-        </li>
-        <li>
-          <a class="has-arrow" href="javascript:;">
-            <div class="parent-icon"><i class="material-icons-outlined">view_agenda</i>
-            </div>
-            <div class="menu-title">Icons</div>
-          </a>
-          <ul>
-            <li><a href="icons-line-icons.html"><i class="material-icons-outlined">arrow_right</i>Line Icons</a>
-            </li>
-            <li><a href="icons-boxicons.html"><i class="material-icons-outlined">arrow_right</i>Boxicons</a>
-            </li>
-            <li><a href="icons-feather-icons.html"><i class="material-icons-outlined">arrow_right</i>Feather
-                Icons</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-label">Forms & Tables</li>
-        <li>
-          <a class="has-arrow" href="javascript:;">
-            <div class="parent-icon"><i class="material-icons-outlined">toc</i>
-            </div>
-            <div class="menu-title">Forms</div>
-          </a>
-          <ul>
-            <li><a href="form-elements.html"><i class="material-icons-outlined">arrow_right</i>Form Elements</a>
-            </li>
-            <li><a href="form-input-group.html"><i class="material-icons-outlined">arrow_right</i>Input Groups</a>
-            </li>
-            <li><a href="form-radios-and-checkboxes.html"><i class="material-icons-outlined">arrow_right</i>Radios &
-                Checkboxes</a>
-            </li>
-            <li><a href="form-layouts.html"><i class="material-icons-outlined">arrow_right</i>Forms Layouts</a>
-            </li>
-            <li><a href="form-validations.html"><i class="material-icons-outlined">arrow_right</i>Form Validation</a>
-            </li>
-            <li><a href="form-wizard.html"><i class="material-icons-outlined">arrow_right</i>Form Wizard</a>
-            </li>
-            <li><a href="form-file-upload.html"><i class="material-icons-outlined">arrow_right</i>File Upload</a>
-            </li>
-            <li><a href="form-date-time-pickes.html"><i class="material-icons-outlined">arrow_right</i>Date
-                Pickers</a>
-            </li>
-            <li><a href="form-select2.html"><i class="material-icons-outlined">arrow_right</i>Select2</a>
-            </li>
-            <li><a href="form-repeater.html"><i class="material-icons-outlined">arrow_right</i>Form Repeater</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a class="has-arrow" href="javascript:;">
-            <div class="parent-icon"><i class="material-icons-outlined">api</i>
-            </div>
-            <div class="menu-title">Tables</div>
-          </a>
-          <ul>
-            <li><a href="table-basic-table.html"><i class="material-icons-outlined">arrow_right</i>Basic Table</a>
-            </li>
-            <li><a href="table-datatable.html"><i class="material-icons-outlined">arrow_right</i>Data Table</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-label">Pages</li>
-        <li>
-          <a class="has-arrow" href="javascript:;">
-            <div class="parent-icon"><i class="material-icons-outlined">lock</i>
-            </div>
-            <div class="menu-title">Authentication</div>
-          </a>
-          <ul>
-            <li><a class="has-arrow" href="javascript:;"><i class="material-icons-outlined">arrow_right</i>Basic</a>
-              <ul>
-                <li><a href="auth-basic-login.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Login</a></li>
-                <li><a href="auth-basic-register.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Register</a></li>
-                <li><a href="auth-basic-forgot-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
-                <li><a href="auth-basic-reset-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
-              </ul>
-            </li>
-            <li><a class="has-arrow" href="javascript:;"><i class="material-icons-outlined">arrow_right</i>Cover</a>
-              <ul>
-                <li><a href="auth-cover-login.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Login</a></li>
-                <li><a href="auth-cover-register.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Register</a></li>
-                <li><a href="auth-cover-forgot-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
-                <li><a href="auth-cover-reset-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
-              </ul>
-            </li>
-            <li><a class="has-arrow" href="javascript:;"><i class="material-icons-outlined">arrow_right</i>Boxed</a>
-                <ul>
-                  <li><a href="auth-boxed-login.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Login</a></li>
-                  <li><a href="auth-boxed-register.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Register</a></li>
-                  <li><a href="auth-boxed-forgot-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
-                  <li><a href="auth-boxed-reset-password.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
-                </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="user-profile.html">
-            <div class="parent-icon"><i class="material-icons-outlined">person</i>
-            </div>
-            <div class="menu-title">User Profile</div>
-          </a>
-        </li>
-        <li>
-          <a href="timeline.html">
-            <div class="parent-icon"><i class="material-icons-outlined">join_right</i>
-            </div>
-            <div class="menu-title">Timeline</div>
-          </a>
-        </li>
-        <li>
-          <a class="has-arrow" href="javascript:;">
-            <div class="parent-icon"><i class="material-icons-outlined">report_problem</i>
-            </div>
-            <div class="menu-title">Pages</div>
-          </a>
-          <ul>
-            <li><a href="pages-error-404.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>404
-                Error</a>
-            </li>
-            <li><a href="pages-error-505.html" target="_blank"><i class="material-icons-outlined">arrow_right</i>505
-                Error</a>
-            </li>
-            <li><a href="pages-coming-soon.html" target="_blank"><i
-                  class="material-icons-outlined">arrow_right</i>Coming Soon</a>
-            </li>
-            <li><a href="pages-starter-page.html" target="_blank"><i
-                  class="material-icons-outlined">arrow_right</i>Blank Page</a> 
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="faq.html">
-            <div class="parent-icon"><i class="material-icons-outlined">help_outline</i>
-            </div>
-            <div class="menu-title">FAQ</div>
-          </a>
-        </li>
-        <li>
-          <a href="pricing-table.html">
-            <div class="parent-icon"><i class="material-icons-outlined">sports_football</i>
-            </div>
-            <div class="menu-title">Pricing</div>
-          </a>
-        </li>
-        <li class="menu-label">Charts & Maps</li>
-        <li>
-          <a class="has-arrow" href="javascript:;">
-            <div class="parent-icon"><i class="material-icons-outlined">fitbit</i>
-            </div>
-            <div class="menu-title">Charts</div>
-          </a>
-          <ul>
-            <li><a href="charts-apex-chart.html"><i class="material-icons-outlined">arrow_right</i>Apex</a>
-            </li>
-            <li><a href="charts-chartjs.html"><i class="material-icons-outlined">arrow_right</i>Chartjs</a>
-            </li>   
-          </ul>
-        </li>
-        <li>
-          <a class="has-arrow" href="javascript:;">
-            <div class="parent-icon"><i class="material-icons-outlined">sports_football</i>
-            </div>
-            <div class="menu-title">Maps</div>
-          </a>
-          <ul>
-            <li><a href="map-google-maps.html"><i class="material-icons-outlined">arrow_right</i>Google Maps</a>
-            </li>
-            <li><a href="map-vector-maps.html"><i class="material-icons-outlined">arrow_right</i>Vector Maps</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-label">Others</li>
-        <li>
-          <a class="has-arrow" href="javascript:;">
-            <div class="parent-icon"><i class="material-icons-outlined">face_5</i>
-            </div>
-            <div class="menu-title">Menu Levels</div>
-          </a>
-          <ul>
-            <li><a class="has-arrow" href="javascript:;"><i class="material-icons-outlined">arrow_right</i>Level
-                One</a>
-              <ul>
-                <li><a class="has-arrow" href="javascript:;"><i class="material-icons-outlined">arrow_right</i>Level
-                    Two</a>
+
+  <!--start sidebar-->
+  <aside class="sidebar-wrapper" data-simplebar="true">
+      <div class="sidebar-header">
+          <div class="logo-icon">
+              <img src="{{ asset('/../admin/assets/images/logo-icon.png') }}" class="logo-img" alt="">
+          </div>
+          <div class="logo-name flex-grow-1">
+              <h5 class="mb-0">Maxton</h5>
+          </div>
+          <div class="sidebar-close">
+              <span class="material-icons-outlined">close</span>
+          </div>
+      </div>
+      <div class="sidebar-nav">
+          <!--navigation-->
+          <ul class="metismenu" id="sidenav">
+              <li>
+                  <a href="javascript:;" class="has-arrow">
+                      <div class="parent-icon"><i class="material-icons-outlined">home</i>
+                      </div>
+                      <div class="menu-title">Dashboard</div>
+                  </a>
                   <ul>
-                    <li><a href="javascript:;"><i class="material-icons-outlined">arrow_right</i>Level Three</a>
-                    </li>
+                      <li><a href="{{ url('/../admin/index') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Analysis</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/index2') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>eCommerce</a>
+                      </li>
                   </ul>
-                </li>
-              </ul>
-            </li>
+              </li>
+              <li>
+                  <a href="javascript:;" class="has-arrow">
+                      <div class="parent-icon"><i class="material-icons-outlined">widgets</i>
+                      </div>
+                      <div class="menu-title">Widgets</div>
+                  </a>
+                  <ul>
+                      <li><a href="{{ url('/../admin/widgets-data') }}')}}"><i
+                                  class="material-icons-outlined">arrow_right</i>Data</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/widgets-static') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Static</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a class="has-arrow" href="javascript:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">apps</i>
+                      </div>
+                      <div class="menu-title">Apps</div>
+                  </a>
+                  <ul>
+                      <li><a href="{{ url('/../admin/app-emailbox') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Email Box</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/app-emailread') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Email Read</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/app-chat-box') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Chat</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/app-fullcalender') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Calendar</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/app-to-do') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>To do</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/app-invoice') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Invoice</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="menu-label">UI Elements</li>
+              <li>
+                  <a href="{{ url('/../admin/cards') }}">
+                      <div class="parent-icon"><i class="material-icons-outlined">inventory_2</i>
+                      </div>
+                      <div class="menu-title">Cards</div>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="javascript:;" class="has-arrow">
+                      <div class="parent-icon"><i class="material-icons-outlined">shopping_bag</i>
+                      </div>
+                      <div class="menu-title">eCommerce</div>
+                  </a>
+                  <ul>
+                      <li><a href="{{ url('/../admin/ecommerce-add-product') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Add Product</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/ecommerce-products') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Products</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/ecommerce-customers') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Customers</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/ecommerce-customer-details') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Customer Details</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/ecommerce-orders') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Orders</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/ecommerce-order-details') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Order Details</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a class="has-arrow" href="javascript:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">card_giftcard</i>
+                      </div>
+                      <div class="menu-title">Components</div>
+                  </a>
+                  <ul>
+                      <li><a href="{{ url('/../admin/component-alerts') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Alerts</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-accordions') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Accordions</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-badges') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Badges</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-buttons') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Buttons</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-carousels') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Carousels</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-media-object') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Media
+                              Objects</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-modals') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Modals</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-navs-tabs') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Navs & Tabs</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-navbar') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Navbar</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-paginations') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Pagination</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-popovers-tooltips') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Popovers
+                              & Tooltips</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-progress-bars') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Progress</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-spinners') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Spinners</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-notifications') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Notifications</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-avtars-chips') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Avatrs &
+                              Chips</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-typography') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Typography</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/component-text-utilities') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Utilities</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a class="has-arrow" href="javascript:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">view_agenda</i>
+                      </div>
+                      <div class="menu-title">Icons</div>
+                  </a>
+                  <ul>
+                      <li><a href="{{ url('/../admin/icons-line-icons') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Line Icons</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/icons-boxicons') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Boxicons</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/icons-feather-icons') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Feather
+                              Icons</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="menu-label">Forms & Tables</li>
+              <li>
+                  <a class="has-arrow" href="javascript:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">toc</i>
+                      </div>
+                      <div class="menu-title">Forms</div>
+                  </a>
+                  <ul>
+                      <li><a href="{{ url('/../admin/form-elements') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Form Elements</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/form-input-group') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Input Groups</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/form-radios-and-checkboxes') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Radios &
+                              Checkboxes</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/form-layouts') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Forms Layouts</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/form-validations') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Form Validation</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/form-wizard') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Form Wizard</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/form-file-upload') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>File Upload</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/form-date-time-pickes') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Date
+                              Pickers</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/form-select2') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Select2</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/form-repeater') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Form Repeater</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a class="has-arrow" href="javascript:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">api</i>
+                      </div>
+                      <div class="menu-title">Tables</div>
+                  </a>
+                  <ul>
+                      <li><a href="{{ url('/../admin/table-basic-table') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Basic Table</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/table-datatable') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Data Table</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="menu-label">Pages</li>
+              <li>
+                  <a class="has-arrow" href="javascript:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">lock</i>
+                      </div>
+                      <div class="menu-title">Authentication</div>
+                  </a>
+                  <ul>
+                      <li><a class="has-arrow" href="javascript:;"><i
+                                  class="material-icons-outlined">arrow_right</i>Basic</a>
+                          <ul>
+                              <li><a href="{{ url('/../admin/auth-basic-login') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Login</a></li>
+                              <li><a href="{{ url('/../admin/auth-basic-register') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Register</a></li>
+                              <li><a href="{{ url('/../admin/auth-basic-forgot-password') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
+                              <li><a href="{{ url('/../admin/auth-basic-reset-password') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
+                          </ul>
+                      </li>
+                      <li><a class="has-arrow" href="javascript:;"><i
+                                  class="material-icons-outlined">arrow_right</i>Cover</a>
+                          <ul>
+                              <li><a href="{{ url('/../admin/auth-cover-login') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Login</a></li>
+                              <li><a href="{{ url('/../admin/auth-cover-register') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Register</a></li>
+                              <li><a href="{{ url('/../admin/auth-cover-forgot-password') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
+                              <li><a href="{{ url('/../admin/auth-cover-reset-password') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
+                          </ul>
+                      </li>
+                      <li><a class="has-arrow" href="javascript:;"><i
+                                  class="material-icons-outlined">arrow_right</i>Boxed</a>
+                          <ul>
+                              <li><a href="{{ url('/../admin/auth-boxed-login') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Login</a></li>
+                              <li><a href="{{ url('/../admin/auth-boxed-register') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Register</a></li>
+                              <li><a href="{{ url('/../admin/auth-boxed-forgot-password') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
+                              <li><a href="{{ url('/../admin/auth-boxed-reset-password') }}" target="_blank"><i
+                                          class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="{{ url('admin/user-profile') }}">
+                      <div class="parent-icon"><i class="material-icons-outlined">person</i>
+                      </div>
+                      <div class="menu-title">User Profile</div>
+                  </a>
+              </li>
+              <li>
+                  <a href="{{ url('admin/timeline') }}">
+                      <div class="parent-icon"><i class="material-icons-outlined">join_right</i>
+                      </div>
+                      <div class="menu-title">Timeline</div>
+                  </a>
+              </li>
+              <li>
+                  <a class="has-arrow" href="javascript:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">report_problem</i>
+                      </div>
+                      <div class="menu-title">Pages</div>
+                  </a>
+                  <ul>
+                      <li><a href="{{ url('/../admin/pages-error-404') }}" target="_blank"><i
+                                  class="material-icons-outlined">arrow_right</i>404
+                              Error</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/pages-error-505') }}" target="_blank"><i
+                                  class="material-icons-outlined">arrow_right</i>505
+                              Error</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/pages-coming-soon') }}" target="_blank"><i
+                                  class="material-icons-outlined">arrow_right</i>Coming Soon</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/pages-starter-page') }}" target="_blank"><i
+                                  class="material-icons-outlined">arrow_right</i>Blank Page</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="{{ url('/../admin/faq') }}">
+                      <div class="parent-icon"><i class="material-icons-outlined">help_outline</i>
+                      </div>
+                      <div class="menu-title">FAQ</div>
+                  </a>
+              </li>
+              <li>
+                  <a href="{{ url('/../admin/pricing-table') }}">
+                      <div class="parent-icon"><i class="material-icons-outlined">sports_football</i>
+                      </div>
+                      <div class="menu-title">Pricing</div>
+                  </a>
+              </li>
+              <li class="menu-label">Charts & Maps</li>
+              <li>
+                  <a class="has-arrow" href="javascript:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">fitbit</i>
+                      </div>
+                      <div class="menu-title">Charts</div>
+                  </a>
+                  <ul>
+                      <li><a href="{{ url('/../admin/charts-apex-chart') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Apex</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/charts-chartjs') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Chartjs</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a class="has-arrow" href="javascript:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">sports_football</i>
+                      </div>
+                      <div class="menu-title">Maps</div>
+                  </a>
+                  <ul>
+                      <li><a href="{{ url('/../admin/map-google-maps') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Google Maps</a>
+                      </li>
+                      <li><a href="{{ url('/../admin/map-vector-maps') }}"><i
+                                  class="material-icons-outlined">arrow_right</i>Vector Maps</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="menu-label">Others</li>
+              <li>
+                  <a class="has-arrow" href="javascript:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">face_5</i>
+                      </div>
+                      <div class="menu-title">Menu Levels</div>
+                  </a>
+                  <ul>
+                      <li><a class="has-arrow" href="javascript:;"><i
+                                  class="material-icons-outlined">arrow_right</i>Level
+                              One</a>
+                          <ul>
+                              <li><a class="has-arrow" href="javascript:;"><i
+                                          class="material-icons-outlined">arrow_right</i>Level
+                                      Two</a>
+                                  <ul>
+                                      <li><a href="javascript:;"><i
+                                                  class="material-icons-outlined">arrow_right</i>Level Three</a>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="javascrpt:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">description</i>
+                      </div>
+                      <div class="menu-title">Documentation</div>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascrpt:;">
+                      <div class="parent-icon"><i class="material-icons-outlined">support</i>
+                      </div>
+                      <div class="menu-title">Support</div>
+                  </a>
+              </li>
           </ul>
-        </li>
-        <li>
-          <a href="javascrpt:;">
-            <div class="parent-icon"><i class="material-icons-outlined">description</i>
-            </div>
-            <div class="menu-title">Documentation</div>
-          </a>
-        </li>
-        <li>
-          <a href="javascrpt:;">
-            <div class="parent-icon"><i class="material-icons-outlined">support</i>
-            </div>
-            <div class="menu-title">Support</div>
-          </a>
-        </li>
-       </ul>
-      <!--end navigation-->
-  </div>
-</aside>
-<!--end sidebar-->
+          <!--end navigation-->
+      </div>
+  </aside>
+  <!--end sidebar-->
 
 
   <!--start main wrapper-->
@@ -1024,13 +1182,25 @@
       </div>
 
       <div class="row g-3">
-        <div class="col-auto">
-          <div class="position-relative">
-            <input class="form-control px-5" type="search" placeholder="Search Products">
-            <span
-              class="material-icons-outlined position-absolute ms-3 translate-middle-y start-0 top-50 fs-5">search</span>
-          </div>
+        <div class="col-auto d-flex">
+          <form method="GET" action="{{ route('products.Search1') }}" class="search-form d-flex w-100 align-items-center">
+            <div class="position-relative d-flex w-100">
+              <input 
+                class="form-control px-4" 
+                type="search" 
+                name="search" 
+                placeholder="Search Products" 
+                value="{{ request('search') }}"
+              >
+              <button type="submit" class="btn btn-secondary position-absolute end-0 top-0 bottom-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
+        
         <div class="col-auto flex-grow-1 overflow-auto">
           <div class="btn-group position-static">
             <div class="btn-group position-static">
@@ -1092,127 +1262,70 @@
               <table class="table align-middle">
                 <thead class="table-light">
                   <tr>
+                    <th>Id</th>
                     <th>Product Name</th>
+                    <th>USer Id</th>
                     <th>Price</th>
                     <th>Category</th>
-                    <th>Tags</th>
-                    <th>Rating</th>
-                    <th>Vendor</th>
                     <th>Date</th>
-                    <th>Action</th>
+                    <th>Status</th>
+                    <th>Reject/Approve</th>
                   </tr>
                 </thead>
                 <tbody>
-                                          {{-- Card Start --}}
-                                          @if($products->count())
-                                          @foreach ($products as $product)
-                                              <div data-wow-delay="0s" class="wow fadeInUp fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                                                  <div class="tf-card-box style-1">
-                                                      <div class="card-media">
-                                                          <a href="{{ route('software_products.show', $product->id) }}">
-                                                              @if (is_array($product->screenshots) && count($product->screenshots) > 0)
-                                                                  <img src="{{ asset('storage/' . $product->screenshots[0]) }}"
-                                                                      alt="{{ $product->name }}">
-                                                              @else
-                                                                  <img src="{{ asset('/../template/assets/images/box-item/default-placeholder.png') }}"
-                                                                      alt="No image">
-                                                              @endif
-                                                          </a>
-                                                          <span class="wishlist-button icon-heart"></span>
-                                                          <div class="button-place-bid">
-                                                              <a href="{{ route('software_products.show', $product->id) }}"
-                                                                  class="tf-button">
-                                                                  <span>{{ $product->pricing_type === 'free' ? 'Download' : 'Buy Now' }}</span>
-                                                              </a>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="name">
-                                                          <a href="{{ route('software_products.show', $product->id) }}">
-                                                              {{ Str::limit($product->name, 30) }}
-                                                          </a>
-                                                      </h5>
-                                                      <div class="author flex items-center">
-                                                          <div class="avatar">
-                                                              <img src="{{ asset('/../template/assets/images/avatar/avatar-box-01.jpg') }}"
-                                                                  alt="Creator Avatar">
-                                                          </div>
-                                                          <div class="info">
-                                                              <span>Created by:</span>
-                                                              <h6>
-                                                                  <a href="#">{{ $product->user->name ?? 'Unknown' }}</a>
-                                                              </h6>
-                                                          </div>
-                                                      </div>
-                                                      <div class="divider"></div>
-                                                      <div class="meta-info flex items-center justify-between">
-                                                          <span class="text-bid">Price</span>
-                                                          <h6 class="price gem">
-                                                              <i class="icon-gem"></i>
-                                                              {{ $product->pricing_type === 'free' ? 'Free' : number_format($product->price, 2) }}
-                                                          </h6>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          @endforeach
-                                          @else
-                                          <p>No products found.</p>
-                                          @endif 
-                                          {{-- Card End --}}
-                  <tr>
+                    @if($products->count())
+                     @foreach ($products as $product)<tr>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="product-box">
-                          <img src="assets/images/orders/01.png" width="70" class="rounded-3" alt="">
-                        </div>
+                    {{ $product->id }}
+                    </td>
+                    <td>
                         <div class="product-info">
                           <h5 class="name">
-                            <a style="color: white; text-transform: capitalize;" href="{{ route('software_products.show', $product->id) }}">
+                            <a style="color: white; text-transform: capitalize; text-decoration: none;" href="{{ route('software_products.show', $product->id) }}">
                                 {{ Str::limit($product->name, 30) }}
                             </a>
                         </h5>
                         </div>
                       </div>
                     </td>
-                    <td>                                                      <div class="meta-info flex items-center justify-between">
+                    <td>{{ $product->user_id }}</td>
+                    <td>                                                      
+                      <div class="meta-info flex items-center justify-between">
                       <h6 class="price gem">
                           <i class="icon-gem"></i>
                           {{ $product->pricing_type === 'free' ? 'Free' : number_format($product->price, 2) }}
                       </h6>
-                  </div></td>
-                    <td>Palazzos</td>
+                  </div>
+                  </td>
                     <td>
-                      <div class="product-tags">
-                        <a href="javascript:;" class="btn-tags">Jeans</a>
-                        <a href="javascript:;" class="btn-tags">iPhone</a>
-                        <a href="javascript:;" class="btn-tags">Laptops</a>
-                        <a href="javascript:;" class="btn-tags">Mobiles</a>
-                        <a href="javascript:;" class="btn-tags">Wallets</a>
-                      </div>
+                      {{ $product->category }} 
                     </td>
+                    <td>{{ $product->created_at->format('Y-m-d') }}</td>
+                    <td>{{ ucfirst($product->status) }}</td>
+
                     <td>
-                      <div class="product-rating">
-                        <i class="bi bi-star-fill text-warning me-2"></i><span>5.0</span>
-                      </div>
+                        @if($product->status == 'pending')
+                            <form action="{{ route('software_products.approve', $product->id) }}" method="POST" style="display:inline;">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                            </form>
+                
+                            <form action="{{ route('software_products.reject', $product->id) }}" method="POST" style="display:inline;">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+                            </form>
+                        @elseif($product->status == 'approved')
+                            <h6><span class="badge bg-success">Approved</span></h6>
+                        @elseif($product->status == 'rejected')
+                        <h6><span class="badge bg-danger">Rejected</span></h6>
+                        @endif
                     </td>
-                    <td>
-                      <a href="javascript:;">Michle Shoes England</a>
-                    </td>
-                    <td>
-                      Nov 12, 10:45 PM
-                    </td>
-                    <td>
-                      <div class="dropdown">
-                        <button class="btn btn-sm btn-filter dropdown-toggle dropdown-toggle-nocaret"
-                          type="button" data-bs-toggle="dropdown">
-                          <i class="bi bi-three-dots"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </div>
-                    </td>
+                    @endforeach
+                    @else
+                      <tr><td colspan="8" class="text-center"><h4>No products found.</h4> </td></tr>
+                    @endif 
                   </tr>
                   {{-- <tr>
                     <td>
@@ -1856,16 +1969,19 @@
   </div>
   <!--start switcher-->
 
-  <!--bootstrap js-->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--bootstrap js-->
+    <script src="{{ asset('/../admin/assets/js/bootstrap.bundle.min.js') }}"></script>
 
-  <!--plugins-->
-  <script src="assets/js/jquery.min.js"></script>
-  <!--plugins-->
-  <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-  <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
-  <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
-  <script src="assets/js/main.js"></script>
+    <!--plugins-->
+    <script src="{{ asset('/../admin/assets/js/jquery.min.js') }}"></script>
+    <!--plugins-->
+    <script src="{{ asset('/../admin/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js') }}"></script>
+    <script src="{{ asset('/../admin/assets/plugins/metismenu/metisMenu.min.js') }}"></script>
+    <script src="{{ asset('/../admin/assets/plugins/apexchart/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('/../admin/assets/plugins/simplebar/js/simplebar.min.js') }}"></script>
+    <script src="{{ asset('/../admin/assets/plugins/peity/jquery.peity.min.js') }}"></script>
+    <script src="{{ asset('/../admin/assets/js/main.js') }}"></script>
+    <script src="{{ asset('/../admin/assets/js/dashboard1.js') }}"></script>
 
 
 </body>

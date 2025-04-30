@@ -594,7 +594,7 @@
                             <div data-wow-delay="0s" class="wow fadeInUp fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="{{ route('software_products.show', $product->id) }}">
+                                        <a href="{{ url('software_products', $product->id) }}">
                                             @if (is_array($product->screenshots) && count($product->screenshots) > 0)
                                                 <img src="{{ asset('storage/' . $product->screenshots[0]) }}"
                                                     alt="{{ $product->name }}">
@@ -605,20 +605,23 @@
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="{{ route('software_products.show', $product->id) }}"
+                                            <form action="{{ route('orders.store') }}" method="POST">
+                                                @csrf
+                                            <a href="{{  url('software_products', $product->id) }}"
                                                 class="tf-button">
                                                 <span>{{ $product->pricing_type === 'free' ? 'Download' : 'Buy Now' }}</span>
                                             </a>
+                                        </form>
                                         </div>
                                     </div>
                                     <h5 class="name">
-                                        <a href="{{ route('software_products.show', $product->id) }}">
+                                        <a href="{{  url('software_products', $product->id) }}">
                                             {{ Str::limit($product->name, 30) }}
                                         </a>
                                     </h5>
                                     <div class="author flex items-center">
                                         <div class="avatar">
-                                            <img src="{{ asset('/../template/assets/images/avatar/avatar-box-01.jpg') }}"
+                                            <img src="{{ asset('user_profile') }}"
                                                 alt="Creator Avatar">
                                         </div>
                                         <div class="info">
@@ -640,7 +643,9 @@
                             </div>
                         @endforeach
                         @else
-                        <p>No products found.</p>
+                        <div class="text-center mt-3 mb-5">
+                        <h1>No products found.</h1>
+                        </div>
                         @endif 
                         {{-- Card End --}}
                         

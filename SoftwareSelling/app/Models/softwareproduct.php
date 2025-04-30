@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+
 
 class SoftwareProduct extends Model
 {
@@ -38,7 +40,7 @@ class SoftwareProduct extends Model
     /**
      * Get the user who submitted the software.
      */
-    public function user()
+    public function users()
     {
         return $this->belongsTo(User::class);
     }
@@ -56,6 +58,26 @@ class SoftwareProduct extends Model
             'detected_language' => $this->detected_language,
             'status' => $this->status,
         ];
+    }
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+
+    public function downloads()
+    {
+        return $this->hasMany(SoftwareDownload::class);
+    }
+
+    public function analytics()
+    {
+        return $this->hasOne(SoftwareAnalytics::class);
+    }
+
+    public function licenses()
+    {
+        return $this->hasMany(SoftwareLicense::class);
     }
 }
 
