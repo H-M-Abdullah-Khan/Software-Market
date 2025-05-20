@@ -33,14 +33,12 @@ class SoftwareProductController extends Controller
             'description' => 'nullable|string',
             'category' => 'nullable|string',
             'pricing_type' => 'required|in:free,paid',
-            'price' => 'nullable|bignit',
-            'main_file' => 'required|file',
+            'price' => 'nullable|numeric',
             'screenshots' => 'nullable|array',
             'demo_url' => 'nullable|url',
         ]);
 
         $validated['user_id'] = Auth::id();
-        $validated['main_file'] = $request->file('main_file')->store('uploads/software_files');
 
         $validated['screenshots'] = $request->has('screenshots')
             ? json_encode($request->screenshots)
@@ -48,7 +46,10 @@ class SoftwareProductController extends Controller
 
         SoftwareProduct::create($validated);
 
-        return redirect()->route('software_products.index')->with('success', 'Software submitted successfully.');
+        if(Auth::user()->role == 'admin'){
+            return redirect('admin/ecommerce-products')->with('success', 'Software submitted successfully.');  
+        }
+        return redirect('company/ecommerce-products')->with('success', 'Software submitted successfully.');
     }
 
     public function show(SoftwareProduct $softwareProduct)
@@ -92,73 +93,88 @@ class SoftwareProductController extends Controller
     }
 
     public function Search(Request $request)
-{
-    $query = SoftwareProduct::query();
+    {
+        $query = SoftwareProduct::query();
 
-    // Search by name
-    if ($request->filled('search')) {
-        $query->where('name', 'like', '%' . $request->search . '%');
-    }
+        // Search by name
+        if ($request->filled('search')) {
+            $query->where('name', 'like', '%' . $request->search . '%');
+        }
 
-    // Filter by category
-    if ($request->filled('category')) {
-        $query->where('category', $request->category);
-    }
+        // Filter by category
+        if ($request->filled('category')) {
+            $query->where('category', $request->category);
+        }
 
-    // Filter by price range
-    if ($request->filled('min_price')) {
-        $query->where('price', '>=', $request->min_price);
-    }
+        // Filter by price range
+        if ($request->filled('min_price')) {
+            $query->where('price', '>=', $request->min_price);
+        }
 
-    if ($request->filled('max_price')) { 
-        $query->where('price', '<=', $request->max_price);
-    }
+        if ($request->filled('max_price')) {
+            $query->where('price', '<=', $request->max_price);
+        }
 
-    // $products = $query->get(); // or paginate() if needed
-    // $categories = category::all(); // for dropdown
-    $products = $query->get();
-    return view('explore-1', compact('products'));
+        // $products = $query->get(); // or paginate() if needed
+        // $categories = category::all(); // for dropdown
+        $products = $query->get();
+        return view('explore-1', compact('products'));
     }
     public function Search1(Request $request)
     {
-    $queryy = SoftwareProduct::query();
+        $queryy = SoftwareProduct::query();
 
-    // Search by name
-    if ($request->filled('search')) {
-        $queryy->where('name', 'like', '%' . $request->search . '%');
+        // Search by name
+        if ($request->filled('search1')) {
+            $queryy->where('name', 'like', '%' . $request->search . '%');
+        }
+
+        // Filter by category
+        if ($request->filled('category')) {
+            $queryy->where('category', $request->category);
+        }
+
+        // Filter by price range
+        if ($request->filled('min_price')) {
+            $queryy->where('price', '>=', $request->min_price);
+        }
+
+        if ($request->filled('max_price')) {
+            $queryy->where('price', '<=', $request->max_price);
+        }
+
+        // $products = $query->get(); // or paginate() if needed
+        // $categories = category::all(); // for dropdown
+        $products = $queryy->get();
+        return view('admin/ecommerce-products', compact('products'));
+    }
+    public function approve(SoftwareProduct $softwareProduct)
+    {
+        $softwareProduct->update(['status' => 'approved']);
+        // $softwareProduct->user->notify(new SoftwareStatusNotification('approved', $softwareProduct->name));
+        return redirect()->back()->with('success', 'Software approved.');
     }
 
-    // Filter by category
-    if ($request->filled('category')) {
-        $queryy->where('category', $request->category);
+    public function reject(SoftwareProduct $softwareProduct)
+    {
+        $softwareProduct->update(['status' => 'rejected']);
+        // $softwareProduct->user->notify(new SoftwareStatusNotification('rejected', $softwareProduct->name));
+        return redirect()->back()->with('error', 'Software rejected.');
     }
 
-    // Filter by price range
-    if ($request->filled('min_price')) {
-        $queryy->where('price', '>=', $request->min_price);
+    public function buy(Request $request)
+    {
+        // Validate the incoming request data
+        $validatedData = $request->validate([
+            'product_name' => 'required|string',
+            'order_date' => 'required|date',
+            'customer_name' => 'required|string',
+            'payment' => 'required|string',
+            'payment_status' => 'required|string',
+            'total_price' => 'required|numeric',
+            'quantity' => 'required|integer',
+            'order_status' => 'required|string',
+        ]);
+        return redirect()->back();
     }
-
-    if ($request->filled('max_price')) {
-        $queryy->where('price', '<=', $request->max_price);
-    }
-
-    // $products = $query->get(); // or paginate() if needed
-    // $categories = category::all(); // for dropdown
-    $products = $queryy->get();
-    return view('admin/ecommerce-products', compact('products'));
-}
-public function approve(SoftwareProduct $softwareProduct)
-{
-    $softwareProduct->update(['status' => 'approved']);
-    $softwareProduct->user->notify(new SoftwareStatusNotification('approved', $softwareProduct->name));
-    return redirect()->back()->with('success', 'Software approved.');
-}
-
-public function reject(SoftwareProduct $softwareProduct)
-{
-    $softwareProduct->update(['status' => 'rejected']);
-    $softwareProduct->user->notify(new SoftwareStatusNotification('rejected', $softwareProduct->name));
-    return redirect()->back()->with('error', 'Software rejected.');
-}
-
 }

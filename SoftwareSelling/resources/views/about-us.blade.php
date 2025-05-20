@@ -103,13 +103,25 @@
                                             </li>
                                             @if (Route::has('login'))
                                             @auth
-                                            <li>
-                                                <a class="tf-button style-1"
-                                                    href="{{ url('/dashboard') }}"  
-                                                >
-                                                    Dashboard
+                                            @if(Auth::user()->role == 'admin')
+                                            <li class="menu-item">
+                                                <a href="{{ url('/admin/dashboard') }}">
+                                                    Admin Dashboard
                                                 </a>
                                             </li>
+                                        @elseif(Auth::user()->role == 'company')
+                                            <li class="menu-item">
+                                                <a href="{{ url('/company/dashboard') }}">
+                                                    Company Dashboard
+                                                </a>
+                                            </li>
+                                            @elseif(Auth::user()->role == 'company')
+                                            <li class="menu-item">
+                                                <a href="{{ url('/dashboard') }}">
+                                                    User Dashboard
+                                                </a>
+                                            </li>
+                                        @endif
                                             @else
                                             <li class="menu-item">
                                                 <a class=""
@@ -266,13 +278,25 @@
                                 </li>
                                 @if (Route::has('login'))
                                             @auth
-                                            <li>
-                                                <a class="tf-button style-1"
-                                                    href="{{ url('/dashboard') }}"  
-                                                >
-                                                    Dashboard
+                                            @if(Auth::user()->role == 'admin')
+                                            <li class="menu-item">
+                                                <a href="{{ url('/admin/dashboard') }}">
+                                                    Admin Dashboard
                                                 </a>
                                             </li>
+                                        @elseif(Auth::user()->role == 'company')
+                                            <li class="menu-item">
+                                                <a href="{{ url('/company/dashboard') }}">
+                                                    Company Dashboard
+                                                </a>
+                                            </li>
+                                            @elseif(Auth::user()->role == 'company')
+                                            <li class="menu-item">
+                                                <a href="{{ url('/dashboard') }}">
+                                                    User Dashboard
+                                                </a>
+                                            </li>
+                                        @endif
                                             @else
                                             <li class="menu-item">
                                                 <a class=""

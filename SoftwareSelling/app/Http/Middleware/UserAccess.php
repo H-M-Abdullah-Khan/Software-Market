@@ -1,7 +1,7 @@
 <?php
-  
+
 namespace App\Http\Middleware;
-  
+
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -12,14 +12,22 @@ class UserAccess
     /**
      * Handle an incoming request.
      *
-     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @param  string  $userType
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function handle(Request $request, Closure $next, $userType): Response
+    public function handle(Request $request, Closure $next, string $userType): Response
     {
-        if(Auth::user()->type == $userType){
+        if (!Auth::check()) {
+            return response()->json(['message' => 'Unauthorized access.'], 401);
+        }
+    
+        if (Auth::user()->role === $userType) {
             return $next($request);
         }
-          
-        return response()->json(['You do not have permission to access for this page.']);
+
+        // Return a forbidden response if the user does not have access
+        return redirect('404');
     }
 }

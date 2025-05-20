@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 
@@ -79,5 +80,9 @@ class SoftwareProduct extends Model
     {
         return $this->hasMany(SoftwareLicense::class);
     }
-}
 
+    public function commissions()
+    {
+        return $this->hasOne(Commission::class, 'software_product_id')->where('user_id', Auth::user()->id);
+    }
+}

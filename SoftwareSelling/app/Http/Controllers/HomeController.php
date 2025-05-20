@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
     public function company()
     {
         return view('company/dashboard');
@@ -34,7 +34,7 @@ class HomeController extends Controller
     }
     public function explore()
     {
-         $products = SoftwareProduct::where('status','=','approved')->get();
+        $products = SoftwareProduct::where('status','=','approved')->get();
         return view('explore-1', compact('products'));
     }
     public function Create()
@@ -128,5 +128,9 @@ class HomeController extends Controller
     public function upcoming()
     {
         return view('upcoming');
+    }
+    public function errorpage()
+    {
+        return view('404');
     }
 }

@@ -56,11 +56,11 @@ class User extends Authenticatable
     protected function type(): Attribute
     {
         return new Attribute(
-            get: fn ($value) => in_array($value, [1, 2, 3]) ? ["admin", "user", "company"][$value] : 'default_value',
+            get: fn($value) => in_array($value, [1, 2, 3]) ? ["admin", "user", "company"][$value] : 'default_value',
         );
     }
-    
-    
+
+
 
     public function software()
     {
@@ -76,5 +76,4 @@ class User extends Authenticatable
     {
         return $this->hasMany(UserActivityLog::class);
     }
-
 }

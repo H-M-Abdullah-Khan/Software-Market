@@ -25,7 +25,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin Dashboard</title>
+  <title>User Dashboard</title>
   <!--favicon-->
   <link rel="icon" href="{{asset('/../admin/assets/images/favicon-32x32.png')}}" type="image/png">
   <!-- loader-->
@@ -621,7 +621,7 @@
               <div class="text-center">
                 <img src="{{asset('/../admin/assets/images/avatars/01.png')}}" class="rounded-circle p-1 shadow mb-3" width="90" height="90"
                   alt="">
-                <h5 class="user-name mb-0 fw-bold">Admin</h5>
+                <h5 class="user-name mb-0 fw-bold">User</h5>
               </div>
             </a>
             <hr class="dropdown-divider">

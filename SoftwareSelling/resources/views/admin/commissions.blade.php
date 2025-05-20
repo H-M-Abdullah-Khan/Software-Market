@@ -1,32 +1,13 @@
-{{-- <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout> --}}
-
-
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
 
 
-<!-- Mirrored from codervent.com/maxton/demo/vertical-menu/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 14:21:21 GMT -->
+<!-- Mirrored from codervent.com/maxton/demo/vertical-menu/ecommerce-orders.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 14:22:37 GMT -->
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comapny Dashboard</title>
+    <title>Admin Dashboard</title>
     <!--favicon-->
     <link rel="icon" href="{{ asset('/../admin/assets/images/favicon-32x32.png') }}" type="image/png">
     <!-- loader-->
@@ -51,10 +32,115 @@
     <link href="{{ asset('/../admin/sass/semi-dark.css') }}" rel="stylesheet">
     <link href="{{ asset('/../admin/sass/bordered-theme.css') }}" rel="stylesheet">
     <link href="{{ asset('/../admin/sass/responsive.css') }}" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
 
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .commission-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .commission-table th,
+        .commission-table td {
+            padding: 10px 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .commission-table th {
+            /* background-color: #007BFF;
+            color: #fff; */
+            text: center;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .btn-warning {
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        form.inline-form {
+            display: inline;
+        }
+
+        .input-rate {
+            width: 80px;
+            padding: 6px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+
+            .commission-table,
+            .commission-table thead,
+            .commission-table tbody,
+            .commission-table th,
+            .commission-table td,
+            .commission-table tr {
+                display: block;
+            }
+
+            .commission-table tr {
+                margin-bottom: 15px;
+            }
+
+            .commission-table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+
+            .commission-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                top: 12px;
+                font-weight: bold;
+                text-align: left;
+            }
+
+            .input-rate {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-[#f3f7f6] min-h-screen p-4 sm:p-6 md:p-10">
 
     <!--start header-->
     <header class="top-header">
@@ -695,7 +781,7 @@
                                 <img src="{{ asset('/../admin/assets/images/avatars/01.png') }}"
                                     class="rounded-circle p-1 shadow mb-3" width="90" height="90"
                                     alt="">
-                                <h5 class="user-name mb-0 fw-bold">Company</h5>
+                                <h5 class="user-name mb-0 fw-bold">Admin</h5>
                             </div>
                         </a>
                         <hr class="dropdown-divider">
@@ -749,10 +835,10 @@
                         <div class="menu-title">Dashboard</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/index') }}"><i
+                        <li><a href="{{ url('/../admin/index') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Analysis</a>
                         </li>
-                        <li><a href="{{ url('/../company/index2') }}"><i
+                        <li><a href="{{ url('/../admin/index2') }}"><i
                                     class="material-icons-outlined">arrow_right</i>eCommerce</a>
                         </li>
                     </ul>
@@ -764,10 +850,10 @@
                         <div class="menu-title">Widgets</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/widgets-data') }}')}}"><i
+                        <li><a href="{{ url('/../admin/widgets-data') }}')}}"><i
                                     class="material-icons-outlined">arrow_right</i>Data</a>
                         </li>
-                        <li><a href="{{ url('/../company/widgets-static') }}"><i
+                        <li><a href="{{ url('/../admin/widgets-static') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Static</a>
                         </li>
                     </ul>
@@ -779,29 +865,29 @@
                         <div class="menu-title">Apps</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/app-emailbox') }}"><i
+                        <li><a href="{{ url('/../admin/app-emailbox') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Email Box</a>
                         </li>
-                        <li><a href="{{ url('/../company/app-emailread') }}"><i
+                        <li><a href="{{ url('/../admin/app-emailread') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Email Read</a>
                         </li>
-                        <li><a href="{{ url('/../company/app-chat-box') }}"><i
+                        <li><a href="{{ url('/../admin/app-chat-box') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Chat</a>
                         </li>
-                        <li><a href="{{ url('/../company/app-fullcalender') }}"><i
+                        <li><a href="{{ url('/../admin/app-fullcalender') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Calendar</a>
                         </li>
-                        <li><a href="{{ url('/../company/app-to-do') }}"><i
+                        <li><a href="{{ url('/../admin/app-to-do') }}"><i
                                     class="material-icons-outlined">arrow_right</i>To do</a>
                         </li>
-                        <li><a href="{{ url('/../company/app-invoice') }}"><i
+                        <li><a href="{{ url('/../admin/app-invoice') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Invoice</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-label">UI Elements</li>
                 <li>
-                    <a href="{{ url('/../company/cards') }}">
+                    <a href="{{ url('/../admin/cards') }}">
                         <div class="parent-icon"><i class="material-icons-outlined">inventory_2</i>
                         </div>
                         <div class="menu-title">Cards</div>
@@ -815,26 +901,26 @@
                         <div class="menu-title">eCommerce</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/ecommerce-add-product') }}"><i
+                        <li><a href="{{ url('/../admin/ecommerce-add-product') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Add Product</a>
                         </li>
-                        <li><a href="{{ url('/../company/ecommerce-products') }}"><i
+                        <li><a href="{{ url('/../admin/ecommerce-products') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Products</a>
                         </li>
-                        <li><a href="{{ url('/../company/ecommerce-customers') }}"><i
+                        <li><a href="{{ url('/../admin/ecommerce-customers') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Customers</a>
                         </li>
-                        <li><a href="{{ url('/../company/ecommerce-customer-details') }}"><i
+                        <li><a href="{{ url('/../admin/ecommerce-customer-details') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Customer Details</a>
                         </li>
-                        <li><a href="{{ url('/../company/ecommerce-company-orders') }}"><i
+                        <li><a href="{{ url('/../admin/ecommerce-orders') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Orders</a>
                         </li>
-                        <li><a href="{{ url('/../company/ecommerce-order-details') }}"><i
+                        <li><a href="{{ url('/../admin/ecommerce-order-details') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Order Details</a>
                         </li>
-                        <li><a href="{{ url('/../company/commission') }}"><i
-                                    class="material-icons-outlined">arrow_right</i>Check Commission</a>
+                        <li><a href="{{ url('/../admin/commissions') }}"><i
+                                    class="material-icons-outlined">arrow_right</i>Manage Commission</a>
                         </li>
                     </ul>
                 </li>
@@ -845,58 +931,58 @@
                         <div class="menu-title">Components</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/component-alerts') }}"><i
+                        <li><a href="{{ url('/../admin/component-alerts') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Alerts</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-accordions') }}"><i
+                        <li><a href="{{ url('/../admin/component-accordions') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Accordions</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-badges') }}"><i
+                        <li><a href="{{ url('/../admin/component-badges') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Badges</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-buttons') }}"><i
+                        <li><a href="{{ url('/../admin/component-buttons') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Buttons</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-carousels') }}"><i
+                        <li><a href="{{ url('/../admin/component-carousels') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Carousels</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-media-object') }}"><i
+                        <li><a href="{{ url('/../admin/component-media-object') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Media
                                 Objects</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-modals') }}"><i
+                        <li><a href="{{ url('/../admin/component-modals') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Modals</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-navs-tabs') }}"><i
+                        <li><a href="{{ url('/../admin/component-navs-tabs') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Navs & Tabs</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-navbar') }}"><i
+                        <li><a href="{{ url('/../admin/component-navbar') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Navbar</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-paginations') }}"><i
+                        <li><a href="{{ url('/../admin/component-paginations') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Pagination</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-popovers-tooltips') }}"><i
+                        <li><a href="{{ url('/../admin/component-popovers-tooltips') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Popovers
                                 & Tooltips</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-progress-bars') }}"><i
+                        <li><a href="{{ url('/../admin/component-progress-bars') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Progress</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-spinners') }}"><i
+                        <li><a href="{{ url('/../admin/component-spinners') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Spinners</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-notifications') }}"><i
+                        <li><a href="{{ url('/../admin/component-notifications') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Notifications</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-avtars-chips') }}"><i
+                        <li><a href="{{ url('/../admin/component-avtars-chips') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Avatrs &
                                 Chips</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-typography') }}"><i
+                        <li><a href="{{ url('/../admin/component-typography') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Typography</a>
                         </li>
-                        <li><a href="{{ url('/../company/component-text-utilities') }}"><i
+                        <li><a href="{{ url('/../admin/component-text-utilities') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Utilities</a>
                         </li>
                     </ul>
@@ -908,13 +994,13 @@
                         <div class="menu-title">Icons</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/icons-line-icons') }}"><i
+                        <li><a href="{{ url('/../admin/icons-line-icons') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Line Icons</a>
                         </li>
-                        <li><a href="{{ url('/../company/icons-boxicons') }}"><i
+                        <li><a href="{{ url('/../admin/icons-boxicons') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Boxicons</a>
                         </li>
-                        <li><a href="{{ url('/../company/icons-feather-icons') }}"><i
+                        <li><a href="{{ url('/../admin/icons-feather-icons') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Feather
                                 Icons</a>
                         </li>
@@ -928,36 +1014,36 @@
                         <div class="menu-title">Forms</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/form-elements') }}"><i
+                        <li><a href="{{ url('/../admin/form-elements') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Form Elements</a>
                         </li>
-                        <li><a href="{{ url('/../company/form-input-group') }}"><i
+                        <li><a href="{{ url('/../admin/form-input-group') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Input Groups</a>
                         </li>
-                        <li><a href="{{ url('/../company/form-radios-and-checkboxes') }}"><i
+                        <li><a href="{{ url('/../admin/form-radios-and-checkboxes') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Radios &
                                 Checkboxes</a>
                         </li>
-                        <li><a href="{{ url('/../company/form-layouts') }}"><i
+                        <li><a href="{{ url('/../admin/form-layouts') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Forms Layouts</a>
                         </li>
-                        <li><a href="{{ url('/../company/form-validations') }}"><i
+                        <li><a href="{{ url('/../admin/form-validations') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Form Validation</a>
                         </li>
-                        <li><a href="{{ url('/../company/form-wizard') }}"><i
+                        <li><a href="{{ url('/../admin/form-wizard') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Form Wizard</a>
                         </li>
-                        <li><a href="{{ url('/../company/form-file-upload') }}"><i
+                        <li><a href="{{ url('/../admin/form-file-upload') }}"><i
                                     class="material-icons-outlined">arrow_right</i>File Upload</a>
                         </li>
-                        <li><a href="{{ url('/../company/form-date-time-pickes') }}"><i
+                        <li><a href="{{ url('/../admin/form-date-time-pickes') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Date
                                 Pickers</a>
                         </li>
-                        <li><a href="{{ url('/../company/form-select2') }}"><i
+                        <li><a href="{{ url('/../admin/form-select2') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Select2</a>
                         </li>
-                        <li><a href="{{ url('/../company/form-repeater') }}"><i
+                        <li><a href="{{ url('/../admin/form-repeater') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Form Repeater</a>
                         </li>
                     </ul>
@@ -969,10 +1055,10 @@
                         <div class="menu-title">Tables</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/table-basic-table') }}"><i
+                        <li><a href="{{ url('/../admin/table-basic-table') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Basic Table</a>
                         </li>
-                        <li><a href="{{ url('/../company/table-datatable') }}"><i
+                        <li><a href="{{ url('/../admin/table-datatable') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Data Table</a>
                         </li>
                     </ul>
@@ -988,39 +1074,39 @@
                         <li><a class="has-arrow" href="javascript:;"><i
                                     class="material-icons-outlined">arrow_right</i>Basic</a>
                             <ul>
-                                <li><a href="{{ url('/../company/auth-basic-login') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-basic-login') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Login</a></li>
-                                <li><a href="{{ url('/../company/auth-basic-register') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-basic-register') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Register</a></li>
-                                <li><a href="{{ url('/../company/auth-basic-forgot-password') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-basic-forgot-password') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
-                                <li><a href="{{ url('/../company/auth-basic-reset-password') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-basic-reset-password') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
                             </ul>
                         </li>
                         <li><a class="has-arrow" href="javascript:;"><i
                                     class="material-icons-outlined">arrow_right</i>Cover</a>
                             <ul>
-                                <li><a href="{{ url('/../company/auth-cover-login') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-cover-login') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Login</a></li>
-                                <li><a href="{{ url('/../company/auth-cover-register') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-cover-register') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Register</a></li>
-                                <li><a href="{{ url('/../company/auth-cover-forgot-password') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-cover-forgot-password') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
-                                <li><a href="{{ url('/../company/auth-cover-reset-password') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-cover-reset-password') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
                             </ul>
                         </li>
                         <li><a class="has-arrow" href="javascript:;"><i
                                     class="material-icons-outlined">arrow_right</i>Boxed</a>
                             <ul>
-                                <li><a href="{{ url('/../company/auth-boxed-login') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-boxed-login') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Login</a></li>
-                                <li><a href="{{ url('/../company/auth-boxed-register') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-boxed-register') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Register</a></li>
-                                <li><a href="{{ url('/../company/auth-boxed-forgot-password') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-boxed-forgot-password') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Forgot Password</a></li>
-                                <li><a href="{{ url('/../company/auth-boxed-reset-password') }}" target="_blank"><i
+                                <li><a href="{{ url('/../admin/auth-boxed-reset-password') }}" target="_blank"><i
                                             class="material-icons-outlined">arrow_right</i>Reset Password</a></li>
                             </ul>
                         </li>
@@ -1047,31 +1133,31 @@
                         <div class="menu-title">Pages</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/pages-error-404') }}" target="_blank"><i
+                        <li><a href="{{ url('/../admin/pages-error-404') }}" target="_blank"><i
                                     class="material-icons-outlined">arrow_right</i>404
                                 Error</a>
                         </li>
-                        <li><a href="{{ url('/../company/pages-error-505') }}" target="_blank"><i
+                        <li><a href="{{ url('/../admin/pages-error-505') }}" target="_blank"><i
                                     class="material-icons-outlined">arrow_right</i>505
                                 Error</a>
                         </li>
-                        <li><a href="{{ url('/../company/pages-coming-soon') }}" target="_blank"><i
+                        <li><a href="{{ url('/../admin/pages-coming-soon') }}" target="_blank"><i
                                     class="material-icons-outlined">arrow_right</i>Coming Soon</a>
                         </li>
-                        <li><a href="{{ url('/../company/pages-starter-page') }}" target="_blank"><i
+                        <li><a href="{{ url('/../admin/pages-starter-page') }}" target="_blank"><i
                                     class="material-icons-outlined">arrow_right</i>Blank Page</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="{{ url('/../company/faq') }}">
+                    <a href="{{ url('/../admin/faq') }}">
                         <div class="parent-icon"><i class="material-icons-outlined">help_outline</i>
                         </div>
                         <div class="menu-title">FAQ</div>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/../company/pricing-table') }}">
+                    <a href="{{ url('/../admin/pricing-table') }}">
                         <div class="parent-icon"><i class="material-icons-outlined">sports_football</i>
                         </div>
                         <div class="menu-title">Pricing</div>
@@ -1085,10 +1171,10 @@
                         <div class="menu-title">Charts</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/charts-apex-chart') }}"><i
+                        <li><a href="{{ url('/../admin/charts-apex-chart') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Apex</a>
                         </li>
-                        <li><a href="{{ url('/../company/charts-chartjs') }}"><i
+                        <li><a href="{{ url('/../admin/charts-chartjs') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Chartjs</a>
                         </li>
                     </ul>
@@ -1100,10 +1186,10 @@
                         <div class="menu-title">Maps</div>
                     </a>
                     <ul>
-                        <li><a href="{{ url('/../company/map-google-maps') }}"><i
+                        <li><a href="{{ url('/../admin/map-google-maps') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Google Maps</a>
                         </li>
-                        <li><a href="{{ url('/../company/map-vector-maps') }}"><i
+                        <li><a href="{{ url('/../admin/map-vector-maps') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Vector Maps</a>
                         </li>
                     </ul>
@@ -1153,916 +1239,104 @@
     </aside>
     <!--end sidebar-->
 
+
     <!--start main wrapper-->
     <main class="main-wrapper">
         <div class="main-content">
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                <div class="breadcrumb-title pe-3">{{ __('Company Dashboard') }}</div>
+                <div class="breadcrumb-title pe-3">Components</div>
                 <div class="ps-3">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb mb-0 p-0">
                             <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Analysis</li>
+                            <li class="breadcrumb-item active" aria-current="page">Manage Comissions</li>
                         </ol>
                     </nav>
                 </div>
-                <div class="ms-auto">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-outline-primary">Settings</button>
-                        <button type="button"
-                            class="btn btn-outline-primary split-bg-primary dropdown-toggle dropdown-toggle-split"
-                            data-bs-toggle="dropdown"> <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"> <a class="dropdown-item"
-                                href="javascript:;">Action</a>
-                            <a class="dropdown-item" href="javascript:;">Another action</a>
-                            <a class="dropdown-item" href="javascript:;">Something else here</a>
-                            <div class="dropdown-divider"></div> <a class="dropdown-item"
-                                href="javascript:;">Separated link</a>
-                        </div>
-                    </div>
-                </div>
             </div>
             <!--end breadcrumb-->
+            <div class="card mt-4">
+                <div class="card-body">
+                    <div class="customer-table">
+                        <div class="table-responsive white-space-nowrap">
+                            <!-- Table -->
 
-            <div class="row">
-                <div class="col-xxl-8 d-flex align-items-stretch">
-                    <div class="card w-100 overflow-hidden rounded-4">
-                        <div class="card-body position-relative p-4">
-                            <div class="row">
-                                <div class="col-12 col-sm-7">
-                                    <div class="d-flex align-items-center gap-3 mb-5">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/01.png') }}"
-                                            class="rounded-circle bg-grd-info p-1" width="60" height="60"
-                                            alt="user">
-                                        <div class="">
-                                            <p class="mb-0 fw-semibold">Welcome back</p>
-                                            <h4 class="fw-semibold mb-0 fs-4">Jhon Anderson!</h4>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-5">
-                                        <div class="">
-                                            <h4 class="mb-1 fw-semibold d-flex align-content-center">$65.4K<i
-                                                    class="ti ti-arrow-up-right fs-5 lh-base text-success"></i>
-                                            </h4>
-                                            <p class="mb-3">Today's Sales</p>
-                                            <div class="progress mb-0" style="height:5px;">
-                                                <div class="progress-bar bg-grd-success" role="progressbar"
-                                                    style="width: 60%" aria-valuenow="25" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="vr"></div>
-                                        <div class="">
-                                            <h4 class="mb-1 fw-semibold d-flex align-content-center">78.4%<i
-                                                    class="ti ti-arrow-up-right fs-5 lh-base text-success"></i>
-                                            </h4>
-                                            <p class="mb-3">Growth Rate</p>
-                                            <div class="progress mb-0" style="height:5px;">
-                                                <div class="progress-bar bg-grd-danger" role="progressbar"
-                                                    style="width: 60%" aria-valuenow="25" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-5">
-                                    <div class="welcome-back-img pt-4">
-                                        <img src="{{ asset('/../admin/assets/images/gallery/welcome-back-3.png') }}"
-                                            height="180" alt="">
-                                    </div>
-                                </div>
-                            </div><!--end row-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-2 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start justify-content-between mb-1">
-                                <div class="">
-                                    <h5 class="mb-0">42.5K</h5>
-                                    <p class="mb-0">Active Users</p>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="chart-container2">
-                                <div id="chart1"></div>
-                            </div>
-                            <div class="text-center">
-                                <p class="mb-0 font-12">24K users increased from last month</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-2 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start justify-content-between mb-3">
-                                <div class="">
-                                    <h5 class="mb-0">97.4K</h5>
-                                    <p class="mb-0">Total Users</p>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="chart-container2">
-                                <div id="chart2"></div>
-                            </div>
-                            <div class="text-center">
-                                <p class="mb-0 font-12"><span class="text-success me-1">12.5%</span> from last month
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="text-center">
-                                <h6 class="mb-0">Monthly Revenue</h6>
-                            </div>
-                            <div class="mt-4" id="chart5"></div>
-                            <p>Avrage monthly sale for every author</p>
-                            <div class="d-flex align-items-center gap-3 mt-4">
-                                <div class="">
-                                    <h1 class="mb-0 text-primary">68.9%</h1>
-                                </div>
-                                <div class="d-flex align-items-center align-self-end">
-                                    <p class="mb-0 text-success">34.5%</p>
-                                    <span class="material-icons-outlined text-success">expand_less</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex flex-column gap-3">
-                                <div class="d-flex align-items-start justify-content-between">
-                                    <div class="">
-                                        <h5 class="mb-0">Device Type</h5>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                            data-bs-toggle="dropdown">
-                                            <span class="material-icons-outlined fs-5">more_vert</span>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                            <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                            <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="position-relative">
-                                    <div class="piechart-legend">
-                                        <h2 class="mb-1">68%</h2>
-                                        <h6 class="mb-0">Total Views</h6>
-                                    </div>
-                                    <div id="chart6"></div>
-                                </div>
-                                <div class="d-flex flex-column gap-3">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="mb-0 d-flex align-items-center gap-2 w-25"><span
-                                                class="material-icons-outlined fs-6 text-primary">desktop_windows</span>Desktop
-                                        </p>
-                                        <div class="">
-                                            <p class="mb-0">35%</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="mb-0 d-flex align-items-center gap-2 w-25"><span
-                                                class="material-icons-outlined fs-6 text-danger">tablet_mac</span>Tablet
-                                        </p>
-                                        <div class="">
-                                            <p class="mb-0">48%</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="mb-0 d-flex align-items-center gap-2 w-25"><span
-                                                class="material-icons-outlined fs-6 text-success">phone_android</span>Mobile
-                                        </p>
-                                        <div class="">
-                                            <p class="mb-0">27%</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4">
-                    <div class="row">
-                        <div class="col-md-6 d-flex align-items-stretch">
-                            <div class="card w-100 rounded-4">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-start justify-content-between mb-1">
-                                        <div class="">
-                                            <h5 class="mb-0">82.7K</h5>
-                                            <p class="mb-0">Total Clicks</p>
-                                        </div>
-                                        <div class="dropdown">
-                                            <a href="javascript:;"
-                                                class="dropdown-toggle-nocaret options dropdown-toggle"
-                                                data-bs-toggle="dropdown">
-                                                <span class="material-icons-outlined fs-5">more_vert</span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                                <li><a class="dropdown-item" href="javascript:;">Another action</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="javascript:;">Something else
-                                                        here</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="chart-container2">
-                                        <div id="chart3"></div>
-                                    </div>
-                                    <div class="text-center">
-                                        <p class="mb-0 font-12"><span class="text-success me-1">12.5%</span> from
-                                            last month</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 d-flex align-items-stretch">
-                            <div class="card w-100 rounded-4">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-start justify-content-between mb-1">
-                                        <div class="">
-                                            <h5 class="mb-0">68.4K</h5>
-                                            <p class="mb-0">Total Views</p>
-                                        </div>
-                                        <div class="dropdown">
-                                            <a href="javascript:;"
-                                                class="dropdown-toggle-nocaret options dropdown-toggle"
-                                                data-bs-toggle="dropdown">
-                                                <span class="material-icons-outlined fs-5">more_vert</span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                                <li><a class="dropdown-item" href="javascript:;">Another action</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="javascript:;">Something else
-                                                        here</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="chart-container2">
-                                        <div id="chart4"></div>
-                                    </div>
-                                    <div class="text-center">
-                                        <p class="mb-0 font-12">35K users increased from last month</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center gap-3 mb-2">
-                                <div class="">
-                                    <h3 class="mb-0">85,247</h3>
-                                </div>
-                                <div class="flex-grow-0">
-                                    <p
-                                        class="dash-lable d-flex align-items-center gap-1 rounded mb-0 bg-success text-success bg-opacity-10">
-                                        <span class="material-icons-outlined fs-6">arrow_downward</span>23.7%
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="mb-0">Total Accounts</p>
-                            <div id="chart7"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start justify-content-between mb-3">
-                                <div class="">
-                                    <h6 class="mb-0 fw-bold">Campaign Stats</h6>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <div class="container">
+                                <h1>Manage Commissions</h1>
 
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-primary">
-                                            <span class="material-icons-outlined text-white">calendar_today</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Campaigns</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">54</p>
-                                            <p class="mb-0 fw-bold text-success">28%</p>
-                                        </div>
+                                @if (session('success'))
+                                    <div
+                                        style="margin-bottom:15px; padding:10px; background-color:#d4edda; color:#155724; border-radius: 5px;">
+                                        {{ session('success') }}
                                     </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-success">
-                                            <span class="material-icons-outlined text-white">email</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Emailed</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">245</p>
-                                            <p class="mb-0 fw-bold text-danger">15%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-branding">
-                                            <span class="material-icons-outlined text-white">open_in_new</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Opened</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">54</p>
-                                            <p class="mb-0 fw-bold text-success">30.5%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-warning">
-                                            <span class="material-icons-outlined text-white">ads_click</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Clicked</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">859</p>
-                                            <p class="mb-0 fw-bold text-danger">34.6%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-info">
-                                            <span class="material-icons-outlined text-white">subscriptions</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Subscribed</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">24,758</p>
-                                            <p class="mb-0 fw-bold text-success">53%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-danger">
-                                            <span class="material-icons-outlined text-white">inbox</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Spam Message</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">548</p>
-                                            <p class="mb-0 fw-bold text-danger">47%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-deep-blue">
-                                            <span class="material-icons-outlined text-white">visibility</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Views Mails</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">9845</p>
-                                            <p class="mb-0 fw-bold text-success">68%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                @endif
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div id="chart8"></div>
-                            <div class="d-flex align-items-center gap-3 mt-4">
-                                <div class="">
-                                    <h1 class="mb-0">36.7%</h1>
-                                </div>
-                                <div class="d-flex align-items-center align-self-end gap-2">
-                                    <span class="material-icons-outlined text-success">trending_up</span>
-                                    <p class="mb-0 text-success">34.5%</p>
-                                </div>
-                            </div>
-                            <p class="mb-4">Visitors Growth</p>
-                            <div class="d-flex flex-column gap-3">
-                                <div class="">
-                                    <p class="mb-1">Cliks <span class="float-end">2589</span></p>
-                                    <div class="progress" style="height: 5px;">
-                                        <div class="progress-bar bg-grd-primary" style="width: 65%"></div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <p class="mb-1">Likes <span class="float-end">6748</span></p>
-                                    <div class="progress" style="height: 5px;">
-                                        <div class="progress-bar bg-grd-warning" style="width: 55%"></div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <p class="mb-1">Upvotes <span class="float-end">9842</span></p>
-                                    <div class="progress" style="height: 5px;">
-                                        <div class="progress-bar bg-grd-info" style="width: 45%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start justify-content-between mb-3">
-                                <div class="">
-                                    <h5 class="mb-0 fw-bold">Social Leads</h5>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between gap-4">
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/17.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Facebook</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">55%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#0d6efd", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/18.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">LinkedIn</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">67%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#fc185a", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/19.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Instagram</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">78%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#02c27a", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/20.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Snapchat</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">46%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#fd7e14", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/05.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Google</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">38%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#0dcaf0", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/08.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Altaba</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">15%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#6f42c1", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/07.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Spotify</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">12%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#ff00b3", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-header border-0 p-3 border-bottom">
-                            <div class="d-flex align-items-start justify-content-between">
-                                <div class="">
-                                    <h5 class="mb-0">New Users</h5>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="user-list p-3">
-                                <div class="d-flex flex-column gap-3">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/01.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Elon Jonado</h6>
-                                            <p class="mb-0">elon_deo</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/02.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Alexzender Clito</h6>
-                                            <p class="mb-0">zli_alexzender</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/03.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Michle Tinko</h6>
-                                            <p class="mb-0">tinko_michle</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/04.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">KailWemba</h6>
-                                            <p class="mb-0">wemba_kl</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/05.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Henhco Tino</h6>
-                                            <p class="mb-0">Henhco_tino</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/06.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Gonjiko Fernando</h6>
-                                            <p class="mb-0">gonjiko_fernando</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/08.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Specer Kilo</h6>
-                                            <p class="mb-0">specer_kilo</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-transparent p-3">
-                            <div class="d-flex align-items-center justify-content-between gap-3">
-                                <a href="javascript:;" class="sharelink"><i
-                                        class="material-icons-outlined">share</i></a>
-                                <a href="javascript:;" class="sharelink"><i
-                                        class="material-icons-outlined">textsms</i></a>
-                                <a href="javascript:;" class="sharelink"><i
-                                        class="material-icons-outlined">email</i></a>
-                                <a href="javascript:;" class="sharelink"><i
-                                        class="material-icons-outlined">attach_file</i></a>
-                                <a href="javascript:;" class="sharelink"><i
-                                        class="material-icons-outlined">event</i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-xxl-8 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start justify-content-between mb-3">
-                                <div class="">
-                                    <h5 class="mb-0">Recent Orders</h5>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="order-search position-relative my-3">
-                                <input class="form-control rounded-5 px-5" type="text" placeholder="Search">
-                                <span
-                                    class="material-icons-outlined position-absolute ms-3 translate-middle-y start-0 top-50">search</span>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table align-middle">
+                                <table class="commission-table">
                                     <thead>
                                         <tr>
-                                            <th>Item Name</th>
-                                            <th>Amount</th>
-                                            <th>Vendor</th>
-                                            <th>Status</th>
-                                            <th>Rating</th>
+                                            <th>Software Product</th>
+                                            <th>Commission Rate (%)</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="">
-                                                        <img src="{{ asset('/../admin/assets/images/top-products/01.png') }}"
-                                                            class="rounded-circle" width="50" height="50"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="mb-0">Sports Shoes</p>
-                                                </div>
-                                            </td>
-                                            <td>$149</td>
-                                            <td>Julia Sunota</td>
-                                            <td>
-                                                <p
-                                                    class="dash-lable mb-0 bg-success bg-opacity-10 text-success rounded-2">
-                                                    Completed</p>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <p class="mb-0">5.0</p>
-                                                    <i class="material-icons-outlined text-warning fs-6">star</i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="">
-                                                        <img src="{{ asset('/../admin/assets/images/top-products/02.png') }}"
-                                                            class="rounded-circle" width="50" height="50"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="mb-0">Goldan Watch</p>
-                                                </div>
-                                            </td>
-                                            <td>$168</td>
-                                            <td>Julia Sunota</td>
-                                            <td>
-                                                <p
-                                                    class="dash-lable mb-0 bg-success bg-opacity-10 text-success rounded-2">
-                                                    Completed</p>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <p class="mb-0">5.0</p>
-                                                    <i class="material-icons-outlined text-warning fs-6">star</i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="">
-                                                        <img src="{{ asset('/../admin/assets/images/top-products/03.png') }}"
-                                                            class="rounded-circle" width="50" height="50"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="mb-0">Men Polo Tshirt</p>
-                                                </div>
-                                            </td>
-                                            <td>$124</td>
-                                            <td>Julia Sunota</td>
-                                            <td>
-                                                <p
-                                                    class="dash-lable mb-0 bg-warning bg-opacity-10 text-warning rounded-2">
-                                                    Pending</p>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <p class="mb-0">4.0</p>
-                                                    <i class="material-icons-outlined text-warning fs-6">star</i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="">
-                                                        <img src="{{ asset('/../admin/assets/images/top-products/04.png') }}"
-                                                            class="rounded-circle" width="50" height="50"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="mb-0">Blue Jeans Casual</p>
-                                                </div>
-                                            </td>
-                                            <td>$289</td>
-                                            <td>Julia Sunota</td>
-                                            <td>
-                                                <p
-                                                    class="dash-lable mb-0 bg-success bg-opacity-10 text-success rounded-2">
-                                                    Completed</p>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <p class="mb-0">3.0</p>
-                                                    <i class="material-icons-outlined text-warning fs-6">star</i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="">
-                                                        <img src="{{ asset('/../admin/assets/images/top-products/06.png') }}"
-                                                            class="rounded-circle" width="50" height="50"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="mb-0">Fancy Shirts</p>
-                                                </div>
-                                            </td>
-                                            <td>$389</td>
-                                            <td>Julia Sunota</td>
-                                            <td>
-                                                <p
-                                                    class="dash-lable mb-0 bg-danger bg-opacity-10 text-danger rounded-2">
-                                                    Canceled</p>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <p class="mb-0">2.0</p>
-                                                    <i class="material-icons-outlined text-warning fs-6">star</i>
-                                                </div>
-                                            </td>
-                                        </tr>
-
+                                        @foreach ($softwareProducts as $product)
+                                            @php
+                                                $commission = $product->commissions ? $product->commissions : null;
+                                            @endphp
+                                            <tr>
+                                                <td data-label="Software Product">{{ $product->name }}</td>
+                                                <td data-label="Commission Rate">
+                                                    <form
+                                                        action="{{ $commission ? route('commissions.update', $commission->id) : route('commissions.store') }}"
+                                                        method="POST" class="inline-form"
+                                                        style="display:flex; align-items:center;">
+                                                        @csrf
+                                                        @if ($commission)
+                                                            @method('PUT')
+                                                            <input type="hidden" name="commission_id"
+                                                                value="{{ $commission->id }}">
+                                                        @endif
+                                                        <input type="hidden" name="software_product_id"
+                                                            value="{{ $product->id }}" />
+                                                        <input type="hidden" name="user_id"
+                                                            value="{{ auth()->id() }}" />
+                                                        <input class="input-rate" type="number"
+                                                            name="commission_rate" min="0" max="100"
+                                                            step="0.01"
+                                                            value="{{ old('commission_rate', $commission ? $commission->commission_rate : '') }}"
+                                                            placeholder="0.00" required />
+                                                        <button type="submit" class="btn btn-success"
+                                                            style="margin-left:8px;">
+                                                            {{ $commission ? 'Update' : 'Add' }}
+                                                        </button>
+                                                    </form>
+                                                </td>
+                                                <td data-label="Actions">
+                                                    @if ($commission)
+                                                        <form
+                                                            action="{{ route('commissions.destroy', $commission->id) }}"
+                                                            method="POST" class="inline-form"
+                                                            onsubmit="return confirm('Are you sure you want to delete this commission?');">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit"
+                                                                class="btn btn-danger">Delete</button>
+                                                        </form>
+                                                    @else
+                                                        <span style="color: #888;">-</span>
+                                                    @endif
+                                                </td>
+                                            </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
     </main>
     <!--end main wrapper-->
+
 
     <!--start overlay-->
     <div class="overlay btn-toggle"></div>
@@ -2072,7 +1346,7 @@
     <footer class="page-footer">
         <p class="mb-0">Copyright © 2024. All right reserved.</p>
     </footer>
-    <!--end footer-->
+    <!--top footer-->
 
     <!--start cart-->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart">
@@ -2086,8 +1360,8 @@
             <div class="order-list">
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/01.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ url('/../admin/assets/images/orders/01.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">White Men Shoes</h5>
@@ -2101,8 +1375,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/02.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ url('/../admin/assets/images/orders/02.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Red Airpods</h5>
@@ -2116,8 +1390,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/03.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ url('/../admin/assets/images/orders/03.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Men Polo Tshirt</h5>
@@ -2131,8 +1405,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/04.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ url('/../admin/assets/images/orders/04.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Blue Jeans Casual</h5>
@@ -2146,8 +1420,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/05.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ url('/../admin/assets/images/orders/05.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Fancy Shirts</h5>
@@ -2161,8 +1435,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/06.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ url('/../admin/assets/images/orders/06.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Home Sofa Set </h5>
@@ -2176,8 +1450,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/07.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ url('/../admin/assets/images/orders/07.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Black iPhone</h5>
@@ -2191,8 +1465,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/08.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ url('/../admin/assets/images/orders/08.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Goldan Watch</h5>
@@ -2290,28 +1564,223 @@
     <!--start switcher-->
 
     <!--bootstrap js-->
-    <script src="{{ asset('/../admin/assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url('/../admin/assets/js/bootstrap.bundle.min.js') }}"></script>
 
     <!--plugins-->
-    <script src="{{ asset('/../admin/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url('/../admin/assets/js/jquery.min.js') }}"></script>
     <!--plugins-->
-    <script src="{{ asset('/../admin/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js') }}"></script>
-    <script src="{{ asset('/../admin/assets/plugins/metismenu/metisMenu.min.js') }}"></script>
-    <script src="{{ asset('/../admin/assets/plugins/apexchart/apexcharts.min.js') }}"></script>
-    <script src="{{ asset('/../admin/assets/plugins/simplebar/js/simplebar.min.js') }}"></script>
-    <script src="{{ asset('/../admin/assets/plugins/peity/jquery.peity.min.js') }}"></script>
+    <script src="{{ url('/../admin/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js') }}"></script>
+    <script src="{{ url('/../admin/assets/plugins/metismenu/metisMenu.min.js') }}"></script>
+    <script src="{{ url('/../admin/assets/plugins/simplebar/js/simplebar.min.js') }}"></script>
+    <script src="{{ url('/../admin/assets/js/main.js') }}"></script>
     <script>
-        $(".data-attributes span").peity("donut")
+        // Data Model (MVC Model)
+        //  const transactions = [
+        //    {
+        //      orderId: "#SLR132131-9N",
+        //      productName: "Apple iPad (Gen 10)",
+        //      productImg: "https://storage.googleapis.com/a1aa/image/00a64e74-abdd-4ef2-aae9-732aa363211e.jpg",
+        //      orderDate: "2025-02-13",
+        //      customerName: "Anika Dokidis",
+        //      payment: "COD",
+        //      paymentStatus: "Un Paid",
+        //      totalPrice: 449,
+        //      quantity: "1 Pcs",
+        //      orderStatus: "Processing"
+        //    },
+        //    {
+        //      orderId: "#SLR132130-8N",
+        //      productName: "Apple iPhone 13",
+        //      productImg: "https://storage.googleapis.com/a1aa/image/fe650e20-711b-4b60-4fd7-e64fa8694d83.jpg",
+        //      orderDate: "2025-02-13",
+        //      customerName: "Randy Ekstrom",
+        //      payment: "Bank Transfer",
+        //      paymentStatus: "Pending",
+        //      totalPrice: 1198,
+        //      quantity: "2 Pcs",
+        //      orderStatus: "Shipped"
+        //    },
+        //    {
+        //      orderId: "#SLR913229-7N",
+        //      productName: "Apple MacBook Air M2",
+        //      productImg: "https://storage.googleapis.com/a1aa/image/65c56fbb-21f4-49e7-d28a-0c6514f136c0.jpg",
+        //      orderDate: "2025-02-13",
+        //      customerName: "Mira Curtis",
+        //      payment: "Credit Card",
+        //      paymentStatus: "Paid",
+        //      totalPrice: 999,
+        //      quantity: "1 Pcs",
+        //      orderStatus: "Shipped"
+        //    },
+        //    {
+        //      orderId: "#SLR132128-6N",
+        //      productName: "Apple iMac 2023",
+        //      productImg: "https://storage.googleapis.com/a1aa/image/23e10f77-2e62-46f9-8b2c-fe3ef76b5e65.jpg",
+        //      orderDate: "2025-02-13",
+        //      customerName: "Hanna Baptista",
+        //      payment: "Credit Card",
+        //      paymentStatus: "Pending",
+        //      totalPrice: 5196,
+        //      quantity: "4 Pcs",
+        //      orderStatus: "Processing"
+        //    },
+        //    {
+        //      orderId: "#SLR132127-5N",
+        //      productName: "Apple Airpods 4",
+        //      productImg: "https://storage.googleapis.com/a1aa/image/d204feb9-815e-41e8-93f0-a1c9c8a72f17.jpg",
+        //      orderDate: "2025-02-13",
+        //      customerName: "Alfonso Botosh",
+        //      payment: "Bank Transfer",
+        //      paymentStatus: "Paid",
+        //      totalPrice: 249,
+        //      quantity: "1 Pcs",
+        //      orderStatus: "Delivered"
+        //    },
+        //    {
+        //      orderId: "#SLR132126-4N",
+        //      productName: "Apple iPhone 15",
+        //      productImg: "https://storage.googleapis.com/a1aa/image/d042285a-780b-4be1-48ea-96008c7945e3.jpg",
+        //      orderDate: "2025-02-13",
+        //      customerName: "Marilyn Rosser",
+        //      payment: "Credit Card",
+        //      paymentStatus: "Pending",
+        //      totalPrice: 799,
+        //      quantity: "1 Pcs",
+        //      orderStatus: "Delivered"
+        //    },
+        //    {
+        //      orderId: "#SLR132125-3N",
+        //      productName: "Dell XPS 15",
+        //      productImg: "https://storage.googleapis.com/a1aa/image/edffe297-2678-4ba2-689d-6de51c71b050.jpg",
+        //      orderDate: "2025-02-13",
+        //      customerName: "Kadin Herwitz",
+        //      payment: "COD",
+        //      paymentStatus: "Un Paid",
+        //      totalPrice: 1799,
+        //      quantity: "1 Pcs",
+        //      orderStatus: "Processing"
+        //    },
+        //    {
+        //      orderId: "#SLR132124-2N",
+        //      productName: "Razer Kraken Headset",
+        //      productImg: "https://storage.googleapis.com/a1aa/image/f73f1fe2-c320-4c48-fc6c-86e2b94540be.jpg",
+        //      orderDate: "2025-02-13",
+        //      customerName: "Zaire Wester",
+        //      payment: "Bank Transfer",
+        //      paymentStatus: "Paid",
+        //      totalPrice: 297,
+        //      quantity: "3 Pcs",
+        //      orderStatus: "Shipped"
+        //    }
+        //  ];
+
+        // View: Render table rows
+        function renderTable(data) {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            if (data.length === 0) {
+                const tr = document.createElement('tr');
+                tr.className = 'bg-[#f9f9f9] rounded-xl';
+                tr.innerHTML = `<td colspan="11" class="text-center py-6 text-[#7a7a7a]">No matching records found.</td>`;
+                tbody.appendChild(tr);
+                return;
+            }
+            data.forEach(item => {
+                const tr = document.createElement('tr');
+                tr.className = 'bg-[#f9f9f9] rounded-xl';
+                tr.innerHTML = `
+           <td class="pl-6 pr-3 py-3 align-middle">
+             <input type="checkbox" aria-label="Select order ${item.orderId}" class="cursor-pointer" />
+           </td>
+           <td class="pr-3 py-3 align-middle font-semibold text-[#1e1e1e]">${item.orderId}</td>
+           <td class="pr-3 py-3 align-middle flex items-center space-x-2">
+             <img src="${item.productImg}" alt="${item.productName} product thumbnail" class="flex-shrink-0" width="16" height="16" loading="lazy" decoding="async" />
+             <span>${item.productName}</span>
+           </td>
+           <td class="pr-3 py-3 align-middle">${new Date(item.orderDate).toLocaleDateString('en-GB', {day:'2-digit', month:'long', year:'numeric'})}</td>
+           <td class="pr-3 py-3 align-middle">${item.customerName}</td>
+           <td class="pr-3 py-3 align-middle">${item.payment}</td>
+           <td class="pr-3 py-3 align-middle">
+             <span class="inline-block text-[10px] font-semibold rounded-full px-2 py-[2px] ${
+               item.paymentStatus === 'Un Paid' ? 'bg-[#f9d9d9] text-[#b93a3a]' :
+               item.paymentStatus === 'Pending' ? 'bg-[#fef5d1] text-[#b38f3a]' :
+               item.paymentStatus === 'Paid' ? 'bg-[#d9f0d9] text-[#3a9a3a]' : ''
+             }">${item.paymentStatus}</span>
+           </td>
+           <td class="pr-3 py-3 align-middle font-semibold text-[#1e1e1e]">$${item.totalPrice.toLocaleString()}</td>
+           <td class="pr-3 py-3 align-middle">${item.quantity}</td>
+           <td class="pr-3 py-3 align-middle">
+             <span class="inline-block text-[10px] font-semibold rounded-full px-3 py-[2px] ${
+               item.orderStatus === 'Processing' ? 'bg-[#3ab0f9] text-white' :
+               item.orderStatus === 'Shipped' ? 'bg-[#a07ff9] text-white' :
+               item.orderStatus === 'Delivered' ? 'bg-[#1a2fc9] text-white' : ''
+             }">${item.orderStatus}</span>
+           </td>
+           <td class="pr-6 py-3 align-middle text-center text-[#7a7a7a] cursor-pointer">
+             <i class="fas fa-map-marker-alt"></i>
+             <i class="fas fa-ellipsis-h ml-3"></i>
+           </td>
+         `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Controller: Filter logic
+        function filterData(filters) {
+            return transactions.filter(item => {
+                // Order Date filter (exact match)
+                if (filters.orderDate && item.orderDate !== filters.orderDate) return false;
+                // Order ID filter (case insensitive substring)
+                if (filters.orderId && !item.orderId.toLowerCase().includes(filters.orderId.toLowerCase()))
+                    return false;
+                // Product Name filter (case insensitive substring)
+                if (filters.productName && !item.productName.toLowerCase().includes(filters.productName
+                        .toLowerCase())) return false;
+                // Customer Name filter (case insensitive substring)
+                if (filters.customerName && !item.customerName.toLowerCase().includes(filters.customerName
+                        .toLowerCase())) return false;
+                // Payment filter (exact match)
+                if (filters.payment && item.payment !== filters.payment) return false;
+                // Payment Status filter (exact match)
+                if (filters.paymentStatus && item.paymentStatus !== filters.paymentStatus) return false;
+                // Price range filter
+                if (filters.minPrice && item.totalPrice < filters.minPrice) return false;
+                if (filters.maxPrice && item.totalPrice > filters.maxPrice) return false;
+                // Order Status filter (exact match)
+                if (filters.orderStatus && item.orderStatus !== filters.orderStatus) return false;
+                return true;
+            });
+        }
+
+        // On DOM ready
+        document.addEventListener('DOMContentLoaded', () => {
+            renderTable(transactions);
+
+            const filterForm = document.getElementById('filterForm');
+            filterForm.addEventListener('submit', e => {
+                e.preventDefault();
+                const formData = new FormData(filterForm);
+                const filters = {
+                    orderDate: formData.get('orderDate'),
+                    orderId: formData.get('orderId').trim(),
+                    productName: formData.get('productName').trim(),
+                    customerName: formData.get('customerName').trim(),
+                    payment: formData.get('payment'),
+                    paymentStatus: formData.get('paymentStatus'),
+                    minPrice: formData.get('minPrice') ? Number(formData.get('minPrice')) : null,
+                    maxPrice: formData.get('maxPrice') ? Number(formData.get('maxPrice')) : null,
+                    orderStatus: formData.get('orderStatus')
+                };
+                const filtered = filterData(filters);
+                renderTable(filtered);
+            });
+        });
     </script>
-    <script src="{{ asset('/../admin/assets/js/main.js') }}"></script>
-    <script src="{{ asset('/../admin/assets/js/dashboard1.js') }}"></script>
-    <script>
-        new PerfectScrollbar(".user-list")
-    </script>
+
 
 </body>
 
 
-<!-- Mirrored from codervent.com/maxton/demo/vertical-menu/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 14:22:08 GMT -->
+<!-- Mirrored from codervent.com/maxton/demo/vertical-menu/ecommerce-orders.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 14:22:37 GMT -->
 
 </html>

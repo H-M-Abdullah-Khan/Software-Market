@@ -814,6 +814,9 @@
                         <li><a href="{{ url('/../admin/ecommerce-order-details') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Order Details</a>
                         </li>
+                        <li><a href="{{ url('/../admin/commissions') }}"><i
+                                    class="material-icons-outlined">arrow_right</i>Manage Commission</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -1524,10 +1527,11 @@
 
             <!-- CREATE SOFTWARE PRODUCT -->
             <div class="card mb-4">
-                <div class="card-header"><h1 class="text-center"><strong>Add New Software Product</strong></h1></div>
+                <div class="card-header">
+                    <h1 class="text-center"><strong>Add New Software Product</strong></h1>
+                </div>
                 <div class="card-body">
-                    <form action="{{ route('software_products.store') }}" method="POST"
-                        enctype="multipart/form-data">
+                    <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
                             <input type="text" name="name" class="form-control" placeholder="Product Name"
@@ -1543,17 +1547,16 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <input type="number" name="price" class="form-control"
-                                placeholder="Price if paid">
+                            <input type="number" name="price" class="form-control" placeholder="Price if paid">
                         </div>
                         <div class="mb-3">
                             <input type="url" name="demo_url" class="form-control"
                                 placeholder="Demo URL (optional)">
                         </div>
-                        <div class="mb-3">
+                        {{-- <div class="mb-3">
                             <h6>Your Software Files</h6>
                             <input type="file" name="main_file" required class="form-control">
-                        </div>
+                        </div> --}}
                         <div class="mb-3">
                             <h6>Your Software Screenshot</h6>
                             <input type="file" name="screenshots[]" multiple class="form-control">
@@ -1573,7 +1576,9 @@
 
             <!-- LIST OF SOFTWARE PRODUCTS -->
             <div class="card">
-                <div class="card-header"><h1 class="text-center"><strong>All Software Products</strong></h1></div>
+                <div class="card-header">
+                    <h1 class="text-center"><strong>All Software Products</strong></h1>
+                </div>
                 <div class="card-body">
                     @foreach ($products as $product)
                         <div class="border p-3 mb-3">
@@ -1627,8 +1632,8 @@
             <div class="order-list">
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/01.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ asset('/../admin/assets/images/orders/01.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">White Men Shoes</h5>
@@ -1642,8 +1647,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/02.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ asset('/../admin/assets/images/orders/02.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Red Airpods</h5>
@@ -1657,8 +1662,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/03.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ asset('/../admin/assets/images/orders/03.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Men Polo Tshirt</h5>
@@ -1672,8 +1677,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/04.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ asset('/../admin/assets/images/orders/04.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Blue Jeans Casual</h5>

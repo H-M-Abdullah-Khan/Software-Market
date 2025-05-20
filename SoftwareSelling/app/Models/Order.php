@@ -39,4 +39,17 @@ class Order extends Model
     {
         return $this->hasOne(SoftwareDownload::class);
     }
+    public function users()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function softwareProduct()
+    {
+        return $this->belongsTo(SoftwareProduct::class, 'software_id');
+    }
+        public function software_Product()
+    {
+        return $this->belongsTo(SoftwareProduct::class);  // adjust foreign key if needed
+    }
 }

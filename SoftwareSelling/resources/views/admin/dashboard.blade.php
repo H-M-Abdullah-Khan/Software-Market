@@ -833,6 +833,9 @@
                         <li><a href="{{ url('/../admin/ecommerce-order-details') }}"><i
                                     class="material-icons-outlined">arrow_right</i>Order Details</a>
                         </li>
+                        <li><a href="{{ url('/../admin/commissions') }}"><i
+                                    class="material-icons-outlined">arrow_right</i>Manage Commission</a>
+                        </li>
                     </ul>
                 </li>
                 <li>

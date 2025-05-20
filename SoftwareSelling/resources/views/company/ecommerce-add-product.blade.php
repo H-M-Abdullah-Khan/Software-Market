@@ -1,32 +1,13 @@
-{{-- <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout> --}}
-
-
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
 
 
-<!-- Mirrored from codervent.com/maxton/demo/vertical-menu/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 14:21:21 GMT -->
+<!-- Mirrored from codervent.com/maxton/demo/vertical-menu/ecommerce-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 14:22:36 GMT -->
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comapny Dashboard</title>
+    <title>Company Dashboard</title>
     <!--favicon-->
     <link rel="icon" href="{{ asset('/../admin/assets/images/favicon-32x32.png') }}" type="image/png">
     <!-- loader-->
@@ -695,7 +676,7 @@
                                 <img src="{{ asset('/../admin/assets/images/avatars/01.png') }}"
                                     class="rounded-circle p-1 shadow mb-3" width="90" height="90"
                                     alt="">
-                                <h5 class="user-name mb-0 fw-bold">Company</h5>
+                                <h5 class="user-name mb-0 fw-bold">Admin</h5>
                             </div>
                         </a>
                         <hr class="dropdown-divider">
@@ -1153,26 +1134,27 @@
     </aside>
     <!--end sidebar-->
 
+
     <!--start main wrapper-->
     <main class="main-wrapper">
         <div class="main-content">
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                <div class="breadcrumb-title pe-3">{{ __('Company Dashboard') }}</div>
+                <div class="breadcrumb-title pe-3">Components</div>
                 <div class="ps-3">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb mb-0 p-0">
                             <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Analysis</li>
+                            <li class="breadcrumb-item active" aria-current="page">Starter Page</li>
                         </ol>
                     </nav>
                 </div>
                 <div class="ms-auto">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-outline-primary">Settings</button>
+                        <button type="button" class="btn btn-primary">Settings</button>
                         <button type="button"
-                            class="btn btn-outline-primary split-bg-primary dropdown-toggle dropdown-toggle-split"
+                            class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split"
                             data-bs-toggle="dropdown"> <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"> <a class="dropdown-item"
@@ -1186,883 +1168,416 @@
                 </div>
             </div>
             <!--end breadcrumb-->
+            {{-- <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <h5 class="mb-3">Product Title</h5>
+                                <input type="text" class="form-control" placeholder="write title here....">
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="mb-3">Product Description</h5>
+                                <textarea class="form-control" cols="4" rows="6" placeholder="write a description here.."></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="mb-3">Display images</h5>
+                                <input id="fancy-file-upload" type="file" name="files"
+                                    accept=".jpg, .png, image/jpeg, image/png" multiple>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="mb-3">Inventory</h5>
 
-            <div class="row">
-                <div class="col-xxl-8 d-flex align-items-stretch">
-                    <div class="card w-100 overflow-hidden rounded-4">
-                        <div class="card-body position-relative p-4">
-                            <div class="row">
-                                <div class="col-12 col-sm-7">
-                                    <div class="d-flex align-items-center gap-3 mb-5">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/01.png') }}"
-                                            class="rounded-circle bg-grd-info p-1" width="60" height="60"
-                                            alt="user">
-                                        <div class="">
-                                            <p class="mb-0 fw-semibold">Welcome back</p>
-                                            <h4 class="fw-semibold mb-0 fs-4">Jhon Anderson!</h4>
+                                <div class="row g-3">
+                                    <div class="col-12 col-lg-3">
+                                        <div
+                                            class="nav flex-column nav-pills border rounded vertical-pills overflow-hidden">
+                                            <button class="nav-link px-4 rounded-0" data-bs-toggle="pill"
+                                                data-bs-target="#Pricing" type="button"><i
+                                                    class="bi bi-tag-fill me-2"></i>Pricing</button>
+                                            <button class="nav-link px-4 rounded-0" data-bs-toggle="pill"
+                                                data-bs-target="#Restock" type="button"><i
+                                                    class="bi bi-box-seam-fill me-2"></i>Restock</button>
+                                            <button class="nav-link active px-4 rounded-0" data-bs-toggle="pill"
+                                                data-bs-target="#Shipping" type="button"><i
+                                                    class="bi bi-truck-front-fill me-2"></i>Shipping</button>
+                                            <button class="nav-link px-4 rounded-0" data-bs-toggle="pill"
+                                                data-bs-target="#GlobalDelivery" type="button"><i
+                                                    class="bi bi-globe me-2"></i>Global Delivery</button>
+                                            <button class="nav-link px-4 rounded-0" data-bs-toggle="pill"
+                                                data-bs-target="#Attributes" type="button"><i
+                                                    class="bi bi-hdd-rack-fill me-2"></i>Attributes</button>
+                                            <button class="nav-link px-4 rounded-0" data-bs-toggle="pill"
+                                                data-bs-target="#Advanced" type="button"><i
+                                                    class="bi bi-handbag-fill me-2"></i>Advanced</button>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center gap-5">
-                                        <div class="">
-                                            <h4 class="mb-1 fw-semibold d-flex align-content-center">$65.4K<i
-                                                    class="ti ti-arrow-up-right fs-5 lh-base text-success"></i>
-                                            </h4>
-                                            <p class="mb-3">Today's Sales</p>
-                                            <div class="progress mb-0" style="height:5px;">
-                                                <div class="progress-bar bg-grd-success" role="progressbar"
-                                                    style="width: 60%" aria-valuenow="25" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
+                                    <div class="col-12 col-lg-9">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade" id="Pricing">
+                                                <div class="row g-3">
+                                                    <div class="col-12 col-lg-6">
+                                                        <h6 class="mb-2">Regular price</h6>
+                                                        <input class="form-control" type="text" placeholder="$$$">
+                                                    </div>
+                                                    <div class="col-12 col-lg-6">
+                                                        <h6 class="mb-2">Sale price</h6>
+                                                        <input class="form-control" type="text" placeholder="$$$">
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="vr"></div>
-                                        <div class="">
-                                            <h4 class="mb-1 fw-semibold d-flex align-content-center">78.4%<i
-                                                    class="ti ti-arrow-up-right fs-5 lh-base text-success"></i>
-                                            </h4>
-                                            <p class="mb-3">Growth Rate</p>
-                                            <div class="progress mb-0" style="height:5px;">
-                                                <div class="progress-bar bg-grd-danger" role="progressbar"
-                                                    style="width: 60%" aria-valuenow="25" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
+                                            <div class="tab-pane fade" id="Restock">
+                                                <h6 class="mb-3">Add to Stock</h6>
+                                                <div class="row g-3">
+                                                    <div class="col-sm-7">
+                                                        <input class="form-control" type="number"
+                                                            placeholder="Quantity">
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <button class="btn btn-outline-primary"><i
+                                                                class="bi bi-check2 me-2"></i>Confirm</button>
+                                                    </div>
+                                                </div>
+                                                <table class="mt-3">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 200px;"></th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-1000 py-1">Product in stock now:</td>
+                                                            <td class="text-700 fw-semi-bold py-1">$2,059<button
+                                                                    class="btn p-0 ms-2" type="button"><i
+                                                                        class="bi bi-arrow-clockwise"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-1000 py-1">Product in transit:</td>
+                                                            <td class="text-700 fw-semi-bold py-1">3000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-1000 py-1">Last time restocked:</td>
+                                                            <td class="text-700 fw-semi-bold py-1">25th March, 2020
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-1000 py-1">Total stock over lifetime:</td>
+                                                            <td class="text-700 fw-semi-bold py-1">50,000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade show active" id="Shipping">
+                                                <div class="d-flex flex-column h-100">
+                                                    <h6 class="mb-3">Shipping Type</h6>
+                                                    <div class="flex-1">
+                                                        <div class="mb-4">
+                                                            <div class="form-check mb-1">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="shippingRadio" id="fullfilledBySeller">
+                                                                <label class="form-check-label fw-bold"
+                                                                    for="fullfilledBySeller">Fullfilled by
+                                                                    Seller</label>
+                                                            </div>
+                                                            <div class="ps-4">
+                                                                <p class="mb-0">You’ll be responsible for product
+                                                                    delivery. <br>Any damage or delay during shipping
+                                                                    may cost you a Damage fee.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <div class="form-check mb-1">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="shippingRadio" id="fullfilledByPhoenix"
+                                                                    checked="checked">
+                                                                <label
+                                                                    class="form-check-label fw-bold d-flex align-items-center"
+                                                                    for="fullfilledByPhoenix">Fullfilled by Admin <span
+                                                                        class="badge bg-warning text-dark ms-2">Recommended</span></label>
+                                                            </div>
+                                                            <div class="ps-4">
+                                                                <p class="mb-0">Your product, Our
+                                                                    responsibility.<br>For a measly fee, we will handle
+                                                                    the delivery process for you.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="fs--1 fw-semi-bold mb-0">See our <a class="fw-bold"
+                                                            href="#!">Delivery terms and conditions </a>for
+                                                        details.</p>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="GlobalDelivery">
+                                                <div class="d-flex flex-column h-100">
+                                                    <h6 class="mb-3">Global Delivery</h6>
+                                                    <div class="flex-1">
+                                                        <div class="mb-4">
+                                                            <div class="form-check mb-1">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="shippingRadio" id="Worldwidedelivery">
+                                                                <label class="form-check-label fw-bold"
+                                                                    for="Worldwidedelivery">Worldwide delivery</label>
+                                                            </div>
+                                                            <div class="ps-4">
+                                                                <p class="mb-0">Only available with Shipping method:
+                                                                    <a href="#!">Fullfilled by Admin</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <div class="form-check mb-1">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="shippingRadio" id="SelectedCountries"
+                                                                    checked="checked">
+                                                                <label
+                                                                    class="form-check-label fw-bold d-flex align-items-center"
+                                                                    for="SelectedCountries">Selected Countries</label>
+                                                            </div>
+                                                            <div class="ps-4">
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="Type Country name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-0">
+                                                            <div class="form-check mb-1">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="shippingRadio" id="Localdelivery">
+                                                                <label class="form-check-label fw-bold"
+                                                                    for="Localdelivery">Local delivery</label>
+                                                            </div>
+                                                            <div class="ps-4">
+                                                                <p class="mb-0">Only available with Shipping method:
+                                                                    <a href="#!">Fullfilled by Admin</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="Attributes">
+                                                <h6 class="mb-3">Attributes</h6>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="fragileCheck"
+                                                        type="checkbox">
+                                                    <label class="form-check-label text-900 fs-0"
+                                                        for="fragileCheck">Fragile Product</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="biodegradableCheck"
+                                                        type="checkbox">
+                                                    <label class="form-check-label text-900 fs-0"
+                                                        for="biodegradableCheck">Biodegradable</label>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="form-check"><input class="form-check-input"
+                                                            id="frozenCheck" type="checkbox" checked="checked">
+                                                        <label class="form-check-label text-900 fs-0"
+                                                            for="frozenCheck">Frozen Product</label>
+                                                        <input class="form-control" type="text"
+                                                            placeholder="Max. allowed Temperature"
+                                                            style="max-width: 350px;">
+                                                    </div>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="productCheck"
+                                                        type="checkbox" checked="checked">
+                                                    <label class="form-check-label text-900 fs-0"
+                                                        for="productCheck">Expiry Date of Product</label>
+                                                    <input class="form-control" id="inventory" type="date">
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="Advanced">
+                                                <h6 class="mb-3">Advanced</h6>
+                                                <div class="row g-3">
+                                                    <div class="col-12 col-lg-6">
+                                                        <label class="mb-2">Product ID Type</label>
+                                                        <select class="form-select">
+                                                            <option selected="selected">ISBN</option>
+                                                            <option value="1">UPC</option>
+                                                            <option value="2">EAN</option>
+                                                            <option value="3">JAN</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-lg-6">
+                                                        <label class="mb-2">Product ID</label>
+                                                        <input class="form-control" type="text"
+                                                            placeholder="ISBN Number">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-5">
-                                    <div class="welcome-back-img pt-4">
-                                        <img src="{{ asset('/../admin/assets/images/gallery/welcome-back-3.png') }}"
-                                            height="180" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-3">
+                                <button type="button" class="btn btn-outline-danger flex-fill"><i
+                                        class="bi bi-x-circle me-2"></i>Discard</button>
+                                <button type="button" class="btn btn-outline-success flex-fill"><i
+                                        class="bi bi-cloud-download me-2"></i>Save Draft</button>
+                                <button type="button" class="btn btn-outline-primary flex-fill"><i
+                                        class="bi bi-send me-2"></i>Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="mb-3">Organize</h5>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="AddCategory" class="form-label">Category</label>
+                                    <select class="form-select" id="AddCategory">
+                                        <option value="0">Topwear</option>
+                                        <option value="1">Bottomwear</option>
+                                        <option value="2">Casual Tshirt</option>
+                                        <option value="3">Electronic</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="Collection" class="form-label">Collection</label>
+                                    <input type="text" class="form-control" id="Collection"
+                                        placeholder="Collection">
+                                </div>
+                                <div class="col-12">
+                                    <label for="Tags" class="form-label">Tags</label>
+                                    <input type="text" class="form-control" id="Tags"
+                                        placeholder="Tags">
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <a href="javascript:;" class="btn btn-sm btn-light border shadow-sm">Woman
+                                            <i class="bi bi-x"></i></a>
+                                        <a href="javascript:;" class="btn btn-sm btn-light border shadow-sm">Fashion
+                                            <i class="bi bi-x"></i></a>
+                                        <a href="javascript:;"
+                                            class="btn btn-sm btn-light border shadow-sm">Furniture <i
+                                                class="bi bi-x"></i></a>
                                     </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="Vendor" class="form-label">Vendor</label>
+                                    <input type="text" class="form-control" id="Vendor"
+                                        placeholder="Vendor">
                                 </div>
                             </div><!--end row-->
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-6 col-xxl-2 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start justify-content-between mb-1">
-                                <div class="">
-                                    <h5 class="mb-0">42.5K</h5>
-                                    <p class="mb-0">Active Users</p>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="chart-container2">
-                                <div id="chart1"></div>
-                            </div>
-                            <div class="text-center">
-                                <p class="mb-0 font-12">24K users increased from last month</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-2 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start justify-content-between mb-3">
-                                <div class="">
-                                    <h5 class="mb-0">97.4K</h5>
-                                    <p class="mb-0">Total Users</p>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="chart-container2">
-                                <div id="chart2"></div>
-                            </div>
-                            <div class="text-center">
-                                <p class="mb-0 font-12"><span class="text-success me-1">12.5%</span> from last month
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="text-center">
-                                <h6 class="mb-0">Monthly Revenue</h6>
-                            </div>
-                            <div class="mt-4" id="chart5"></div>
-                            <p>Avrage monthly sale for every author</p>
-                            <div class="d-flex align-items-center gap-3 mt-4">
-                                <div class="">
-                                    <h1 class="mb-0 text-primary">68.9%</h1>
-                                </div>
-                                <div class="d-flex align-items-center align-self-end">
-                                    <p class="mb-0 text-success">34.5%</p>
-                                    <span class="material-icons-outlined text-success">expand_less</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex flex-column gap-3">
-                                <div class="d-flex align-items-start justify-content-between">
-                                    <div class="">
-                                        <h5 class="mb-0">Device Type</h5>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                            data-bs-toggle="dropdown">
-                                            <span class="material-icons-outlined fs-5">more_vert</span>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                            <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                            <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="position-relative">
-                                    <div class="piechart-legend">
-                                        <h2 class="mb-1">68%</h2>
-                                        <h6 class="mb-0">Total Views</h6>
-                                    </div>
-                                    <div id="chart6"></div>
-                                </div>
-                                <div class="d-flex flex-column gap-3">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="mb-0 d-flex align-items-center gap-2 w-25"><span
-                                                class="material-icons-outlined fs-6 text-primary">desktop_windows</span>Desktop
-                                        </p>
-                                        <div class="">
-                                            <p class="mb-0">35%</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="mb-0 d-flex align-items-center gap-2 w-25"><span
-                                                class="material-icons-outlined fs-6 text-danger">tablet_mac</span>Tablet
-                                        </p>
-                                        <div class="">
-                                            <p class="mb-0">48%</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="mb-0 d-flex align-items-center gap-2 w-25"><span
-                                                class="material-icons-outlined fs-6 text-success">phone_android</span>Mobile
-                                        </p>
-                                        <div class="">
-                                            <p class="mb-0">27%</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4">
-                    <div class="row">
-                        <div class="col-md-6 d-flex align-items-stretch">
-                            <div class="card w-100 rounded-4">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-start justify-content-between mb-1">
-                                        <div class="">
-                                            <h5 class="mb-0">82.7K</h5>
-                                            <p class="mb-0">Total Clicks</p>
-                                        </div>
-                                        <div class="dropdown">
-                                            <a href="javascript:;"
-                                                class="dropdown-toggle-nocaret options dropdown-toggle"
-                                                data-bs-toggle="dropdown">
-                                                <span class="material-icons-outlined fs-5">more_vert</span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                                <li><a class="dropdown-item" href="javascript:;">Another action</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="javascript:;">Something else
-                                                        here</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="chart-container2">
-                                        <div id="chart3"></div>
-                                    </div>
-                                    <div class="text-center">
-                                        <p class="mb-0 font-12"><span class="text-success me-1">12.5%</span> from
-                                            last month</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 d-flex align-items-stretch">
-                            <div class="card w-100 rounded-4">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-start justify-content-between mb-1">
-                                        <div class="">
-                                            <h5 class="mb-0">68.4K</h5>
-                                            <p class="mb-0">Total Views</p>
-                                        </div>
-                                        <div class="dropdown">
-                                            <a href="javascript:;"
-                                                class="dropdown-toggle-nocaret options dropdown-toggle"
-                                                data-bs-toggle="dropdown">
-                                                <span class="material-icons-outlined fs-5">more_vert</span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                                <li><a class="dropdown-item" href="javascript:;">Another action</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="javascript:;">Something else
-                                                        here</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="chart-container2">
-                                        <div id="chart4"></div>
-                                    </div>
-                                    <div class="text-center">
-                                        <p class="mb-0 font-12">35K users increased from last month</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center gap-3 mb-2">
-                                <div class="">
-                                    <h3 class="mb-0">85,247</h3>
-                                </div>
-                                <div class="flex-grow-0">
-                                    <p
-                                        class="dash-lable d-flex align-items-center gap-1 rounded mb-0 bg-success text-success bg-opacity-10">
-                                        <span class="material-icons-outlined fs-6">arrow_downward</span>23.7%
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="mb-0">Total Accounts</p>
-                            <div id="chart7"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start justify-content-between mb-3">
-                                <div class="">
-                                    <h6 class="mb-0 fw-bold">Campaign Stats</h6>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
 
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-primary">
-                                            <span class="material-icons-outlined text-white">calendar_today</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Campaigns</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">54</p>
-                                            <p class="mb-0 fw-bold text-success">28%</p>
-                                        </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="mb-3">Variants</h5>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="Brand" class="form-label">Brand</label>
+                                    <input type="text" class="form-control" id="Brand"
+                                        placeholder="Brand">
+                                </div>
+                                <div class="col-12">
+                                    <label for="SKU" class="form-label">SKU</label>
+                                    <input type="text" class="form-control" id="SKU" placeholder="SKU">
+                                </div>
+                                <div class="col-12">
+                                    <label for="Color" class="form-label">Color</label>
+                                    <input type="text" class="form-control" id="Color"
+                                        placeholder="Color">
+                                </div>
+                                <div class="col-12">
+                                    <label for="Size" class="form-label">Size</label>
+                                    <input type="text" class="form-control" id="Size"
+                                        placeholder="Size">
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-primary">Add Variants</button>
                                     </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-success">
-                                            <span class="material-icons-outlined text-white">email</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Emailed</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">245</p>
-                                            <p class="mb-0 fw-bold text-danger">15%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-branding">
-                                            <span class="material-icons-outlined text-white">open_in_new</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Opened</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">54</p>
-                                            <p class="mb-0 fw-bold text-success">30.5%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-warning">
-                                            <span class="material-icons-outlined text-white">ads_click</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Clicked</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">859</p>
-                                            <p class="mb-0 fw-bold text-danger">34.6%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-info">
-                                            <span class="material-icons-outlined text-white">subscriptions</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Subscribed</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">24,758</p>
-                                            <p class="mb-0 fw-bold text-success">53%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-danger">
-                                            <span class="material-icons-outlined text-white">inbox</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Spam Message</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">548</p>
-                                            <p class="mb-0 fw-bold text-danger">47%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item px-0 bg-transparent">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div
-                                            class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-deep-blue">
-                                            <span class="material-icons-outlined text-white">visibility</span>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Views Mails</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-3">
-                                            <p class="mb-0">9845</p>
-                                            <p class="mb-0 fw-bold text-success">68%</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        </div>
-                    </div>
                 </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div id="chart8"></div>
-                            <div class="d-flex align-items-center gap-3 mt-4">
-                                <div class="">
-                                    <h1 class="mb-0">36.7%</h1>
-                                </div>
-                                <div class="d-flex align-items-center align-self-end gap-2">
-                                    <span class="material-icons-outlined text-success">trending_up</span>
-                                    <p class="mb-0 text-success">34.5%</p>
-                                </div>
-                            </div>
-                            <p class="mb-4">Visitors Growth</p>
-                            <div class="d-flex flex-column gap-3">
-                                <div class="">
-                                    <p class="mb-1">Cliks <span class="float-end">2589</span></p>
-                                    <div class="progress" style="height: 5px;">
-                                        <div class="progress-bar bg-grd-primary" style="width: 65%"></div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <p class="mb-1">Likes <span class="float-end">6748</span></p>
-                                    <div class="progress" style="height: 5px;">
-                                        <div class="progress-bar bg-grd-warning" style="width: 55%"></div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <p class="mb-1">Upvotes <span class="float-end">9842</span></p>
-                                    <div class="progress" style="height: 5px;">
-                                        <div class="progress-bar bg-grd-info" style="width: 45%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start justify-content-between mb-3">
-                                <div class="">
-                                    <h5 class="mb-0 fw-bold">Social Leads</h5>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between gap-4">
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/17.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Facebook</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">55%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#0d6efd", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/18.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">LinkedIn</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">67%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#fc185a", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/19.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Instagram</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">78%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#02c27a", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/20.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Snapchat</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">46%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#fd7e14", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/05.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Google</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">38%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#0dcaf0", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/08.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Altaba</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">15%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#6f42c1", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-4">
-                                    <div class="d-flex align-items-center gap-3 flex-grow-1">
-                                        <img src="{{ asset('/../admin/assets/images/apps/07.png') }}"
-                                            width="32" alt="">
-                                        <p class="mb-0">Spotify</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 fs-6">12%</p>
-                                    </div>
-                                    <div class="">
-                                        <p class="mb-0 data-attributes">
-                                            <span
-                                                data-peity='{ "fill": ["#ff00b3", "rgb(255 255 255 / 10%)"], "innerRadius": 14, "radius": 18 }'>5/7</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-xxl-4 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-header border-0 p-3 border-bottom">
-                            <div class="d-flex align-items-start justify-content-between">
-                                <div class="">
-                                    <h5 class="mb-0">New Users</h5>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="user-list p-3">
-                                <div class="d-flex flex-column gap-3">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/01.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Elon Jonado</h6>
-                                            <p class="mb-0">elon_deo</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/02.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Alexzender Clito</h6>
-                                            <p class="mb-0">zli_alexzender</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/03.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Michle Tinko</h6>
-                                            <p class="mb-0">tinko_michle</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/04.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">KailWemba</h6>
-                                            <p class="mb-0">wemba_kl</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/05.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Henhco Tino</h6>
-                                            <p class="mb-0">Henhco_tino</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/06.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Gonjiko Fernando</h6>
-                                            <p class="mb-0">gonjiko_fernando</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <img src="{{ asset('/../admin/assets/images/avatars/08.png') }}"
-                                            width="45" height="45" class="rounded-circle" alt="">
-                                        <div class="flex-grow-1">
-                                            <h6 class="mb-0">Specer Kilo</h6>
-                                            <p class="mb-0">specer_kilo</p>
-                                        </div>
-                                        <div class="form-check form-check-inline me-0">
-                                            <input class="form-check-input ms-0" type="checkbox">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-transparent p-3">
-                            <div class="d-flex align-items-center justify-content-between gap-3">
-                                <a href="javascript:;" class="sharelink"><i
-                                        class="material-icons-outlined">share</i></a>
-                                <a href="javascript:;" class="sharelink"><i
-                                        class="material-icons-outlined">textsms</i></a>
-                                <a href="javascript:;" class="sharelink"><i
-                                        class="material-icons-outlined">email</i></a>
-                                <a href="javascript:;" class="sharelink"><i
-                                        class="material-icons-outlined">attach_file</i></a>
-                                <a href="javascript:;" class="sharelink"><i
-                                        class="material-icons-outlined">event</i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-xxl-8 d-flex align-items-stretch">
-                    <div class="card w-100 rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start justify-content-between mb-3">
-                                <div class="">
-                                    <h5 class="mb-0">Recent Orders</h5>
-                                </div>
-                                <div class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
-                                        data-bs-toggle="dropdown">
-                                        <span class="material-icons-outlined fs-5">more_vert</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="order-search position-relative my-3">
-                                <input class="form-control rounded-5 px-5" type="text" placeholder="Search">
-                                <span
-                                    class="material-icons-outlined position-absolute ms-3 translate-middle-y start-0 top-50">search</span>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table align-middle">
-                                    <thead>
-                                        <tr>
-                                            <th>Item Name</th>
-                                            <th>Amount</th>
-                                            <th>Vendor</th>
-                                            <th>Status</th>
-                                            <th>Rating</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="">
-                                                        <img src="{{ asset('/../admin/assets/images/top-products/01.png') }}"
-                                                            class="rounded-circle" width="50" height="50"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="mb-0">Sports Shoes</p>
-                                                </div>
-                                            </td>
-                                            <td>$149</td>
-                                            <td>Julia Sunota</td>
-                                            <td>
-                                                <p
-                                                    class="dash-lable mb-0 bg-success bg-opacity-10 text-success rounded-2">
-                                                    Completed</p>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <p class="mb-0">5.0</p>
-                                                    <i class="material-icons-outlined text-warning fs-6">star</i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="">
-                                                        <img src="{{ asset('/../admin/assets/images/top-products/02.png') }}"
-                                                            class="rounded-circle" width="50" height="50"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="mb-0">Goldan Watch</p>
-                                                </div>
-                                            </td>
-                                            <td>$168</td>
-                                            <td>Julia Sunota</td>
-                                            <td>
-                                                <p
-                                                    class="dash-lable mb-0 bg-success bg-opacity-10 text-success rounded-2">
-                                                    Completed</p>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <p class="mb-0">5.0</p>
-                                                    <i class="material-icons-outlined text-warning fs-6">star</i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="">
-                                                        <img src="{{ asset('/../admin/assets/images/top-products/03.png') }}"
-                                                            class="rounded-circle" width="50" height="50"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="mb-0">Men Polo Tshirt</p>
-                                                </div>
-                                            </td>
-                                            <td>$124</td>
-                                            <td>Julia Sunota</td>
-                                            <td>
-                                                <p
-                                                    class="dash-lable mb-0 bg-warning bg-opacity-10 text-warning rounded-2">
-                                                    Pending</p>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <p class="mb-0">4.0</p>
-                                                    <i class="material-icons-outlined text-warning fs-6">star</i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="">
-                                                        <img src="{{ asset('/../admin/assets/images/top-products/04.png') }}"
-                                                            class="rounded-circle" width="50" height="50"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="mb-0">Blue Jeans Casual</p>
-                                                </div>
-                                            </td>
-                                            <td>$289</td>
-                                            <td>Julia Sunota</td>
-                                            <td>
-                                                <p
-                                                    class="dash-lable mb-0 bg-success bg-opacity-10 text-success rounded-2">
-                                                    Completed</p>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <p class="mb-0">3.0</p>
-                                                    <i class="material-icons-outlined text-warning fs-6">star</i>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <div class="">
-                                                        <img src="{{ asset('/../admin/assets/images/top-products/06.png') }}"
-                                                            class="rounded-circle" width="50" height="50"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="mb-0">Fancy Shirts</p>
-                                                </div>
-                                            </td>
-                                            <td>$389</td>
-                                            <td>Julia Sunota</td>
-                                            <td>
-                                                <p
-                                                    class="dash-lable mb-0 bg-danger bg-opacity-10 text-danger rounded-2">
-                                                    Canceled</p>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center gap-1">
-                                                    <p class="mb-0">2.0</p>
-                                                    <i class="material-icons-outlined text-warning fs-6">star</i>
-                                                </div>
-                                            </td>
-                                        </tr>
 
-                                    </tbody>
-                                </table>
-                            </div>
+            </div> --}}
+            <!--end row-->
+        </div>
+        <div class="container">
+
+            {{-- Flash Message --}}
+            @if (session('success'))
+                <div class="alert alert-success">{{ session('success') }}</div>
+            @endif
+
+            {{-- Display Validation Errors --}}
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <!-- CREATE SOFTWARE PRODUCT -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h1 class="text-center"><strong>Add New Software Product</strong></h1>
+                </div>
+                <div class="card-body">
+                    <form action="{{ route('software_products.store') }}" method="POST"
+                        enctype="multipart/form-data">
+                        @csrf
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control" placeholder="Product Name"
+                                required>
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <textarea name="description" class="form-control" placeholder="Description"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <select name="pricing_type" class="form-select">
+                                <option value="free">Free</option>
+                                <option value="paid">Paid</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" name="price" class="form-control" placeholder="Price if paid">
+                        </div>
+                        <div class="mb-3">
+                            <input type="url" name="demo_url" class="form-control"
+                                placeholder="Demo URL (optional)">
+                        </div>
+                        {{-- <div class="mb-3"> --}}
+                        {{-- <h6>Your Software Files</h6>
+                            <input type="file" name="main_file" required class="form-control">
+                        </div> --}}
+                        <div class="mb-3">
+                            <h6>Your Software Screenshot</h6>
+                            <input type="file" name="screenshots[]" multiple class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <select name="category" class="form-select">
+                                <option value="Utility">Utility</option>
+                                <option value="Design">Design</option>
+                                <option value="Productivity">Productivity</option>
+                                <option value="Games">Games</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Publish</button>
+                    </form>
                 </div>
             </div>
-
-
-
         </div>
     </main>
     <!--end main wrapper-->
+
 
     <!--start overlay-->
     <div class="overlay btn-toggle"></div>
@@ -2072,7 +1587,7 @@
     <footer class="page-footer">
         <p class="mb-0">Copyright © 2024. All right reserved.</p>
     </footer>
-    <!--end footer-->
+    <!--top footer-->
 
     <!--start cart-->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart">
@@ -2086,8 +1601,8 @@
             <div class="order-list">
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/01.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ asset('/../admin/assets/images/orders/01.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">White Men Shoes</h5>
@@ -2101,8 +1616,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/02.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ asset('/../admin/assets/images/orders/02.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Red Airpods</h5>
@@ -2116,8 +1631,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/03.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ asset('/../admin/assets/images/orders/03.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Men Polo Tshirt</h5>
@@ -2131,8 +1646,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/04.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ asset('/../admin/assets/images/orders/04.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Blue Jeans Casual</h5>
@@ -2146,8 +1661,8 @@
 
                 <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
                     <div class="order-img">
-                        <img src="{{ asset('/../admin/assets/images/orders/05.png') }}"
-                            class="img-fluid rounded-3" width="75" alt="">
+                        <img src="{{ asset('/../admin/assets/images/orders/05.png') }}" class="img-fluid rounded-3"
+                            width="75" alt="">
                     </div>
                     <div class="order-info flex-grow-1">
                         <h5 class="mb-1 order-title">Fancy Shirts</h5>
@@ -2213,7 +1728,6 @@
         </div>
     </div>
     <!--end cart-->
-
 
 
     <!--start switcher-->
@@ -2297,21 +1811,25 @@
     <!--plugins-->
     <script src="{{ asset('/../admin/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js') }}"></script>
     <script src="{{ asset('/../admin/assets/plugins/metismenu/metisMenu.min.js') }}"></script>
-    <script src="{{ asset('/../admin/assets/plugins/apexchart/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('/../admin/assets/plugins/fancy-file-uploader/jquery.ui.widget.js') }}"></script>
+    <script src="{{ asset('/../admin/assets/plugins/fancy-file-uploader/jquery.fileupload.js') }}"></script>
+    <script src="{{ asset('/../admin/assets/plugins/fancy-file-uploader/jquery.iframe-transport.js') }}"></script>
+    <script src="{{ asset('/../admin/assets/plugins/fancy-file-uploader/jquery.fancy-fileupload.js') }}"></script>
+    <script>
+        $('#fancy-file-upload').FancyFileUpload({
+            params: {
+                action: 'fileuploader'
+            },
+            maxfilesize: 1000000000
+        });
+    </script>
     <script src="{{ asset('/../admin/assets/plugins/simplebar/js/simplebar.min.js') }}"></script>
-    <script src="{{ asset('/../admin/assets/plugins/peity/jquery.peity.min.js') }}"></script>
-    <script>
-        $(".data-attributes span").peity("donut")
-    </script>
     <script src="{{ asset('/../admin/assets/js/main.js') }}"></script>
-    <script src="{{ asset('/../admin/assets/js/dashboard1.js') }}"></script>
-    <script>
-        new PerfectScrollbar(".user-list")
-    </script>
+
 
 </body>
 
 
-<!-- Mirrored from codervent.com/maxton/demo/vertical-menu/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 14:22:08 GMT -->
+<!-- Mirrored from codervent.com/maxton/demo/vertical-menu/ecommerce-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 14:22:37 GMT -->
 
 </html>
